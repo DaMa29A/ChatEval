@@ -14,6 +14,7 @@ from .base import BaseAgent
 @agent_registry.register("conversation")
 class ConversationAgent(BaseAgent):
     def step(self, env_description: str = "") -> Message:
+        print(f"step function in conversation_agent_con.py")
         prompt = self._fill_prompt_template(env_description)
 
         parsed_response = None
@@ -30,7 +31,7 @@ class ConversationAgent(BaseAgent):
                 continue
 
         if parsed_response is None:
-            logging.error(f"{self.name} failed to generate valid response.")
+            logging.error(f"{self.name} failed to generate valid response. [llm_eval_agent (step)]")
 
         message = Message(
             content=""
@@ -42,6 +43,7 @@ class ConversationAgent(BaseAgent):
         return message
 
     async def astep(self, env_description: str = "") -> Message:
+        print(f"astep function in conversation_agent_con.py")
         """Asynchronous version of step"""
         prompt = self._fill_prompt_template(env_description)
 
@@ -59,7 +61,7 @@ class ConversationAgent(BaseAgent):
                 continue
 
         if parsed_response is None:
-            logging.error(f"{self.name} failed to generate valid response.")
+            logging.error(f"{self.name} failed to generate valid response. [llm_eval_agent (astep)]")
 
         message = Message(
             content=""

@@ -23,6 +23,7 @@ class LLMEvalAgent(BaseAgent):
     # for direct score
     reference_text: str = ""
     generated_text: str = ""
+    response_to_evaluate: str = ""  # TODO: ho aggiunto questa
 
     # for pair comparison
     compared_text_one: str = ""
@@ -32,6 +33,7 @@ class LLMEvalAgent(BaseAgent):
     final_prompt_to_use: str = ""
 
     def step(self, env_description: str = "") -> Message:
+        print(f"step function in llm_eval_multi_agent.py")
         prompt = self._fill_prompt_template(env_description)
 
         parsed_response = None
@@ -48,7 +50,7 @@ class LLMEvalAgent(BaseAgent):
                 continue
 
         if parsed_response is None:
-            logging.error(f"{self.name} failed to generate valid response.")
+            logging.error(f"{self.name} failed to generate valid response. [llm_eval_multi_agent (step)]")
 
         message = Message(
             content=""
@@ -60,6 +62,7 @@ class LLMEvalAgent(BaseAgent):
         return message
 
     async def astep(self, env: BaseEnvironment = None, env_description: str = "") -> Message:
+        print(f"astep function in llm_eval_multi_agent.py")
         """Asynchronous version of step"""
 
         # TODO modify this line, if it is the final round, add some instruction in the prompt
@@ -89,8 +92,12 @@ class LLMEvalAgent(BaseAgent):
 
             for i in range(self.max_retry):
                 try:
+                    print(f"Before response")
                     response = await self.llm.agenerate_response(prompt, self.memory.messages, self.final_prompt)
+                    print(f"Response: {response}")
+                    #TODO: Abbiamo modificato parser (in agentverse/tasks/output_parser.py)
                     parsed_response = self.output_parser.parse(response, env.cnt_turn, env.max_turns, len(env.agents))
+                    print(f"Parsed response:\n{parsed_response}")
                     should_break = True
                     break
                 except (KeyboardInterrupt, bdb.BdbQuit):
@@ -113,7 +120,7 @@ class LLMEvalAgent(BaseAgent):
                 continue
 
         if parsed_response is None:
-            logging.error(f"{self.name} failed to generate valid response.")
+            logging.error(f"{self.name} failed to generate valid response. [llm_eval_multi_agent (astep)]")
 
         message = Message(
             content=""
@@ -140,6 +147,7 @@ class LLMEvalAgent(BaseAgent):
             "source_text": self.source_text,
             "reference_text": self.reference_text,
             "generated_text": self.generated_text,
+            "response_to_evaluate": self.response_to_evaluate, # <-- TODO: ho aggiunto questa
             "compared_text_one": self.compared_text_one,
             "compared_text_two": self.compared_text_two,
             "final_prompt": self.final_prompt,

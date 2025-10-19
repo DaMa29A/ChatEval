@@ -23,6 +23,7 @@ class LLMEvalAgent(BaseAgent):
     # for direct score
     reference_text: str = ""
     generated_text: str = ""
+    response_to_evaluate: str = ""  # TODO: ho aggiunto questa
 
     # for pair comparison
     compared_text_one: str = ""
@@ -33,6 +34,7 @@ class LLMEvalAgent(BaseAgent):
 
 
     def step(self, env_description: str = "") -> Message:
+        print(f"step function in llm_eval_multi_agent_con.py")
         prompt = self._fill_prompt_template(env_description)
 
         parsed_response = None
@@ -49,7 +51,7 @@ class LLMEvalAgent(BaseAgent):
                 continue
 
         if parsed_response is None:
-            logging.error(f"{self.name} failed to generate valid response.")
+            logging.error(f"{self.name} failed to generate valid response. [llm_eval_multi_agent_con (step)]")
 
         message = Message(
             content=""
@@ -61,6 +63,7 @@ class LLMEvalAgent(BaseAgent):
         return message
 
     async def astep(self, env: BaseEnvironment = None, env_description: str = "") -> Message:
+        print(f"astep function in llm_eval_multi_agent_con.py")
         """Asynchronous version of step"""
 
         # TODO modify this line, if it is the final round, add some instruction in the prompt
@@ -110,7 +113,7 @@ class LLMEvalAgent(BaseAgent):
                 continue
 
         if parsed_response is None:
-            logging.error(f"{self.name} failed to generate valid response.")
+            logging.error(f"{self.name} failed to generate valid response. [llm_eval_multi_agent_con (astep)]")
 
         message = Message(
             content=""
@@ -137,6 +140,7 @@ class LLMEvalAgent(BaseAgent):
             "source_text": self.source_text,
             "reference_text": self.reference_text,
             "generated_text": self.generated_text,
+            "response_to_evaluate": self.response_to_evaluate, # <-- TODO: ho aggiunto questa
             "compared_text_one": self.compared_text_one,
             "compared_text_two": self.compared_text_two,
             "final_prompt": self.final_prompt,

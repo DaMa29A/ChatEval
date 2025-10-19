@@ -74,9 +74,67 @@ if "faireval" in args_data_path:
     #     json.dump(gt_origin_output, f, indent=4)
 
 elif "fed" in args_data_path:
-    print(f"Fed")
-    pass
+    print(f"--- Rilevato dataset 'Fed'. Avvio modalità di valutazione assoluta. ---")
+    output = []
+    
+    # n=1 significa che stai testando solo sul primo elemento.
+    # Ricorda di rimuovere [:n] per l'esecuzione finale!
+    n = 1 
+    
+    # 1. LOOP SUL DATASET (Esterno)
+    for index, elem in enumerate(data[:n]):
+        print(f"================================instance {index+1}====================================")
+        
+        chat = elem["context"]
+        response = elem["response"]
+        #print(f"Chat:\n{chat}\n\nResponse:\n{response}\n")
+
+        for agent_id in range(len(agentverse.agents)):
+            agent = agentverse.agents[agent_id]
+            print(f"Agente '{agent.name}'")
+            
+            # Assegna gli stessi dati a ogni agente
+            agent.source_text = chat
+            agent.response_to_evaluate = response
+            agent.final_prompt = "" # Resetta i prompt per il dibattito
+
+        print("--- Dati agenti impostati. Avvio del dibattito (agentverse.run())... ---")
+        # Vedendo nella funzione astep, stampando response ne vediamo il formato
+        # Nel nostro caso abbiamo qualcosa di simile:
+        '''
+        content='Evaluation evidence: The assistant’s response is brief and somewhat relevant, as it acknowledges the user’s 
+        reluctance to share details about the meeting and attempts to connect by suggesting the meeting might be boring. 
+        However, it lacks empathy and does not encourage further conversation or provide any supportive or engaging content. 
+        The response could have been improved by showing understanding of the user’s privacy or by offering a light, 
+        friendly comment to keep the dialogue flowing. Overall, it is a minimal but acceptable reply that fits the context 
+        but does not add much value.\n\nOverall Score: 5' 
+        send_tokens=626 
+        recv_tokens=111 
+        total_tokens=737
+        '''
+        agentverse.run() #avvio dibattito
+
+        # Estrazione risultati dal dibattito
+        print("--- Dibattito concluso. Estrazione delle valutazioni... ---")
+        # evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
+        # print(f"Evaluation: {evaluation}")
+        # 5. SALVA L'OUTPUT (UNA VOLTA SOLA)
+    #     output.append({
+    #         "context": elem["context"],
+    #         "response": elem["response"],
+    #         "human_annotations": elem["annotations"], # Ci salviamo anche i voti umani
+    #         "chateval_evaluation": evaluation
+    #     })
+
+    # # 6. SALVA IL FILE JSON FINALE (Alla fine di tutto il ciclo)
+    # os.makedirs(args_output_dir, exist_ok=True)
+    # with open(os.path.join(args_output_dir, "fed_evaluation_results.json"), "w") as f:
+    #     print(f"--- Valutazione completata. Salvo i risultati in {args_output_dir}/fed_evaluation_results.json ---")
+    #     json.dump(output, f, indent=4)
 
 elif "tropical" in args_data_path:
     print(f"Tropical")
-    pass
+    output = []
+    n = 1
+    for index, elem in enumerate(data[:n]):
+        print(f"================================instance {index+1}====================================")

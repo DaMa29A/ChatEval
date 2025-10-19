@@ -9,6 +9,8 @@ In questa prima fase decidiamo di usare: https://github.com/selfsff/GPT4ALL-Free
 Dobbiamo apportare delle modifiche al progetto però.
 In: ./agentverse/llms/openai.py usiamo anche base_url
 Chiavi OPENAI_API_KEY e OPENAI_BASE_URL da settare in variabili d'ambiente utente.
+Dei modelli usati nei file config.yaml, se si usa qualcosa di nuovo non già in openai.py bisogna registrarlo lì con:
+@llm_registry.register("gpt-4")     # A riga 91 piu o meno
 
 MODIFICHE:
 In agentverse/tasks/llm_eval/
@@ -20,6 +22,10 @@ In agentverse/tasks/llm_eval/
 Modificare agentverse/tasks/llm_eval/fed/config.yaml in base alle esigenze dataset.
 Modificare agentverse/tasks/llm_eval/tropical/config.yaml in base alle esigenze dataset.
 Modificare ./llm_eval.py aggiungendo le istruzioni per fed e tropical
+Modificare ./agentverse/eval_helper/get_evaluation.py per estrarre bene le info dal dibattito
+Modificare ./agentverse/agents tutti gli agenti. In particolare per aggiungere variabili che usiamo in prompt
+nel file config.yaml e funzione astep che danno problema nel parsare risposta generata.
+Modifica parser?? agentverse/tasks/output_parser.py
 
 [COME AVVIARE]
 venv\Scripts\activate
