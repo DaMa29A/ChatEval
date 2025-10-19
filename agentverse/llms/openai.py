@@ -18,8 +18,14 @@ try:
     import openai
     from openai import OpenAI, AsyncOpenAI
     
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
-    aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
+    # TODO: originale
+    # client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
+    # aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
+    print(f"Print key: {os.environ.get("OPENAI_API_KEY")}")
+    print(f"Base url: {os.environ.get("OPENAI_BASE_URL")}")
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"), base_url= os.environ.get("OPENAI_BASE_URL"))
+    aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"), base_url=os.environ.get("OPENAI_BASE_URL"))
+
     from openai import OpenAIError
 except ImportError:
     is_openai_available = False

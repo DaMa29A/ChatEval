@@ -1,0 +1,35 @@
+INSTALLAZIONE:
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+UTILIZZO CHIAVI:
+Progetto utilizza OpenAi.
+In questa prima fase decidiamo di usare: https://github.com/selfsff/GPT4ALL-Free-GPT-API
+Dobbiamo apportare delle modifiche al progetto però.
+In: ./agentverse/llms/openai.py usiamo anche base_url
+Chiavi OPENAI_API_KEY e OPENAI_BASE_URL da settare in variabili d'ambiente utente.
+
+MODIFICHE:
+In agentverse/tasks/llm_eval/
+    In sottocartella /data creo:    - /fed  con all'interno dataset 
+                                    - /tropical con all'interno dataset 
+    Creo sottocartella /project_configs con all'interno:    - /fed/config.yaml
+                                                            - /tropical/config.yaml
+
+Modificare agentverse/tasks/llm_eval/fed/config.yaml in base alle esigenze dataset.
+Modificare agentverse/tasks/llm_eval/tropical/config.yaml in base alle esigenze dataset.
+Modificare ./llm_eval.py aggiungendo le istruzioni per fed e tropical
+
+[COME AVVIARE]
+venv\Scripts\activate
+
+TEST GIA' ESISTENTE:
+python llm_eval.py --config agentverse/tasks/llm_eval/config.yaml
+
+VERSIONI CREATE
+python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/fed/config.yaml
+python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/tropical/config.yaml
+
+[OUTPUTS]
+In directory ./outputs
