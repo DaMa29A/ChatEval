@@ -33,7 +33,7 @@ class LLMEvalAgent(BaseAgent):
     final_prompt_to_use: str = ""
 
     def step(self, env_description: str = "") -> Message:
-        print(f"step function in llm_eval_multi_agent.py")
+        #print(f"step function in llm_eval_multi_agent.py")
         prompt = self._fill_prompt_template(env_description)
 
         parsed_response = None
@@ -62,7 +62,7 @@ class LLMEvalAgent(BaseAgent):
         return message
 
     async def astep(self, env: BaseEnvironment = None, env_description: str = "") -> Message:
-        print(f"astep function in llm_eval_multi_agent.py")
+        #print(f"astep function in llm_eval_multi_agent.py")
         """Asynchronous version of step"""
 
         # TODO modify this line, if it is the final round, add some instruction in the prompt
@@ -92,12 +92,13 @@ class LLMEvalAgent(BaseAgent):
 
             for i in range(self.max_retry):
                 try:
-                    print(f"Before response")
+                    # print(f"Before response")
                     response = await self.llm.agenerate_response(prompt, self.memory.messages, self.final_prompt)
-                    print(f"Response: {response}")
-                    #TODO: Abbiamo modificato parser (in agentverse/tasks/output_parser.py)
+                    #print(f"Response: {response}")
+                    #TODO: Abbiamo modificato parser (in agentverse/tasks/llm_eval/output_parser.py)
+                    #Prima accettava il parser solo risposte che iniziavano con una certa parola.
                     parsed_response = self.output_parser.parse(response, env.cnt_turn, env.max_turns, len(env.agents))
-                    print(f"Parsed response:\n{parsed_response}")
+                    #print(f"Parsed response:\n{parsed_response}")
                     should_break = True
                     break
                 except (KeyboardInterrupt, bdb.BdbQuit):

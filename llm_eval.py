@@ -91,7 +91,7 @@ elif "fed" in args_data_path:
 
         for agent_id in range(len(agentverse.agents)):
             agent = agentverse.agents[agent_id]
-            print(f"Agente '{agent.name}'")
+            #print(f"Agente '{agent.name}'")
             
             # Assegna gli stessi dati a ogni agente
             agent.source_text = chat
@@ -116,8 +116,8 @@ elif "fed" in args_data_path:
 
         # Estrazione risultati dal dibattito
         print("--- Dibattito concluso. Estrazione delle valutazioni... ---")
-        # evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
-        # print(f"Evaluation: {evaluation}")
+        evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
+        #print(f"Evaluation: {evaluation}")
         # 5. SALVA L'OUTPUT (UNA VOLTA SOLA)
     #     output.append({
     #         "context": elem["context"],

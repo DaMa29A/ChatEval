@@ -25,7 +25,9 @@ Modificare ./llm_eval.py aggiungendo le istruzioni per fed e tropical
 Modificare ./agentverse/eval_helper/get_evaluation.py per estrarre bene le info dal dibattito
 Modificare ./agentverse/agents tutti gli agenti. In particolare per aggiungere variabili che usiamo in prompt
 nel file config.yaml e funzione astep che danno problema nel parsare risposta generata.
-Modifica parser?? agentverse/tasks/output_parser.py
+Modifica parser (agentverse/tasks/output_parser.py) e (agentverse/tasks/llm_eval/output_parser.py) Quest'ultimo è 
+quello che viene sicuramente usato. Eliminato controllo sulle parole iniziali che doveva avere risposta.
+Modifica funzione get_evaluation in ./eval_helper
 
 [COME AVVIARE]
 venv\Scripts\activate
