@@ -118,19 +118,19 @@ elif "fed" in args_data_path:
         print("--- Dibattito concluso. Estrazione delle valutazioni... ---")
         evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents))
         #print(f"Evaluation: {evaluation}")
-        # 5. SALVA L'OUTPUT (UNA VOLTA SOLA)
-    #     output.append({
-    #         "context": elem["context"],
-    #         "response": elem["response"],
-    #         "human_annotations": elem["annotations"], # Ci salviamo anche i voti umani
-    #         "chateval_evaluation": evaluation
-    #     })
+        #Salvataggio output
+        output.append({
+            "context": elem["context"],
+            "response": elem["response"],
+            "human_annotations": elem["annotations"], # Ci salviamo anche i voti umani
+            "chateval_evaluation": evaluation
+        })
 
-    # # 6. SALVA IL FILE JSON FINALE (Alla fine di tutto il ciclo)
-    # os.makedirs(args_output_dir, exist_ok=True)
-    # with open(os.path.join(args_output_dir, "fed_evaluation_results.json"), "w") as f:
-    #     print(f"--- Valutazione completata. Salvo i risultati in {args_output_dir}/fed_evaluation_results.json ---")
-    #     json.dump(output, f, indent=4)
+    # Salvataggio in file json
+    os.makedirs(args_output_dir, exist_ok=True)
+    with open(os.path.join(args_output_dir, "fed_evaluation_results.json"), "w") as f:
+        print(f"--- Valutazione completata. Salvo i risultati in {args_output_dir}/fed_evaluation_results.json ---")
+        json.dump(output, f, indent=4)
 
 elif "tropical" in args_data_path:
     print(f"Tropical")
