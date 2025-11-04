@@ -64,7 +64,7 @@ elif "fed" in args_data_path:
     
     # n=1 significa che stai testando solo sul primo elemento.
     # Ricorda di rimuovere [:n] per l'esecuzione finale!
-    n = 6
+    n = 2
     
     # 1. LOOP SUL DATASET (Esterno)
     for index, elem in enumerate(data[:n]): #data[:n]
@@ -107,7 +107,7 @@ elif "fed" in args_data_path:
         output.append({
             "context": elem["context"],
             "response": elem["response"],
-            #"overall_annotations": overall_annotations,
+            "overall_annotations": overall_annotations,
             "average_annotations": average_scores,
             "chateval_evaluation": evaluation
         })

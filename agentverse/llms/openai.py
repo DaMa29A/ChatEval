@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 logger = logging.getLogger(__name__)
 load_dotenv()
 
-#MODEL_NAME = os.getenv('GROQ_MODEL_NAME')   # Viene registrato giù
-MODEL_NAME = os.getenv('FREE_GPT_MODEL_NAME')
+MODEL_NAME = os.getenv('GROQ_MODEL_NAME')   # Viene registrato giù
+#MODEL_NAME = os.getenv('FREE_GPT_MODEL_NAME')
 
 try:
     import openai
@@ -25,22 +25,22 @@ try:
     # aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
     
     # Free GPT-4
-    OPENAI_API_KEY = os.getenv('FREE_GPT_KEY')
-    OPENAI_BASE_URL = os.getenv('FREE_GPT_BASE_URL')
-    print(f"Print key: {OPENAI_API_KEY}")
-    print(f"Base url: {OPENAI_BASE_URL}")
-    print(f"Model name: {MODEL_NAME}")
-    client = OpenAI(api_key=OPENAI_API_KEY, base_url= OPENAI_BASE_URL)
-    aclient = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
-
-    # #Groq llama
-    # OPENAI_API_KEY = os.getenv('GROQ_KEY')
-    # OPENAI_BASE_URL = os.getenv('GROQ_BASE_URL')
+    # OPENAI_API_KEY = os.getenv('FREE_GPT_KEY')
+    # OPENAI_BASE_URL = os.getenv('FREE_GPT_BASE_URL')
     # print(f"Print key: {OPENAI_API_KEY}")
     # print(f"Base url: {OPENAI_BASE_URL}")
     # print(f"Model name: {MODEL_NAME}")
     # client = OpenAI(api_key=OPENAI_API_KEY, base_url= OPENAI_BASE_URL)
     # aclient = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
+
+    #Groq llama
+    OPENAI_API_KEY = os.getenv('GROQ_KEY')
+    OPENAI_BASE_URL = os.getenv('GROQ_BASE_URL')
+    print(f"Print key: {OPENAI_API_KEY}")
+    print(f"Base url: {OPENAI_BASE_URL}")
+    print(f"Model name: {MODEL_NAME}")
+    client = OpenAI(api_key=OPENAI_API_KEY, base_url= OPENAI_BASE_URL)
+    aclient = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
 
     from openai import OpenAIError
 except ImportError:

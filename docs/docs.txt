@@ -1,6 +1,0 @@
-1- Uso di llama - Cambio di Openai che usava gpt4
-2- Cambio salvataggio chiave in file .env [fai pip install python-dotenv e crea file .env]
-2- Modifiche parser che controllava che ci fossero esattamente le frasi "Answer1 e Answer2"
-3- Preprocessing dataset FED - alcune non avevano risposta su cui calcolare overall
-4- Modifiche di config per prompt e agenti
-5- Modifiche di llm_eval.py per aggiungere fed e topical

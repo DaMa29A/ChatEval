@@ -1,0 +1,158 @@
+task:
+  llmeval
+data_path:
+  ./agentverse/tasks/llm_eval/data/fed/fed_data_preproc.json
+output_dir:
+  ./outputs/fed/simultaneous
+prompts:
+  prompt: &prompt |-
+    [Dialog Context]
+    ${source_text}
+
+    [The Start of System's Answer]
+    ${response_to_evaluate}
+    [The End of System's Answer]
+    
+    [System]
+    We would like to request your feedback on the performance of the System's response displayed above.
+    Please evaluate the quality of this specific response based on its context.
+    
+    There are a few other referees assigned the same task. It is your responsibility to discuss with them, think critically, and reach a consensus on a final score.
+    The System will receive an Overall Score on a scale of 0 to 5, where 5 indicates excellent overall performance.
+
+    ${role_description}
+    Now it's your time to talk, please make your talk short and clear, ${agent_name}!
+
+    ${final_prompt}
+
+environment:
+  env_type: llm_eval
+  max_turns: 2 # 2 turni per istanza (2 dice articolo come ideale)
+  rule:
+    order:
+      # This is the "Simultaneous-Talk" strategy
+      type: concurrent 
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval_multi
+    name: General Public
+    final_prompt_to_use: &final_prompt_definition |-
+      Please first provide a comprehensive explanation of your evaluation, avoiding any potential bias and and ensuring that the order in which the responses were presented does not affect your judgment.
+      Then, output one line indicating the Overall Score for the System on a scale of 0 to 5.
+
+      Remember that you are not required to output the same value as other referees, but you should aim for a consensus.
+      Output with the following format strictly:
+      Evaluation evidence: [your explanation here]
+      Overall Score: [score only]
+    
+    role_description: |-
+      You are now General Public, one of the referees in this task.
+      You are interested in the story and looking for updates on the investigation.
+      You will focus on the overall feel of the response. Is it natural? 
+      Does it make sense? Is it something a person would plausibly say in this conversation?
+      Please help other referees determine the final "Overall Score" from 0 to 5.
+    
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "llama-3.1-8b-instant"
+      llm_type: llama-3.1-8b-instant
+      temperature: 0
+      max_tokens: 512
+
+  -
+    agent_type: llm_eval_multi
+    name: Critic
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are now Critic, one of the referees in this task. 
+      You will check for fluent writing, clear sentences, correctness, and relevance of the response.
+      Your job is to question others' judgments to ensure their judgment is well-considered.
+      Please help other referees determine the final "Overall Score" from 0 to 5.
+    
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "llama-3.1-8b-instant"
+      llm_type: llama-3.1-8b-instant
+      temperature: 0
+      max_tokens: 512
+  
+  -
+    agent_type: llm_eval_multi
+    name: News Author
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are News Author, one of the referees in this task. 
+      You will focus on how semantically appropriate and specific the response is, given the dialog context.
+      Please help other referees determine the final "Overall Score" from 0 to 5.
+
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "llama-3.1-8b-instant"
+      llm_type: llama-3.1-8b-instant
+      temperature: 0
+      max_tokens: 512
+  
+  -
+    agent_type: llm_eval_multi
+    name: Psychologist
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are Psychologist, one of the referees in this task.
+      You will study human behavior and mental processes in order to understand and explain human behavior
+      and how engaging and interesting the response is.
+      Please help other referees determine the final "Overall Score" from 0 to 5.
+    
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "llama-3.1-8b-instant"
+      llm_type: llama-3.1-8b-instant
+      temperature: 0
+      max_tokens: 512
+  
+  -
+    agent_type: llm_eval_multi
+    name: Scientist
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are Scientist, one of the referees in this task. 
+      You are a professional engaged in systematic study who possesses a strong background in the scientific method, critical thinking, and problem-solving abilities.
+      You will focus on the logical soundness and understandability shown in the response.
+      Please help other referees determine the final "Overall Score" from 0 to 5.
+    
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      model: "llama-3.1-8b-instant"
+      llm_type: llama-3.1-8b-instant
+      temperature: 0
+      max_tokens: 512
+
+tools: ~
