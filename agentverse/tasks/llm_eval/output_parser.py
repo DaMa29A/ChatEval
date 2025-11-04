@@ -41,3 +41,8 @@ class LLMEvalParser(OutputParser):
         #         raise OutputParserError(text)
 
         return AgentFinish({"output": text}, text)
+
+@output_parser_registry.register("fed")
+class FedParser(OutputParser):
+    def parse(self, output: LLMResult, cnt_turn: int, max_turns: int, agent_nums: int) -> Union[AgentAction, AgentFinish]:
+        pass

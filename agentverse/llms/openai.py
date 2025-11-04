@@ -3,16 +3,18 @@ import numpy as np
 import time
 import os
 from typing import Dict, List, Optional, Union
-
 from pydantic import BaseModel, Field
-
 from agentverse.llms.base import LLMResult
-
 from . import llm_registry
 from .base import BaseChatModel, BaseCompletionModel, BaseModelArgs
 from agentverse.message import Message
+from dotenv import load_dotenv
 
 logger = logging.getLogger(__name__)
+load_dotenv()
+
+#MODEL_NAME = os.getenv('GROQ_MODEL_NAME')   # Viene registrato giù
+MODEL_NAME = os.getenv('FREE_GPT_MODEL_NAME')
 
 try:
     import openai
@@ -21,17 +23,30 @@ try:
     # TODO: originale
     # client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
     # aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
-    print(f"Print key: {os.environ.get("OPENAI_API_KEY")}")
-    print(f"Base url: {os.environ.get("OPENAI_BASE_URL")}")
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"), base_url= os.environ.get("OPENAI_BASE_URL"))
-    aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"), base_url=os.environ.get("OPENAI_BASE_URL"))
+    
+    # Free GPT-4
+    OPENAI_API_KEY = os.getenv('FREE_GPT_KEY')
+    OPENAI_BASE_URL = os.getenv('FREE_GPT_BASE_URL')
+    print(f"Print key: {OPENAI_API_KEY}")
+    print(f"Base url: {OPENAI_BASE_URL}")
+    print(f"Model name: {MODEL_NAME}")
+    client = OpenAI(api_key=OPENAI_API_KEY, base_url= OPENAI_BASE_URL)
+    aclient = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
+
+    # #Groq llama
+    # OPENAI_API_KEY = os.getenv('GROQ_KEY')
+    # OPENAI_BASE_URL = os.getenv('GROQ_BASE_URL')
+    # print(f"Print key: {OPENAI_API_KEY}")
+    # print(f"Base url: {OPENAI_BASE_URL}")
+    # print(f"Model name: {MODEL_NAME}")
+    # client = OpenAI(api_key=OPENAI_API_KEY, base_url= OPENAI_BASE_URL)
+    # aclient = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
 
     from openai import OpenAIError
 except ImportError:
     is_openai_available = False
     logging.warning("openai package is not installed")
 else:
-
     if openai.api_key is None:
         logging.warning(
             "OpenAI API key is not set. Please set the environment variable OPENAI_API_KEY"
@@ -89,7 +104,8 @@ class OpenAICompletion(BaseCompletionModel):
             total_tokens=response.usage.total_tokens,
         )
 
-@llm_registry.register("gpt-4.1-mini")
+@llm_registry.register(MODEL_NAME)
+# @llm_registry.register("gpt-4.1-mini")
 @llm_registry.register("gpt-3.5-turbo-0301")
 @llm_registry.register("gpt-3.5-turbo")
 @llm_registry.register("gpt-4")

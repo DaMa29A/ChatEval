@@ -4,13 +4,10 @@ import logging
 import bdb
 from string import Template
 from typing import TYPE_CHECKING, List
-
 from agentverse.message import Message
 from openai import RateLimitError
-
 from . import agent_registry
 from .base import BaseAgent
-
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
@@ -18,7 +15,6 @@ if TYPE_CHECKING:
 
 @agent_registry.register("llm_eval_multi")
 class LLMEvalAgent(BaseAgent):
-
     source_text: str = ""
     # for direct score
     reference_text: str = ""
@@ -84,12 +80,11 @@ class LLMEvalAgent(BaseAgent):
             self.final_prompt = self.final_prompt_to_use
 
         prompt = self._fill_prompt_template(env_description)
+        #print(f"Prompt:\n{prompt}")
 
         parsed_response = None
-
         should_break = False
         while True:
-
             for i in range(self.max_retry):
                 try:
                     # print(f"Before response")

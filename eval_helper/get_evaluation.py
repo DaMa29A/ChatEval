@@ -1,18 +1,36 @@
 import os
 import json
+import re
 from typing import List
 from agentverse.message import Message
 
 
-def get_evaluation(setting: str = None, messages: List[Message] = None, agent_nums: int = None) -> List[dict]:
+def get_evaluation(setting: str = None, messages: List[Message] = None, agent_nums: int = None, type: str = None) -> List[dict]:
     #TODO: Modifica effettuata anche qui
     results = []
     if setting == "every_agent":
-        # Currently 2 round, concurrent, so the response will start from messages[-3:]
         for message in messages[-agent_nums:]:
-            #print(f"Mex: {message}")
-            print(f"\n--Role: {message.sender}\n--Evaluation:\n{message.content}")
-            results.append({"role": message.sender,
-                            "evaluation": message.content})
+            mex = message
+            agent_role = mex.sender
+            evaluation = mex.content
+            if type == "fed":
+                # 1. (.*)   - Gruppo 1: Cattura tutto il testo dell'analisi
+                # 2. (\d+)  - Gruppo 2: Cattura solo i numeri (lo score)
+                match = re.search(r"(.*)Overall Score:\s*(\d+)", evaluation, flags=re.DOTALL | re.IGNORECASE)
+                score = None
+                evaluation_text = evaluation
+
+                if match:
+                    evaluation_text = match.group(1).strip()
+                    score = int(match.group(2))
+                results.append({"role": agent_role,
+                                "evaluation": evaluation_text,
+                                "score": score})
+                
+            elif type == "topical":
+                pass
+            else:
+                results.append({"role": agent_role,
+                                "evaluation": evaluation})
 
     return results

@@ -1,9 +1,9 @@
 task:
   llmeval
 data_path:
-  ./agentverse/tasks/llm_eval/data/tropical/tc_usr_data.json
+  ./agentverse/tasks/llm_eval/data/topical/tc_usr_data.json
 output_dir:
-  ./outputs/tropical
+  ./outputs/topical
 prompts:
   prompt: &prompt |-
     [Question]
