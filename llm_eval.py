@@ -87,7 +87,14 @@ elif "fed" in args_data_path:
         print("--- Dati agenti impostati. Avvio del dibattito (agentverse.run())... ---")
         # Vedendo nella funzione astep, stampando response ne vediamo il formato
         
+        # LOG 1: VERIFICA LA MEMORIA PRIMA
+        print(f"--- DEBUG [llm_eval]: Pre-run. Messaggi in memoria: {len(agentverse.agents[0].memory.messages)} ---")
         agentverse.run() #avvio dibattito
+        # LOG 2: VERIFICA LA MEMORIA SUBITO DOPO
+        full_transcript = agentverse.agents[0].memory.messages
+        print(f"--- DEBUG [llm_eval]: Post-run. Messaggi in memoria: {len(full_transcript)} ---")
+        if len(full_transcript) == 0:
+            print("--- DEBUG [llm_eval]: ERRORE? La memoria è vuota dopo agentverse.run()! ---")
 
         # --- INIZIO BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
         
@@ -116,6 +123,11 @@ elif "fed" in args_data_path:
             print(f"ERRORE durante il salvataggio della trascrizione: {e}")
 
         # --- FINE BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
+        
+        # LOG 3: VERIFICA I MESSAGGI PASSATI A GET_EVALUATION
+        print(f"--- DEBUG [llm_eval]: Passo {len(full_transcript)} messaggi a get_evaluation ---")
+        evaluation = get_evaluation(setting="every_agent", messages=full_transcript, agent_nums=len(agentverse.agents), type="fed")
+        print(f"Evaluation: {evaluation}")
 
         # Estrazione risultati dal dibattito
         print("--- Dibattito concluso. Estrazione delle valutazioni... ---")

@@ -32,6 +32,11 @@ llm_config: &llm_config
   temperature: 0
   max_tokens: 256 #512
 
+llm_config: &llm_config_sum
+  model: "llama-3.1-8b-instant"
+  llm_type: llama-3.1-8b-instant
+  temperature: 0
+  max_tokens: 512
 
 environment:
   env_type: llm_eval
@@ -52,16 +57,13 @@ summary_template_def: &summary_template_def |-
   Summarize the latest discussion turns below:
   ${new_lines}
 
-  Previous summary:
-  ${summary}
-
   Write a brief, neutral summary keeping key evaluation points, logic trends, and disagreements.
   No new opinions. Max 3 sentences. Focus on system performance only. Output concise summary text.
 
 
 agents:
   -
-    agent_type: llm_eval_multi
+    agent_type: llm_eval_multi_con
     name: General Public
     final_prompt_to_use: &final_prompt_definition |-
       BE EXTREMELY BRIEF AND CLEAR IN YOUR EXPLANATION.
@@ -81,26 +83,22 @@ agents:
       Ask yourself: does this sound like something a normal person would say here?
     
     # memory:
-    #   memory_type: summary 
-    # memory_manipulator:
-    #   memory_manipulator_type: summary 
-    #   llm: *llm_config 
-    #   summary_template: *summary_template_def
+    #   memory_type: summary
+    #   llm: *llm_config_sum
+    #   prompt_template: *summary_template_def
+    #   recursive: false
     memory:
-      memory_type: summary
-      llm: *llm_config
-      prompt_template: *summary_template_def
-      recursive: true
+      memory_type: chat_history
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config  
+      llm: *llm_config_sum  
       summary_template: *summary_template_def
 
     prompt_template: *prompt
     llm: *llm_config 
 
   -
-    agent_type: llm_eval_multi
+    agent_type: llm_eval_multi_con
     name: Critic
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
@@ -108,27 +106,24 @@ agents:
       You will check for fluency, correctness, clarity, and relevance of the response.
       You will challenge other judgments if needed and ensure the reasoning is logically consistent.
       Focus on writing quality and precision of expression.
+  
     # memory:
     #   memory_type: summary
-    # memory_manipulator:
-    #   memory_manipulator_type: summary
-    #   llm: *llm_config
-    #   summary_template: *summary_template_def 
+    #   llm: *llm_config_sum
+    #   prompt_template: *summary_template_def
+    #   recursive: false
     memory:
-      memory_type: summary
-      llm: *llm_config
-      prompt_template: *summary_template_def
-      recursive: true
+      memory_type: chat_history
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config  
+      llm: *llm_config_sum  
       summary_template: *summary_template_def
 
     prompt_template: *prompt
     llm: *llm_config
   
   -
-    agent_type: llm_eval_multi
+    agent_type: llm_eval_multi_con
     name: News Author
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
@@ -138,25 +133,21 @@ agents:
 
     # memory:
     #   memory_type: summary
-    # memory_manipulator:
-    #   memory_manipulator_type: summary
-    #   llm: *llm_config
-    #   summary_template: *summary_template_def
+    #   llm: *llm_config_sum
+    #   prompt_template: *summary_template_def
+    #   recursive: false
     memory:
-      memory_type: summary
-      llm: *llm_config
-      prompt_template: *summary_template_def
-      recursive: true
+      memory_type: chat_history
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config  
+      llm: *llm_config_sum  
       summary_template: *summary_template_def
 
     prompt_template: *prompt
     llm: *llm_config
   
   -
-    agent_type: llm_eval_multi
+    agent_type: llm_eval_multi_con
     name: Psychologist
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
@@ -166,25 +157,21 @@ agents:
     
     # memory:
     #   memory_type: summary
-    # memory_manipulator:
-    #   memory_manipulator_type: summary
-    #   llm: *llm_config
-    #   summary_template: *summary_template_def 
+    #   llm: *llm_config_sum
+    #   prompt_template: *summary_template_def
+    #   recursive: false
     memory:
-      memory_type: summary
-      llm: *llm_config
-      prompt_template: *summary_template_def
-      recursive: true
+      memory_type: chat_history
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config  
+      llm: *llm_config_sum  
       summary_template: *summary_template_def
 
     prompt_template: *prompt
     llm: *llm_config
   
   -
-    agent_type: llm_eval_multi
+    agent_type: llm_eval_multi_con
     name: Scientist
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
@@ -193,19 +180,15 @@ agents:
       Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
     
     # memory:
-    #   memory_type: summary 
-    # memory_manipulator:
-    #   memory_manipulator_type: summary
-    #   llm: *llm_config
-    #   summary_template: *summary_template_def
+    #   memory_type: summary
+    #   llm: *llm_config_sum
+    #   prompt_template: *summary_template_def
+    #   recursive: false
     memory:
-      memory_type: summary
-      llm: *llm_config
-      prompt_template: *summary_template_def
-      recursive: true
+      memory_type: chat_history
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config  
+      llm: *llm_config_sum  
       summary_template: *summary_template_def
 
     prompt_template: *prompt

@@ -54,6 +54,9 @@ class BasicEnvironment(BaseEnvironment):
         # Get the next agent index
         agent_ids = self.rule.get_next_agent_idx(self)
 
+        # LOG 1: QUALI AGENTI STANNO PARLANDO?
+        print(f"--- DEBUG [Env.step]: Turno {self.cnt_turn}. Agenti selezionati (async): {agent_ids} ---")
+
         # Generate current environment description
         env_descriptions = self.rule.get_env_description(self)
 
@@ -64,6 +67,8 @@ class BasicEnvironment(BaseEnvironment):
 
         # Some rules will select certain messages from all the messages
         selected_messages = self.rule.select_message(self, messages)
+        # LOG 5: COSA È STATO SELEZIONATO?
+        print(f"--- DEBUG [Env.step]: Messaggi selezionati dalla regola: {len(selected_messages)} ---")
         self.last_messages = selected_messages
         self.print_messages(selected_messages)
 
