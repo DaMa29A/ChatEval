@@ -2,6 +2,7 @@ import numpy as np
 import json
 import os
 from scipy.stats import spearmanr, kendalltau, pearsonr
+from sklearn.metrics import cohen_kappa_score
 
 def get_human_scores(path):
     scores_list = []

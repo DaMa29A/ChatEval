@@ -49,7 +49,7 @@ environment:
 agents:
   -
     agent_type: llm_eval_multi
-    name: General Public
+    name: Critic
     final_prompt_to_use: &final_prompt_definition |-
       BE EXTREMELY BRIEF AND CLEAR IN YOUR EXPLANATION.
       Provide a concise justification of your evaluation, ensuring no order bias affects your judgment.
@@ -60,23 +60,6 @@ agents:
       USE THIS STRICT FORMAT:
       Evaluation evidence: [your explanation here]
       Overall Score: [score only]
-    
-    role_description: |-
-      You are now [General Public], one of the referees in this task.
-      You represent an average, interested reader following the story or conversation.
-      You will focus on how natural, realistic, and plausible the response sounds.
-      Ask yourself: does this sound like something a normal person would say here?
-    memory:
-      memory_type: chat_history
-    memory_manipulator:
-      memory_manipulator_type: basic
-    prompt_template: *prompt
-    llm: *llm_config
-
-  -
-    agent_type: llm_eval_multi
-    name: Critic
-    final_prompt_to_use: *final_prompt_definition
     role_description: |-
       You are now [Critic], one of the referees in this task.
       You will check for fluency, correctness, clarity, and relevance of the response.
@@ -88,6 +71,22 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm: *llm_config
+
+  # -
+  #   agent_type: llm_eval_multi
+  #   name: General Public
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [General Public], one of the referees in this task.
+  #     You represent an average, interested reader following the story or conversation.
+  #     You will focus on how natural, realistic, and plausible the response sounds.
+  #     Ask yourself: does this sound like something a normal person would say here?
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: basic
+  #   prompt_template: *prompt
+  #   llm: *llm_config
   
   -
     agent_type: llm_eval_multi
@@ -119,19 +118,19 @@ agents:
     prompt_template: *prompt
     llm: *llm_config
   
-  -
-    agent_type: llm_eval_multi
-    name: Scientist
-    final_prompt_to_use: *final_prompt_definition
-    role_description: |-
-      You are now [Scientist], one of the referees in this task.
-      You evaluate logical soundness, factual consistency, and understandability.
-      Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
-    memory:
-      memory_type: chat_history
-    memory_manipulator:
-      memory_manipulator_type: basic
-    prompt_template: *prompt
-    llm: *llm_config
+  # -
+  #   agent_type: llm_eval_multi
+  #   name: Scientist
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [Scientist], one of the referees in this task.
+  #     You evaluate logical soundness, factual consistency, and understandability.
+  #     Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: basic
+  #   prompt_template: *prompt
+  #   llm: *llm_config
 
 tools: ~

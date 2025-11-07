@@ -64,7 +64,7 @@ summary_template_def: &summary_template_def |-
 agents:
   -
     agent_type: llm_eval_multi_con
-    name: General Public
+    name: Critic
     final_prompt_to_use: &final_prompt_definition |-
       BE EXTREMELY BRIEF AND CLEAR IN YOUR EXPLANATION.
       Provide a concise justification of your evaluation, ensuring no order bias affects your judgment.
@@ -75,43 +75,11 @@ agents:
       USE THIS STRICT FORMAT:
       Evaluation evidence: [your explanation here]
       Overall Score: [score only]
-
-    role_description: |-
-      You are now [General Public], one of the referees in this task.
-      You represent an average, interested reader following the story or conversation.
-      You will focus on how natural, realistic, and plausible the response sounds.
-      Ask yourself: does this sound like something a normal person would say here?
-    
-    # memory:
-    #   memory_type: summary
-    #   llm: *llm_config_sum
-    #   prompt_template: *summary_template_def
-    #   recursive: false
-    memory:
-      memory_type: chat_history
-    memory_manipulator:
-      memory_manipulator_type: summary
-      llm: *llm_config_sum  
-      summary_template: *summary_template_def
-
-    prompt_template: *prompt
-    llm: *llm_config 
-
-  -
-    agent_type: llm_eval_multi_con
-    name: Critic
-    final_prompt_to_use: *final_prompt_definition
     role_description: |-
       You are now [Critic], one of the referees in this task.
       You will check for fluency, correctness, clarity, and relevance of the response.
       You will challenge other judgments if needed and ensure the reasoning is logically consistent.
       Focus on writing quality and precision of expression.
-  
-    # memory:
-    #   memory_type: summary
-    #   llm: *llm_config_sum
-    #   prompt_template: *summary_template_def
-    #   recursive: false
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -121,6 +89,25 @@ agents:
 
     prompt_template: *prompt
     llm: *llm_config
+
+  # -
+  #   agent_type: llm_eval_multi_con
+  #   name: General Public
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [General Public], one of the referees in this task.
+  #     You represent an average, interested reader following the story or conversation.
+  #     You will focus on how natural, realistic, and plausible the response sounds.
+  #     Ask yourself: does this sound like something a normal person would say here?
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: summary
+  #     llm: *llm_config_sum  
+  #     summary_template: *summary_template_def
+
+  #   prompt_template: *prompt
+  #   llm: *llm_config 
   
   -
     agent_type: llm_eval_multi_con
@@ -130,12 +117,6 @@ agents:
       You are now [News Author], one of the referees in this task.
       You evaluate the semantic accuracy, specificity, and contextual relevance of the response.
       Focus on whether the response clearly conveys useful and appropriate information, as a professional writer would.
-
-    # memory:
-    #   memory_type: summary
-    #   llm: *llm_config_sum
-    #   prompt_template: *summary_template_def
-    #   recursive: false
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -154,12 +135,6 @@ agents:
       You are now [Psychologist], one of the referees in this task.
       You study how engaging, emotionally coherent, and behaviorally realistic the response is.
       Focus on empathy, tone, and human engagement — does the reply connect well with the user’s perspective?
-    
-    # memory:
-    #   memory_type: summary
-    #   llm: *llm_config_sum
-    #   prompt_template: *summary_template_def
-    #   recursive: false
     memory:
       memory_type: chat_history
     memory_manipulator:
@@ -170,28 +145,22 @@ agents:
     prompt_template: *prompt
     llm: *llm_config
   
-  -
-    agent_type: llm_eval_multi_con
-    name: Scientist
-    final_prompt_to_use: *final_prompt_definition
-    role_description: |-
-      You are now [Scientist], one of the referees in this task.
-      You evaluate logical soundness, factual consistency, and understandability.
-      Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
-    
-    # memory:
-    #   memory_type: summary
-    #   llm: *llm_config_sum
-    #   prompt_template: *summary_template_def
-    #   recursive: false
-    memory:
-      memory_type: chat_history
-    memory_manipulator:
-      memory_manipulator_type: summary
-      llm: *llm_config_sum  
-      summary_template: *summary_template_def
+  # -
+  #   agent_type: llm_eval_multi_con
+  #   name: Scientist
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [Scientist], one of the referees in this task.
+  #     You evaluate logical soundness, factual consistency, and understandability.
+  #     Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: summary
+  #     llm: *llm_config_sum  
+  #     summary_template: *summary_template_def
 
-    prompt_template: *prompt
-    llm: *llm_config
+  #   prompt_template: *prompt
+  #   llm: *llm_config
 
 tools: ~
