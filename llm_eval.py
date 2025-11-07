@@ -69,7 +69,7 @@ elif "fed" in args_data_path:
     # 1. LOOP SUL DATASET (Esterno)
     #TODO : One-to-One evaluation fai data[50:80] per eseguire su 30 istanze diverse
     #TODO : Simultaneous evaluation fai data[50:80] per eseguire su 30 istanze diverse
-    for index, elem in enumerate(data[:1]): #data[:n]   data[x:y]
+    for index, elem in enumerate(data[10:20]): #data[:n]   data[x:y]
         print(f"================================instance {index+1}====================================")
         
         chat = elem["context"]
@@ -78,7 +78,6 @@ elif "fed" in args_data_path:
 
         for agent_id in range(len(agentverse.agents)):
             agent = agentverse.agents[agent_id]
-            
             # Assegna gli stessi dati a ogni agente
             agent.source_text = chat
             agent.response_to_evaluate = response
@@ -88,51 +87,51 @@ elif "fed" in args_data_path:
         # Vedendo nella funzione astep, stampando response ne vediamo il formato
         
         # LOG 1: VERIFICA LA MEMORIA PRIMA
-        print(f"--- DEBUG [llm_eval]: Pre-run. Messaggi in memoria: {len(agentverse.agents[0].memory.messages)} ---")
+        #print(f"--- DEBUG [llm_eval]: Pre-run. Messaggi in memoria: {len(agentverse.agents[0].memory.messages)} ---")
         agentverse.run() #avvio dibattito
         # LOG 2: VERIFICA LA MEMORIA SUBITO DOPO
-        full_transcript = agentverse.agents[0].memory.messages
-        print(f"--- DEBUG [llm_eval]: Post-run. Messaggi in memoria: {len(full_transcript)} ---")
-        if len(full_transcript) == 0:
-            print("--- DEBUG [llm_eval]: ERRORE? La memoria è vuota dopo agentverse.run()! ---")
+        #full_transcript = agentverse.agents[0].memory.messages
+        #print(f"--- DEBUG [llm_eval]: Post-run. Messaggi in memoria: {len(full_transcript)} ---")
+        # if len(full_transcript) == 0:
+        #     print("--- DEBUG [llm_eval]: ERRORE? La memoria è vuota dopo agentverse.run()! ---")
 
-        # --- INIZIO BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
+        # # --- INIZIO BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
         
-        # Poiché la visibilità è "all", tutti gli agenti hanno la stessa cronologia.
-        # Accediamo alla memoria del primo agente (agente 0).
-        full_transcript = agentverse.agents[0].memory.messages
+        # # Poiché la visibilità è "all", tutti gli agenti hanno la stessa cronologia.
+        # # Accediamo alla memoria del primo agente (agente 0).
+        # full_transcript = agentverse.agents[0].memory.messages
         
-        # Definisci dove salvare il file .txt (usa lo stesso args_output_dir del JSON)
-        # Assicurati che 'os' sia importato all'inizio del tuo script (import os)
-        transcript_filename = os.path.join(args_output_dir, f"istanza_{index+1}_transcript.txt")
+        # # Definisci dove salvare il file .txt (usa lo stesso args_output_dir del JSON)
+        # # Assicurati che 'os' sia importato all'inizio del tuo script (import os)
+        # transcript_filename = os.path.join(args_output_dir, f"istanza_{index+1}_transcript.txt")
 
-        try:
-            with open(transcript_filename, "w", encoding="utf-8") as f:
-                f.write(f"--- TRANSCRIZIONE DIBATTITO (Istanza {index+1}) ---\n\n")
-                f.write(f"CONTEXT:\n{chat}\n\n")
-                f.write(f"RESPONSE:\n{response}\n\n")
-                f.write("--- INIZIO DIBATTITO ---\n\n")
+        # try:
+        #     with open(transcript_filename, "w", encoding="utf-8") as f:
+        #         f.write(f"--- TRANSCRIZIONE DIBATTITO (Istanza {index+1}) ---\n\n")
+        #         f.write(f"CONTEXT:\n{chat}\n\n")
+        #         f.write(f"RESPONSE:\n{response}\n\n")
+        #         f.write("--- INIZIO DIBATTITO ---\n\n")
                 
-                for message in full_transcript:
-                    # Scrivi il mittente (es. "Critic") e il contenuto del messaggio nel file
-                    f.write(f"[{message.sender}]: {message.content}\n\n") # Aggiungo due ritorni a capo per leggibilità
+        #         for message in full_transcript:
+        #             # Scrivi il mittente (es. "Critic") e il contenuto del messaggio nel file
+        #             f.write(f"[{message.sender}]: {message.content}\n\n") # Aggiungo due ritorni a capo per leggibilità
             
-            print(f"--- Trascrizione salvata in: {transcript_filename} ---")
+        #     print(f"--- Trascrizione salvata in: {transcript_filename} ---")
 
-        except Exception as e:
-            print(f"ERRORE durante il salvataggio della trascrizione: {e}")
+        # except Exception as e:
+        #     print(f"ERRORE durante il salvataggio della trascrizione: {e}")
 
-        # --- FINE BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
+        # # --- FINE BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
         
         # LOG 3: VERIFICA I MESSAGGI PASSATI A GET_EVALUATION
-        print(f"--- DEBUG [llm_eval]: Passo {len(full_transcript)} messaggi a get_evaluation ---")
-        evaluation = get_evaluation(setting="every_agent", messages=full_transcript, agent_nums=len(agentverse.agents), type="fed")
-        print(f"Evaluation: {evaluation}")
+        # print(f"--- DEBUG [llm_eval]: Passo {len(full_transcript)} messaggi a get_evaluation ---")
+        # evaluation = get_evaluation(setting="every_agent", messages=full_transcript, agent_nums=len(agentverse.agents), type="fed")
+        # print(f"Evaluation: {evaluation}")
 
         # Estrazione risultati dal dibattito
         print("--- Dibattito concluso. Estrazione delle valutazioni... ---")
         evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents), type="fed")
-        print(f"Evaluation: {evaluation}")
+        #print(f"Evaluation: {evaluation}")
 
         annotations = elem["annotations"]
         overall_annotations = annotations.get("Overall")
@@ -154,8 +153,8 @@ elif "fed" in args_data_path:
             "chateval_evaluation": evaluation
         })
         # TODO: time.sleep(15) per one-to-one
-        # TODO: time.sleep(50) per simultaneous
-        time.sleep(50)
+        # TODO: time.sleep(50) per simultaneous e anche con sum
+        time.sleep(15)
 
     # Salvataggio in file json
     os.makedirs(args_output_dir, exist_ok=True)

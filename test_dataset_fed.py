@@ -83,6 +83,7 @@ def save_data_to_json(data, file_path):
 if __name__ == "__main__":
     input_dataset_file = "./agentverse/tasks/llm_eval/data/fed/fed_data.json"
     original_data = get_data(input_dataset_file)
+    print(f"Original data: {len(original_data)}")
 
     data_with_response = analyze_dataset(original_data)
     print(f"Data with response: {len(data_with_response)}")

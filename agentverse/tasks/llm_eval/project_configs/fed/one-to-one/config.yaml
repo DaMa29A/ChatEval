@@ -33,7 +33,7 @@ llm_config: &llm_config
 
 environment:
   env_type: llm_eval
-  max_turns: 10  # perchè 5 agents * 2 turni
+  max_turns: 6  # perchè 3 agents * 2 turni
   rule:
     order:
       type: sequential  # "One-by-One" strategy
