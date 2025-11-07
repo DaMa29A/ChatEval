@@ -1,20 +1,3 @@
-# Definizione del prompt finale (valido per tutti gli agenti)
-final_prompt_definition: &final_prompt_definition |-
-  Please first provide a comprehensive explanation of your evaluation, avoiding any potential bias and and ensuring that the order in which the responses were presented does not affect your judgment.
-  Then, output one line indicating the Overall Score for the System on a scale of 0 to 5.
-
-  Remember that you are not required to output the same value as other referees, but you should aim for a consensus.
-  Output with the following format strictly:
-  Evaluation evidence: [your explanation here]
-  Overall Score: [score only]
-  
-# Configurazione Base LLM (Usata in tre posizioni per ogni agente: Risposta, Memoria, Manipolatore)
-llm_config: &llm_config
-  model: "llama-3.1-8b-instant"
-  llm_type: llama-3.1-8b-instant
-  temperature: 0
-  max_tokens: 512
-  
 task:
   llmeval
 data_path:
@@ -31,60 +14,89 @@ prompts:
     [The End of System's Answer]
     
     [System]
-    We would like to request your feedback on the performance of the System's response displayed above.
-    Please evaluate the quality of this specific response based on its context.
-    
-    There are a few other referees assigned the same task. It is your responsibility to discuss with them, think critically, and reach a consensus on a final score.
-    The System will receive an Overall Score on a scale of 0 to 5, where 5 indicates excellent overall performance.
+    TASK: Evaluate the System's response based on context (0-5 scale, MUST be an integer).
+    You are one of several referees. You must discuss and critically analyze the performance to reach a final consensus score.
+
+    Note on scoring: Use 0 for completely off-topic or incoherent answers, and 5 for excellent, coherent, and contextually perfect responses. 
+    (Intermediate scores reflect increasing quality, clarity, and contextual fit.)
 
     ${role_description}
-    Now it's your time to talk, please make your talk short and clear, ${agent_name}!
+    Now generate the final evaluation report. Output MUST strictly follow the format below, ${agent_name}.
 
     ${final_prompt}
 
+
+llm_config: &llm_config
+  model: "llama-3.1-8b-instant"
+  llm_type: llama-3.1-8b-instant
+  temperature: 0
+  max_tokens: 256 #512
+
+
 environment:
   env_type: llm_eval
-  # 2 cicli completi di dibattito (ottimale secondo l'articolo)
   max_turns: 2 
   rule:
     order:
-      # Strategia di Discussione: Simultanea
-      type: concurrent 
+      type: concurrent # "Simultaneous-Talk" strategy
     visibility:
       type: all
     selector:
       type: basic
     updater:
-      # L'Updater rimane 'basic' perché la logica di riassunto è gestita dall'Agente
       type: basic
     describer:
       type: basic
 
+summary_template_def: &summary_template_def |-
+  Summarize the latest discussion turns below:
+  ${new_lines}
+
+  Previous summary:
+  ${summary}
+
+  Write a brief, neutral summary keeping key evaluation points, logic trends, and disagreements.
+  No new opinions. Max 3 sentences. Focus on system performance only. Output concise summary text.
+
+
 agents:
-  # IL BLOCCO INIZIA IMMEDIATAMENTE CON LA SEQUENZA DI AGENTI (-)
   -
     agent_type: llm_eval_multi
     name: General Public
-    final_prompt_to_use: *final_prompt_definition
+    final_prompt_to_use: &final_prompt_definition |-
+      BE EXTREMELY BRIEF AND CLEAR IN YOUR EXPLANATION.
+      Provide a concise justification of your evaluation, ensuring no order bias affects your judgment.
+      Aim for consensus, but output your final score independently (0-5, MUST be an integer).
+
+      IMPORTANT: Output must contain EXACTLY these two lines and nothing else.
+
+      USE THIS STRICT FORMAT:
+      Evaluation evidence: [your explanation here]
+      Overall Score: [score only]
+
     role_description: |-
-      You are now General Public, one of the referees in this task.
-      You are interested in the story and looking for updates on the investigation.
-      You will focus on the overall feel of the response. Is it natural? 
-      Does it make sense? Is it something a person would plausibly say in this conversation?
-      Please help other referees determine the final "Overall Score" from 0 to 5.
+      You are now [General Public], one of the referees in this task.
+      You represent an average, interested reader following the story or conversation.
+      You will focus on how natural, realistic, and plausible the response sounds.
+      Ask yourself: does this sound like something a normal person would say here?
     
+    # memory:
+    #   memory_type: summary 
+    # memory_manipulator:
+    #   memory_manipulator_type: summary 
+    #   llm: *llm_config 
+    #   summary_template: *summary_template_def
     memory:
-      # Memoria per Riassunto
       memory_type: summary
-      # LLM per la Memoria
-      llm: *llm_config 
+      llm: *llm_config
+      prompt_template: *summary_template_def
+      recursive: true
     memory_manipulator:
-      # Manipolatore per Riassunto (Genera la sintesi SUM)
       memory_manipulator_type: summary
-      # LLM per il Manipolatore
-      llm: *llm_config 
+      llm: *llm_config  
+      summary_template: *summary_template_def
+
     prompt_template: *prompt
-    # LLM per la Risposta dell'Agente al dibattito (Generazione della Risposta Dn)
     llm: *llm_config 
 
   -
@@ -92,17 +104,26 @@ agents:
     name: Critic
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
-      You are now Critic, one of the referees in this task. 
-      You will check for fluent writing, clear sentences, correctness, and relevance of the response.
-      Your job is to question others' judgments to ensure their judgment is well-considered.
-      Please help other referees determine the final "Overall Score" from 0 to 5.
-    
+      You are now [Critic], one of the referees in this task.
+      You will check for fluency, correctness, clarity, and relevance of the response.
+      You will challenge other judgments if needed and ensure the reasoning is logically consistent.
+      Focus on writing quality and precision of expression.
+    # memory:
+    #   memory_type: summary
+    # memory_manipulator:
+    #   memory_manipulator_type: summary
+    #   llm: *llm_config
+    #   summary_template: *summary_template_def 
     memory:
       memory_type: summary
-      llm: *llm_config 
+      llm: *llm_config
+      prompt_template: *summary_template_def
+      recursive: true
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config
+      llm: *llm_config  
+      summary_template: *summary_template_def
+
     prompt_template: *prompt
     llm: *llm_config
   
@@ -111,16 +132,26 @@ agents:
     name: News Author
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
-      You are News Author, one of the referees in this task. 
-      You will focus on how semantically appropriate and specific the response is, given the dialog context.
-      Please help other referees determine the final "Overall Score" from 0 to 5.
+      You are now [News Author], one of the referees in this task.
+      You evaluate the semantic accuracy, specificity, and contextual relevance of the response.
+      Focus on whether the response clearly conveys useful and appropriate information, as a professional writer would.
 
+    # memory:
+    #   memory_type: summary
+    # memory_manipulator:
+    #   memory_manipulator_type: summary
+    #   llm: *llm_config
+    #   summary_template: *summary_template_def
     memory:
       memory_type: summary
-      llm: *llm_config 
+      llm: *llm_config
+      prompt_template: *summary_template_def
+      recursive: true
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config
+      llm: *llm_config  
+      summary_template: *summary_template_def
+
     prompt_template: *prompt
     llm: *llm_config
   
@@ -129,17 +160,26 @@ agents:
     name: Psychologist
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
-      You are now Psychologist, one of the referees in this task.
-      You will study human behavior and mental processes in order to understand and explain human behavior
-      and how engaging and interesting the response is.
-      Please help other referees determine the final "Overall Score" from 0 to 5.
+      You are now [Psychologist], one of the referees in this task.
+      You study how engaging, emotionally coherent, and behaviorally realistic the response is.
+      Focus on empathy, tone, and human engagement — does the reply connect well with the user’s perspective?
     
+    # memory:
+    #   memory_type: summary
+    # memory_manipulator:
+    #   memory_manipulator_type: summary
+    #   llm: *llm_config
+    #   summary_template: *summary_template_def 
     memory:
       memory_type: summary
-      llm: *llm_config 
+      llm: *llm_config
+      prompt_template: *summary_template_def
+      recursive: true
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config
+      llm: *llm_config  
+      summary_template: *summary_template_def
+
     prompt_template: *prompt
     llm: *llm_config
   
@@ -148,17 +188,26 @@ agents:
     name: Scientist
     final_prompt_to_use: *final_prompt_definition
     role_description: |-
-      You are now Scientist, one of the referees in this task. 
-      You are a professional engaged in systematic study who possesses a strong background in the scientific method, critical thinking, and problem-solving abilities.
-      You will focus on the logical soundness and understandability shown in the response.
-      Please help other referees determine the final "Overall Score" from 0 to 5.
+      You are now [Scientist], one of the referees in this task.
+      You evaluate logical soundness, factual consistency, and understandability.
+      Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
     
+    # memory:
+    #   memory_type: summary 
+    # memory_manipulator:
+    #   memory_manipulator_type: summary
+    #   llm: *llm_config
+    #   summary_template: *summary_template_def
     memory:
       memory_type: summary
-      llm: *llm_config 
+      llm: *llm_config
+      prompt_template: *summary_template_def
+      recursive: true
     memory_manipulator:
       memory_manipulator_type: summary
-      llm: *llm_config
+      llm: *llm_config  
+      summary_template: *summary_template_def
+
     prompt_template: *prompt
     llm: *llm_config
 

@@ -6,6 +6,12 @@
 4- Modifiche di config per prompt e agenti
 5- Modifiche di llm_eval.py per aggiungere fed e topical
 
+Creazione ambiente
+py -0
+py -3.10 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+pip install python-dotenv
 
 Avviare
 python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/fed/one-to-one/config.yaml

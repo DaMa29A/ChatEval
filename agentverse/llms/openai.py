@@ -36,11 +36,13 @@ try:
     #Groq llama
     OPENAI_API_KEY = os.getenv('GROQ_KEY')
     OPENAI_BASE_URL = os.getenv('GROQ_BASE_URL')
+    
     print(f"Print key: {OPENAI_API_KEY}")
     print(f"Base url: {OPENAI_BASE_URL}")
     print(f"Model name: {MODEL_NAME}")
     client = OpenAI(api_key=OPENAI_API_KEY, base_url= OPENAI_BASE_URL)
     aclient = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
+
 
     from openai import OpenAIError
 except ImportError:
@@ -57,7 +59,7 @@ else:
 
 
 class OpenAIChatArgs(BaseModelArgs):
-    model: str = Field(default="gpt-3.5-turbo")
+    model: str = Field(default=MODEL_NAME)
     max_tokens: int = Field(default=2048)
     temperature: float = Field(default=1.0)
     top_p: int = Field(default=1)
@@ -68,44 +70,103 @@ class OpenAIChatArgs(BaseModelArgs):
 
 
 class OpenAICompletionArgs(OpenAIChatArgs):
-    model: str = Field(default="text-davinci-003")
+    #model: str = Field(default="text-davinci-003")
+    model: str = Field(default=MODEL_NAME)
     suffix: str = Field(default="")
     best_of: int = Field(default=1)
 
 
+# @llm_registry.register("text-davinci-003")
+# @llm_registry.register(MODEL_NAME)
+# class OpenAICompletion(BaseCompletionModel):
+#     args: OpenAICompletionArgs = Field(default_factory=OpenAICompletionArgs)
+#     print("OpenAICompletion SONO QUI")
+
+#     def __init__(self, max_retry: int = 3, **kwargs):
+#         args = OpenAICompletionArgs()
+#         args = args.dict()
+#         for k, v in args.items():
+#             args[k] = kwargs.pop(k, v)
+#         if len(kwargs) > 0:
+#             logging.warning(f"Unused arguments: {kwargs}")
+#         super().__init__(args=args, max_retry=max_retry)
+
+#     def generate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
+#         print(f"Client: {client}")
+#         response = client.completions.create(prompt=prompt, **self.args.dict())
+#         return LLMResult(
+#             content=response.choices[0].text,
+#             send_tokens=response.usage.prompt_tokens,
+#             recv_tokens=response.usage.completion_tokens,
+#             total_tokens=response.usage.total_tokens,
+#         )
+
+#     async def agenerate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
+#         response = await aclient.completions.create(prompt=prompt, **self.args.dict())
+#         return LLMResult(
+#             content=response.choices[0].text,
+#             send_tokens=response.usage.prompt_tokens,
+#             recv_tokens=response.usage.completion_tokens,
+#             total_tokens=response.usage.total_tokens,
+#         )
+
 @llm_registry.register("text-davinci-003")
+@llm_registry.register(MODEL_NAME)
 class OpenAICompletion(BaseCompletionModel):
     args: OpenAICompletionArgs = Field(default_factory=OpenAICompletionArgs)
 
-    def __init__(self, max_retry: int = 3, **kwargs):
-        args = OpenAICompletionArgs()
-        args = args.dict()
-        for k, v in args.items():
-            args[k] = kwargs.pop(k, v)
-        if len(kwargs) > 0:
-            logging.warning(f"Unused arguments: {kwargs}")
-        super().__init__(args=args, max_retry=max_retry)
+    # Nuovo metodo helper per pulire gli argomenti prima della chiamata Chat
+    def _prepare_chat_args(self) -> dict:
+        chat_args = self.args.dict()
+        # Questi argomenti non sono supportati dalla Chat API, vanno rimossi
+        chat_args.pop('suffix', None) 
+        chat_args.pop('best_of', None)
+        return chat_args
 
+    # Metodo helper per convertire il prompt di completion in formato message di chat
+    def _to_chat_messages(self, prompt: str) -> List[Dict[str, str]]:
+        return [{"role": "user", "content": prompt}]
+        
     def generate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
-        response = client.completions.create(prompt=prompt, **self.args.dict())
+        messages = self._to_chat_messages(prompt)
+        chat_args = self._prepare_chat_args() # Usa gli argomenti puliti
+
+        try:
+            # Chiama l'endpoint CHAT con gli argomenti puliti (FIX 404 e FIX suffix)
+            response = client.chat.completions.create(
+                messages=messages, 
+                **chat_args
+            )
+        except (OpenAIError, KeyboardInterrupt) as error:
+            raise
         return LLMResult(
-            content=response.choices[0].text,
+            content=response.choices[0].message.content, 
             send_tokens=response.usage.prompt_tokens,
             recv_tokens=response.usage.completion_tokens,
             total_tokens=response.usage.total_tokens,
         )
 
     async def agenerate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
-        response = await aclient.completions.create(prompt=prompt, **self.args.dict())
+        messages = self._to_chat_messages(prompt)
+        chat_args = self._prepare_chat_args() # Usa gli argomenti puliti
+
+        try:
+            # Chiama l'endpoint CHAT con gli argomenti puliti (FIX 404 e FIX suffix)
+            response = await aclient.chat.completions.create(
+                messages=messages, 
+                **chat_args
+            )
+        except (OpenAIError, KeyboardInterrupt) as error:
+            raise
         return LLMResult(
-            content=response.choices[0].text,
+            content=response.choices[0].message.content,
             send_tokens=response.usage.prompt_tokens,
             recv_tokens=response.usage.completion_tokens,
             total_tokens=response.usage.total_tokens,
         )
 
+
 @llm_registry.register(MODEL_NAME)
-# @llm_registry.register("gpt-4.1-mini")
 @llm_registry.register("gpt-3.5-turbo-0301")
 @llm_registry.register("gpt-3.5-turbo")
 @llm_registry.register("gpt-4")
@@ -138,9 +199,6 @@ class OpenAIChat(BaseChatModel):
             if openai.api_type == "azure":
                 response = client.chat.completions.create(engine="gpt-4-6", messages=messages, **self.args.dict())
             else:
-
-
-
                 response = client.chat.completions.create(messages=messages, **self.args.dict())
         except (OpenAIError, KeyboardInterrupt) as error:
             raise

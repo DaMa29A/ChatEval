@@ -64,10 +64,12 @@ elif "fed" in args_data_path:
     
     # n=1 significa che stai testando solo sul primo elemento.
     # Ricorda di rimuovere [:n] per l'esecuzione finale!
-    n = 2
+    n = 10
     
     # 1. LOOP SUL DATASET (Esterno)
-    for index, elem in enumerate(data[:n]): #data[:n]
+    #TODO : One-to-One evaluation fai data[50:80] per eseguire su 30 istanze diverse
+    #TODO : Simultaneous evaluation fai data[50:80] per eseguire su 30 istanze diverse
+    for index, elem in enumerate(data[:1]): #data[:n]   data[x:y]
         print(f"================================instance {index+1}====================================")
         
         chat = elem["context"]
@@ -87,10 +89,38 @@ elif "fed" in args_data_path:
         
         agentverse.run() #avvio dibattito
 
+        # --- INIZIO BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
+        
+        # Poiché la visibilità è "all", tutti gli agenti hanno la stessa cronologia.
+        # Accediamo alla memoria del primo agente (agente 0).
+        full_transcript = agentverse.agents[0].memory.messages
+        
+        # Definisci dove salvare il file .txt (usa lo stesso args_output_dir del JSON)
+        # Assicurati che 'os' sia importato all'inizio del tuo script (import os)
+        transcript_filename = os.path.join(args_output_dir, f"istanza_{index+1}_transcript.txt")
+
+        try:
+            with open(transcript_filename, "w", encoding="utf-8") as f:
+                f.write(f"--- TRANSCRIZIONE DIBATTITO (Istanza {index+1}) ---\n\n")
+                f.write(f"CONTEXT:\n{chat}\n\n")
+                f.write(f"RESPONSE:\n{response}\n\n")
+                f.write("--- INIZIO DIBATTITO ---\n\n")
+                
+                for message in full_transcript:
+                    # Scrivi il mittente (es. "Critic") e il contenuto del messaggio nel file
+                    f.write(f"[{message.sender}]: {message.content}\n\n") # Aggiungo due ritorni a capo per leggibilità
+            
+            print(f"--- Trascrizione salvata in: {transcript_filename} ---")
+
+        except Exception as e:
+            print(f"ERRORE durante il salvataggio della trascrizione: {e}")
+
+        # --- FINE BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
+
         # Estrazione risultati dal dibattito
         print("--- Dibattito concluso. Estrazione delle valutazioni... ---")
         evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents), type="fed")
-        #print(f"Evaluation: {evaluation}")
+        print(f"Evaluation: {evaluation}")
 
         annotations = elem["annotations"]
         overall_annotations = annotations.get("Overall")
@@ -111,8 +141,9 @@ elif "fed" in args_data_path:
             "average_annotations": average_scores,
             "chateval_evaluation": evaluation
         })
-
-        time.sleep(3)
+        # TODO: time.sleep(15) per one-to-one
+        # TODO: time.sleep(50) per simultaneous
+        time.sleep(50)
 
     # Salvataggio in file json
     os.makedirs(args_output_dir, exist_ok=True)

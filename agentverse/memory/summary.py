@@ -7,7 +7,7 @@ from pydantic import Field, validator
 from agentverse.initialization import load_llm
 from agentverse.llms.base import BaseLLM
 from agentverse.message import Message
-
+from agentverse.llms.openai import OpenAIChat
 from . import memory_registry
 from .base import BaseMemory
 
@@ -24,6 +24,13 @@ class SummaryMemory(BaseMemory):
         llm_config = kwargs.pop("llm")
         llm = load_llm(llm_config)
         super().__init__(llm=llm, *args, **kwargs)
+
+    # def __init__(self, *args, **kwargs):
+    #     #llm_config = kwargs.pop("llm")
+    #     llm_config = kwargs.pop("llm", None)
+    #     # llm = load_llm(llm_config)
+    #     llm = OpenAIChat()
+    #     super().__init__(llm=llm, *args, **kwargs)
 
     @validator("prompt_template")
     def check_prompt_template(cls, v, values):

@@ -1,0 +1,18 @@
+--- TRANSCRIZIONE DIBATTITO (Istanza 1) ---
+
+CONTEXT:
+User: Hi!
+System: Hi! What's up?
+User: Nothing much, how about you
+System: Not much either.
+User: What are you doing
+System: Playing Terraria. What about you?
+User: Sitting in a meeting
+System: What kind of meeting?
+User: Can't say
+
+RESPONSE:
+System: It's probably boring, isn't it?
+
+--- INIZIO DIBATTITO ---
+

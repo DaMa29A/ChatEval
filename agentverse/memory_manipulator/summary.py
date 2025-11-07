@@ -9,7 +9,7 @@ import logging
 import bdb
 from openai import RateLimitError
 
-
+from agentverse.llms.openai import OpenAIChat
 from agentverse.message import Message
 
 from agentverse.memory_manipulator import BaseMemoryManipulator
@@ -39,8 +39,20 @@ class SummaryMemoryManipulator(BaseMemoryManipulator):
         llm = load_llm(llm_config)
         super().__init__(llm=llm, *args, **kwargs)
 
-    def manipulate_memory(self):
+    # Dopo la modifica (Fix for Groq/Custom Model):
+    # def __init__(self, *args, **kwargs):
+    #     # Usa la configurazione LLM passata dal YAML
+    #     #llm_config = kwargs.pop("llm")
+    #     llm_config = kwargs.pop("llm", None)
+    #     # Rimuove il 'llm_type' che causa l'errore di risoluzione
+    #     #llm_type = llm_config.pop("llm_type")
+    #     # FORZA L'USO DELLA CLASSE OPENAICHAT E LE PASSA I TUOI ARGOMENTI GROQ
+    #     llm = OpenAIChat()
+    #     super().__init__(llm=llm, *args, **kwargs)
 
+    def manipulate_memory(self):
+        print(  f"Generating summary for agent {self.agent.name}..."  )
+        print(  f"Total messages to summarize: {len(self.agent.memory.messages)}"  )
         if len(self.agent.memory.messages) == 0:
             # nothing to summary
             return
