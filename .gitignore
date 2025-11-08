@@ -177,6 +177,8 @@ scripts
 !agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json
 !agentverse/tasks/llm_eval/data/fed/*.json
 !agentverse/tasks/llm_eval/data/tropical/*.json
+!outputs/fed/one-to-one/*.json
+!outputs/fed/simultaneous/*.json
 test_gpt_free.py
 test_gpt.py
 ./test_os_key.py
