@@ -27,8 +27,6 @@ from agentverse.parser import output_parser_registry
 
 def load_llm(llm_config: Dict):
     llm_type = llm_config.pop("llm_type", "text-davinci-003")
-    #TODO: 
-    print(f"Loading LLM of type: {llm_type} with config: {llm_config}")
     return llm_registry.build(llm_type, **llm_config)
 
 

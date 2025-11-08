@@ -19,19 +19,6 @@ MODEL_NAME = os.getenv('GROQ_MODEL_NAME')   # Viene registrato giù
 try:
     import openai
     from openai import OpenAI, AsyncOpenAI
-    
-    # TODO: originale
-    # client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
-    # aclient = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"),)
-    
-    # Free GPT-4
-    # OPENAI_API_KEY = os.getenv('FREE_GPT_KEY')
-    # OPENAI_BASE_URL = os.getenv('FREE_GPT_BASE_URL')
-    # print(f"Print key: {OPENAI_API_KEY}")
-    # print(f"Base url: {OPENAI_BASE_URL}")
-    # print(f"Model name: {MODEL_NAME}")
-    # client = OpenAI(api_key=OPENAI_API_KEY, base_url= OPENAI_BASE_URL)
-    # aclient = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
 
     #Groq llama
     OPENAI_API_KEY = os.getenv('GROQ_KEY')
@@ -75,40 +62,6 @@ class OpenAICompletionArgs(OpenAIChatArgs):
     suffix: str = Field(default="")
     best_of: int = Field(default=1)
 
-
-# @llm_registry.register("text-davinci-003")
-# @llm_registry.register(MODEL_NAME)
-# class OpenAICompletion(BaseCompletionModel):
-#     args: OpenAICompletionArgs = Field(default_factory=OpenAICompletionArgs)
-#     print("OpenAICompletion SONO QUI")
-
-#     def __init__(self, max_retry: int = 3, **kwargs):
-#         args = OpenAICompletionArgs()
-#         args = args.dict()
-#         for k, v in args.items():
-#             args[k] = kwargs.pop(k, v)
-#         if len(kwargs) > 0:
-#             logging.warning(f"Unused arguments: {kwargs}")
-#         super().__init__(args=args, max_retry=max_retry)
-
-#     def generate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
-#         print(f"Client: {client}")
-#         response = client.completions.create(prompt=prompt, **self.args.dict())
-#         return LLMResult(
-#             content=response.choices[0].text,
-#             send_tokens=response.usage.prompt_tokens,
-#             recv_tokens=response.usage.completion_tokens,
-#             total_tokens=response.usage.total_tokens,
-#         )
-
-#     async def agenerate_response(self, prompt: str, chat_memory: List[Message], final_prompt: str) -> LLMResult:
-#         response = await aclient.completions.create(prompt=prompt, **self.args.dict())
-#         return LLMResult(
-#             content=response.choices[0].text,
-#             send_tokens=response.usage.prompt_tokens,
-#             recv_tokens=response.usage.completion_tokens,
-#             total_tokens=response.usage.total_tokens,
-#         )
 
 @llm_registry.register("text-davinci-003")
 @llm_registry.register(MODEL_NAME)

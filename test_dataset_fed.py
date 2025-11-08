@@ -81,13 +81,19 @@ def save_data_to_json(data, file_path):
 
 
 if __name__ == "__main__":
-    input_dataset_file = "./agentverse/tasks/llm_eval/data/fed/fed_data.json"
-    original_data = get_data(input_dataset_file)
-    print(f"Original data: {len(original_data)}")
+    # input_dataset_file = "./agentverse/tasks/llm_eval/data/fed/fed_data.json"
+    # original_data = get_data(input_dataset_file)
+    # print(f"Original data: {len(original_data)}")
 
-    data_with_response = analyze_dataset(original_data)
-    print(f"Data with response: {len(data_with_response)}")
-    data_with_response2 = analyze_dataset(data_with_response)
+    # data_with_response = analyze_dataset(original_data)
+    # print(f"Data with response: {len(data_with_response)}")
+    # data_with_response2 = analyze_dataset(data_with_response)
 
-    output_dataset_file = "./agentverse/tasks/llm_eval/data/fed/fed_data_preproc.json"
-    save_data_to_json(data_with_response, output_dataset_file)
+    # output_dataset_file = "./agentverse/tasks/llm_eval/data/fed/fed_data_preproc.json"
+    # save_data_to_json(data_with_response, output_dataset_file)
+
+    input = "./outputs/fed/simultaneous/results.json"
+    print(f"Input: {len(get_data(input))}")
+
+    # input = "./agentverse/tasks/llm_eval/data/fed/fed_data_preproc.json"
+    # print(f"Input: {get_data(input)[130]}")

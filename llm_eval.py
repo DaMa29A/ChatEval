@@ -62,19 +62,14 @@ elif "fed" in args_data_path:
     print(f"[Rilevato dataset 'Fed']")
     output = []
     
-    # n=1 significa che stai testando solo sul primo elemento.
-    # Ricorda di rimuovere [:n] per l'esecuzione finale!
-    n = 10
-    
-    # 1. LOOP SUL DATASET (Esterno)
-    #TODO : One-to-One evaluation fai data[50:80] per eseguire su 30 istanze diverse
-    #TODO : Simultaneous evaluation fai data[50:80] per eseguire su 30 istanze diverse
-    for index, elem in enumerate(data[10:20]): #data[:n]   data[x:y]
+    # LOOP SUL DATASET
+    #TODO : One-to-One evaluation fai data[10:20] 
+    #TODO : Simultaneous evaluation fai data[270:280] 
+    #TODO : Simultaneous summarizer evaluation fai data[:10]
+    for index, elem in enumerate(data[375:376]): #data[:n]   data[x:y]
         print(f"================================instance {index+1}====================================")
-        
         chat = elem["context"]
         response = elem["response"]
-        #print(f"Chat:\n{chat}\n\nResponse:\n{response}\n")
 
         for agent_id in range(len(agentverse.agents)):
             agent = agentverse.agents[agent_id]
@@ -84,16 +79,7 @@ elif "fed" in args_data_path:
             agent.final_prompt = "" # Resetta i prompt per il dibattito
 
         print("--- Dati agenti impostati. Avvio del dibattito (agentverse.run())... ---")
-        # Vedendo nella funzione astep, stampando response ne vediamo il formato
-        
-        # LOG 1: VERIFICA LA MEMORIA PRIMA
-        #print(f"--- DEBUG [llm_eval]: Pre-run. Messaggi in memoria: {len(agentverse.agents[0].memory.messages)} ---")
         agentverse.run() #avvio dibattito
-        # LOG 2: VERIFICA LA MEMORIA SUBITO DOPO
-        #full_transcript = agentverse.agents[0].memory.messages
-        #print(f"--- DEBUG [llm_eval]: Post-run. Messaggi in memoria: {len(full_transcript)} ---")
-        # if len(full_transcript) == 0:
-        #     print("--- DEBUG [llm_eval]: ERRORE? La memoria è vuota dopo agentverse.run()! ---")
 
         # # --- INIZIO BLOCCO SALVATAGGIO TRANSCRIZIONE TXT ---
         
@@ -131,7 +117,6 @@ elif "fed" in args_data_path:
         # Estrazione risultati dal dibattito
         print("--- Dibattito concluso. Estrazione delle valutazioni... ---")
         evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents), type="fed")
-        #print(f"Evaluation: {evaluation}")
 
         annotations = elem["annotations"]
         overall_annotations = annotations.get("Overall")
@@ -140,7 +125,6 @@ elif "fed" in args_data_path:
             sum_scores = sum(overall_annotations)
             num_scores = len(overall_annotations)
             average_scores = sum_scores / num_scores
-            #print(f"La media dei voti 'Overall' umani è: {average_scores}") 
         else:
             average_scores = None
 
@@ -154,7 +138,7 @@ elif "fed" in args_data_path:
         })
         # TODO: time.sleep(15) per one-to-one
         # TODO: time.sleep(50) per simultaneous e anche con sum
-        time.sleep(15)
+        time.sleep(30)
 
     # Salvataggio in file json
     os.makedirs(args_output_dir, exist_ok=True)
