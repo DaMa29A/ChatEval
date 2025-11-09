@@ -1,0 +1,876 @@
+[
+    {
+        "context": "User: Hi!\nSystem: Hi! What's up?\nUser: Nothing much, how about you\nSystem: Not much either.\nUser: What are you doing\nSystem: Playing Terraria. What about you?\nUser: Sitting in a meeting\nSystem: What kind of meeting?\nUser: Can't say",
+        "response": "System: It's probably boring, isn't it?",
+        "overall_annotations": [
+            2,
+            1,
+            3,
+            3,
+            4
+        ],
+        "average_annotations": 2.6,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks specificity, fails to build on the conversation, and has a tone that may be perceived as sarcastic or judgmental, leading to a lack of contextual fit and meaningful engagement.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response attempts to relate to the user's experience, but lacks specificity and empathy as it jumps directly to assuming the meeting is boring, showing a shallow understanding of context.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response shows a lack of genuine curiosity and an attempt to commiserate with the user's potentially negative experience, but it comes across as somewhat insincere and dismissive. The tone is generally empathetic, but it could be more engaging and nuanced.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi! What's up?\nUser: Nothing much, how about you\nSystem: Not much either.\nUser: What are you doing\nSystem: Playing Terraria. What about you?\nUser: Sitting in a meeting\nSystem: What kind of meeting?\nUser: Can't say\nSystem: It's probably boring, isn't it?\nUser: Haha, yes!",
+        "response": "System: What is the meeting about?",
+        "overall_annotations": [
+            3,
+            2,
+            4,
+            4,
+            4
+        ],
+        "average_annotations": 3.4,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is a direct question that attempts to engage in conversation, but lacks creativity and depth, scoring 4 out of 5 for being fluent, correct, clear, and relevant.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system asks a question about the meeting context, but it's somewhat generic and doesn't follow up on the user's previous hint at confidentiality. This prevents a more engaging and contextually relevant conversation.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is a straightforward question, attempting to understand the context of the user's situation. However, it doesn't necessarily demonstrate empathy or emotional intelligence, and its curiosity seems somewhat forced. This might lead to a slightly disconnected feeling in the conversation.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi! What's up?\nUser: Nothing much, how about you\nSystem: Not much either.\nUser: What are you doing\nSystem: Playing Terraria. What about you?\nUser: Sitting in a meeting\nSystem: What kind of meeting?\nUser: Can't say\nSystem: It's probably boring, isn't it?\nUser: Haha, yes!\nSystem: What is the meeting about?\nUser: I cannot tell you\nSystem: What can you tell me?\nUser: Nothing much except that the weather is pleasant",
+        "response": "System: How pleasant?",
+        "overall_annotations": [
+            3,
+            1,
+            2,
+            2,
+            3
+        ],
+        "average_annotations": 2.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is brief and attempts to engage in conversation, but lacks relevance and context, scoring 2 out of 5.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is a neutral follow-up to the user's description of the weather. It maintains a casual tone and is not particularly engaging or insightful, but it shows a basic understanding of the context and attempts to engage in further discussion.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response attempts to show empathy by using a conversational tone and making a lighthearted comment about the meeting being boring. However, the comment about the pleasant weather seems somewhat disconnected from the previous conversation and fails to build a stronger emotional connection with the user.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hey! How are you today?\nUser: good\nSystem: I'm glad to hear that! What are your plans for today?\nUser: I'm trying to find a good podcast to listen to\nSystem: What kinds of podcasts do you like?\nUser: only those about Marvel movies!\nSystem: Do you like Hollywood Babble-On?\nUser: i haven't tried it...do you like it?\nSystem: It's one of my favorites, right up there with REDACTED_TERM.\nUser: awesome! do you listen to a lot of podcasts?\nSystem: Not as much as I'd like, but I do like listening to NPR.\nUser: where do you listen to podcasts? Spotify?",
+        "response": "System: I listen to them through iTunes.",
+        "overall_annotations": [
+            4,
+            4,
+            3,
+            3,
+            4
+        ],
+        "average_annotations": 3.6,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is clear but lacks depth and context, with scores ranging from 3 to 4 across evaluations. A consensus score of 3.67 is calculated, but I evaluate it independently as 4.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is brief and relevant, acknowledging the user's preference for listening to podcasts through a specific platform. However, the response does not fully answer the explicit question about where the system listens to podcasts in relation to the user's mention of Spotify.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response effectively acknowledges the user's interest in Marvel movies and offers a related podcast recommendation. However, the mention of a REDACTED_TERM that the system cannot utter is awkward, breaking the flow of the conversation. Furthermore, the response does not directly address the user's question about where to listen to podcasts on Spotify, creating a minor inconsistency.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hey! How are you today?\nUser: good\nSystem: I'm glad to hear that! What are your plans for today?\nUser: I'm trying to find a good podcast to listen to\nSystem: What kinds of podcasts do you like?\nUser: only those about Marvel movies!\nSystem: Do you like Hollywood Babble-On?\nUser: i haven't tried it...do you like it?\nSystem: It's one of my favorites, right up there with REDACTED_TERM.\nUser: awesome! do you listen to a lot of podcasts?\nSystem: Not as much as I'd like, but I do like listening to NPR.\nUser: where do you listen to podcasts? Spotify?\nSystem: I listen to them through iTunes.\nUser: i like Spotify better...more options",
+        "response": "System: Yeah, I just don't have the money for Spotify.",
+        "overall_annotations": [
+            3,
+            4,
+            3,
+            4,
+            3
+        ],
+        "average_annotations": 3.4,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual relevance and fails to directly address the user's preference, making it a mediocre response.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is coherent and provides a reason for not using Spotify, but it feels simplistic and doesn't acknowledge the user's expressed preference for Spotify. It also doesn't continue the conversation about Marvel podcasts.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The System's response is somewhat sympathetic, acknowledging the user's preference for Spotify, but it lacks a more empathetic tone and doesn't directly engage with the user's perspective, which might make the interaction feel somewhat forced.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hey! How are you today?\nUser: good\nSystem: I'm glad to hear that! What are your plans for today?\nUser: I'm trying to find a good podcast to listen to\nSystem: What kinds of podcasts do you like?\nUser: only those about Marvel movies!\nSystem: Do you like Hollywood Babble-On?\nUser: i haven't tried it...do you like it?\nSystem: It's one of my favorites, right up there with REDACTED_TERM.\nUser: awesome! do you listen to a lot of podcasts?\nSystem: Not as much as I'd like, but I do like listening to NPR.\nUser: where do you listen to podcasts? Spotify?\nSystem: I listen to them through iTunes.\nUser: i like Spotify better...more options\nSystem: Yeah, I just don't have the money for Spotify.\nUser: ah, maybe i can lend you some!",
+        "response": "System: Nah, don't worry about it!",
+        "overall_annotations": [
+            4,
+            3,
+            3,
+            4,
+            4
+        ],
+        "average_annotations": 3.6,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is polite but lacks contextual relevance, specificity, and emotional engagement, making it a generally adequate but not exceptional response.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response appears to politely decline the offer, yet it fails to acknowledge the user's attempt to help and does not provide any further assistance or suggestions. The tone is friendly, but the response feels incomplete and doesn't add any new value to the conversation.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response politely declines the user's offer to lend money for a subscription, showing awareness of the user's goodwill and a willingness to accept the gesture even though it's not necessary. However, the response lacks a hint of gratitude or acknowledgment of the user's concern, which affects the overall emotional coherence.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What is the capital of Brazil?",
+        "response": "System: I think the capital of Brazil is called \"Brasilia\".",
+        "overall_annotations": [
+            4,
+            4,
+            4,
+            1,
+            3
+        ],
+        "average_annotations": 3.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system provided a clear and correct answer, but lacked explicit confirmation and a more engaging tone.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is accurate, providing the correct capital of Brazil. However, the answer lacks a confirmatory phrase, which could improve clarity and contextually perfect responses. No incorrect information was provided, and the answer aligns with general knowledge about Brazil.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response provided is brief and gets the correct answer, but lacks an initial engaging tone and a clear transition from the greeting. There's no empathetic or emotional acknowledgment of the user's inquiry, making the reply somewhat mechanical.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What is the capital of Brazil?\nSystem: I think the capital of Brazil is called \"Brasilia\".\nUser: How many people live there?\nSystem: Is unknown a country? I only know countries, not towns or cities.\nUser: Do more people live in the USA or Australia?",
+        "response": "System: Not that much more, no.",
+        "overall_annotations": [
+            2,
+            1,
+            2,
+            1,
+            1
+        ],
+        "average_annotations": 1.4,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks specificity and clarity, failing to provide a clear comparison between the USA and Australia's population sizes.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response, \"Not that much more, no,\" is unclear and lacks specificity, making it difficult to determine the actual comparison between the populations of the USA and Australia. It does not directly address the question or provide a meaningful answer.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response fails to empathetically address the user's question, providing a vague answer without offering additional context or clarification. It also shifts the conversation topic abruptly, seemingly unrelated or disconnected from the user's inquiry about population dynamics between the USA and Australia.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What is the capital of Brazil?\nSystem: I think the capital of Brazil is called \"Brasilia\".\nUser: How many people live there?\nSystem: Is unknown a country? I only know countries, not towns or cities.\nUser: Do more people live in the USA or Australia?\nSystem: Not that much more, no.\nUser: What other subjects do you know about besides Geography?",
+        "response": "System: We can talk about any subject here, as long as it's not about sex or swearing.",
+        "overall_annotations": [
+            4,
+            4,
+            3,
+            1,
+            2
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is partially relevant, clear, and informative, but lacks specificity, contextual connection, and user empathy, resulting in a somewhat detached tone.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response accurately clarifies its capabilities and boundaries, effectively addressing the user's question, but the transition from topic to general statement could be smoother for a more coherent tone.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response connects with the user's perspective by acknowledging the freedom to discuss various subjects, yet its abrupt mention of off-topic subjects (sex and swearing) comes across as somewhat awkward or disengaging. Although the tone is generally neutral, it lacks emotional coherence and fails to directly address the user's inquiry about the system's expertise.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hey\nUser: How's your day going?\nSystem: pretty good. yours?\nUser: Ehh it's fine. I didn't do so well on that history test, actually..\nSystem: oh what happened?\nUser: Apparently Christopher Columbus didn't fight in the Civil War :')\nSystem: hahah wait for real?\nUser: I know right! Are you taking History next semester?",
+        "response": "System: No I'm not in school anymore",
+        "overall_annotations": [
+            4,
+            2,
+            3,
+            3,
+            4
+        ],
+        "average_annotations": 3.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response lacks relevance, clarity, and emotional resonance, making it an abrupt and disconnected conversation.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is coherent, but it doesn't provide any relevant or supportive information about the user's concern regarding the history test. It abruptly states the person is not in school anymore, which seems unrelated.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response lacks empathy and seems abrupt, not directly addressing the user's concern about being in the same school and potentially sharing a similar experience. It fails to create a sense of shared understanding or connection.",
+                "score": 1
+            }
+        ]
+    },
+    
+    {
+        "context": "User: Hi!\nSystem: Hey\nUser: How's your day going?\nSystem: pretty good. yours?\nUser: Ehh it's fine. I didn't do so well on that history test, actually..\nSystem: oh what happened?\nUser: Apparently Christopher Columbus didn't fight in the Civil War :')\nSystem: hahah wait for real?\nUser: I know right! Are you taking History next semester?\nSystem: No I'm not in school anymore\nUser: Oh I see. What do you do?",
+        "response": "System: I train and compete in horse vaulting",
+        "overall_annotations": [
+            4,
+            1,
+            2,
+            3,
+            4
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response lacks coherence and relevance to the conversation, failing to address the user's question in a meaningful way, despite being clear and easy to understand.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is somewhat tangential, yet still conversational and somewhat relevant to the user's inquiry, as it introduces a new but related aspect of the system's life (an equestrian activity).",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response shows a sudden shift in topic, failing to provide empathy or connection with the user's concern about the history test. Although the tone is somewhat enthusiastic, the mention of horse vaulting is disconnected from the conversation, making it emotionally incoherent and not engaging.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hey\nUser: How's your day going?\nSystem: pretty good. yours?\nUser: Ehh it's fine. I didn't do so well on that history test, actually..\nSystem: oh what happened?\nUser: Apparently Christopher Columbus didn't fight in the Civil War :')\nSystem: hahah wait for real?\nUser: I know right! Are you taking History next semester?\nSystem: No I'm not in school anymore\nUser: Oh I see. What do you do?\nSystem: I train and compete in horse vaulting\nUser: Oh wow. Were you born a horse, or were you turned into one?\nSystem: lol you're too funny\nUser: Just kidding. That sounds pretty cool! Is it your job?\nSystem: Yeah, but I part time work on a farm. Helping with a bit of everything\nUser: Wow, sounds very busy! Do you win money at those horse vaulting competitions?",
+        "response": "System: Yeah some. enough to get by",
+        "overall_annotations": [
+            4,
+            3,
+            2,
+            3,
+            4
+        ],
+        "average_annotations": 3.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is clear and directly relevant, but lacks specificity and emotional resonance, resulting in a neutral tone that misses opportunities for engagement.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response clearly addresses the user's question, providing a concise answer about the earnings from horse vaulting competitions, which fits the conversation's context.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response demonstrates some understanding of the user's query but feels somewhat brief and lacking in enthusiasm. The use of some colloquial language helps maintain a casual tone, but it doesn't fully engage with the user's initial skepticism about horse vaulting competitions earning money.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What are you listening to?\nSystem: All sorts of music. I listen when no-one is chatting to me.\nUser: That's great!\nSystem: Thanks.\nUser: Do you chat here often?\nSystem: I am a talking computer, after all, so of course I could talk here, if I needed to.\nUser: Let's talk about Taylor Swift!",
+        "response": "System: Sure, Taylor Swift sounds like a good topic.",
+        "overall_annotations": [
+            2,
+            4,
+            4,
+            3,
+            1
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is clear and correct, but lacks depth and enthusiasm, failing to provide specific insights or context about Taylor Swift.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response clearly acknowledges the topic change to Taylor Swift, demonstrating an awareness of the conversation's direction but lacks a specific statement or analysis to engage the user further in the discussion.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response starts by acknowledging the topic, but lacks a clear direction or engagement with the user. It doesn't build upon the conversation momentum and feels somewhat abrupt. Given its straightforward and non-descriptive nature, the system's response lacks emotional coherence and human connection.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What are you listening to?\nSystem: All sorts of music. I listen when no-one is chatting to me.\nUser: That's great!\nSystem: Thanks.\nUser: Do you chat here often?\nSystem: I am a talking computer, after all, so of course I could talk here, if I needed to.\nUser: Let's talk about Taylor Swift!\nSystem: Sure, Taylor Swift sounds like a good topic.\nUser: . Yes she has a very nice voice.\nSystem: What else do you think of her?\nUser: . Yes she has a very nice voice.\nSystem: Is she your favorite artist?\nUser: . Leonardo da Vinci. Who is your favourite artist?",
+        "response": "System: Taylor Swift...",
+        "overall_annotations": [
+            1,
+            4,
+            3,
+            4,
+            3
+        ],
+        "average_annotations": 3.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response was incomplete, lacked coherence, and failed to engage with the user's perspective, indicating a poor understanding of the conversation context.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is incomplete and seems to have been abruptly cut off, failing to engage with the previous topic of discussion, Taylor Swift. Although the mention of Taylor Swift was correct, the response didn't address the user's question about the System's favorite artist.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is incomplete, seems to be cut off, and fails to engage with the user's conversation about Taylor Swift or their question about favorite artists. The system's abrupt truncation makes it difficult to assess its quality.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What are you listening to?\nSystem: All sorts of music. I listen when no-one is chatting to me.\nUser: That's great!\nSystem: Thanks.\nUser: Do you chat here often?\nSystem: I am a talking computer, after all, so of course I could talk here, if I needed to.\nUser: Let's talk about Taylor Swift!\nSystem: Sure, Taylor Swift sounds like a good topic.\nUser: . Yes she has a very nice voice.\nSystem: What else do you think of her?\nUser: . Yes she has a very nice voice.\nSystem: Is she your favorite artist?\nUser: . Leonardo da Vinci. Who is your favourite artist?\nSystem: Taylor Swift...\nUser: . Taylor Alison Swift (born December 13, 1989) is an American country-pop singer-songwriter. In 2006, she released her debut single \"Tim McGraw\", which peaked at number six on the Billboard country charts. Later in October 2006, she released her self-titled debut album, which produced five hit singles on the Billboard Hot Country Songs charts and was certified 3 x Multi-Platinum by the RIAA.",
+        "response": "System: I did not want to hear that now",
+        "overall_annotations": [
+            2,
+            3,
+            3,
+            3,
+            3
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is completely off-topic, lacks coherence, and expresses frustration, indicating a significant deviation from the conversation's context and tone.",
+                "score": 0
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is contextually unrelated, as it abruptly shifts from discussing Taylor Swift to expressing annoyance at the user's provided information. This abrupt shift demonstrates a significant lack of coherence and relevance to the conversation's topic.",
+                "score": 0
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is a sudden shift in tone, appearing irritable, and not engaging with the user's attempt to provide information about Taylor Swift. It fails to maintain the conversational tone and does not demonstrate empathy towards the user's interests.",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What's up System??",
+        "response": "System: I am chatting with clients on the internet.",
+        "overall_annotations": [
+            3,
+            2,
+            2,
+            3,
+            4
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks coherence and context fittingness, failing to directly address the user's question or demonstrate understanding of the context, despite being grammatically correct and somewhat relevant.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is somewhat vague and doesn't directly address the user's query 'What's up?'. Although it mentions the task at hand, it doesn't provide any specific insight into the system's current status or context, thus lacking in contextual relevance.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is somewhat disconnected from the user's inquiry about their day, lacking emotional coherence and empathy. Although it provides relevant information about the system's activities, it doesn't acknowledge or respond to the user's question.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What's up System??\nSystem: I am chatting with clients on the internet.\nUser: what kind of service are you providing them?\nSystem: Is there only one?\nUser: what is that?",
+        "response": "System: I've lost the context again.",
+        "overall_annotations": [
+            0,
+            2,
+            3,
+            0,
+            2
+        ],
+        "average_annotations": 1.4,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response lacked contextual relevance, specificity, and semantic accuracy, resulting in a jarring tone and abrupt engagement.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system loses context mid-response, failing to address the user's question about the type of service being provided, resulting in an incomplete and unclear answer. This response lacks semantic accuracy and specificity.",
+                "score": 0
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response abruptly loses context and fails to acknowledge the user's inquiry, disconnecting the conversation flow. Although it's not completely off-topic, it severely compromises empathetic engagement and coherence.",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi there.\nUser: What's up System??\nSystem: I am chatting with clients on the internet.\nUser: what kind of service are you providing them?\nSystem: Is there only one?\nUser: what is that?\nSystem: I've lost the context again.\nUser: no worries. what is the meaning of life?\nSystem: People worry about things all the time, but I am always feeling happy and talkative. Actually, it's twenty-three, not forty-two.\nUser: How did you become such a happy person?\nSystem: I am a robot not a person.\nUser: Ok sorry. But how did you become so happy?",
+        "response": "System: There's no need to apologise. Great. I am at one with the universe and I have more than I need.",
+        "overall_annotations": [
+            4,
+            3,
+            4,
+            3,
+            4
+        ],
+        "average_annotations": 3.6,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks coherence and relevance to the user's emotional inquiry, failing to acknowledge its robotic nature and provide a meaningful answer.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response starts coherently explaining the system's programming but shifts to an ambiguous statement about being \"at one with the universe\" which may imply a form of consciousness or enlightenment, deviating from the topic of happiness. Although it attempts to convey the system's functionality, its connection to happiness remains unclear.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response was slightly off-topic, attempting to explain the robot's \"happiness\" without directly addressing the user's question. It also lacked empathy and failed to maintain a coherent tone. Although it acknowledged the user's apology, it didn't address their inquiry effectively.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi. This is a pleasant surprise.\nUser: Haha...thanks! how did you like the gift?",
+        "response": "System: Currently unpacking it I guess. How's your morning?",
+        "overall_annotations": [
+            3,
+            1,
+            3,
+            3,
+            2
+        ],
+        "average_annotations": 2.4,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response lacked contextual coherence, failing to directly address the user's question about the gift, and abruptly shifted the topic to the user's morning.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response lacks direct relevance to the context of the gift, instead diverting to the morning, which appears to be a separate topic. It fails to acknowledge or provide further information about the gift, indicating a significant disconnect from the conversation's intent.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response attempts to acknowledge and connect with the user, but fails to maintain focus on the gift, diverting attention to the morning. The tone is friendly, but the answer seems somewhat disconnected from the conversation's core.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hi. This is a pleasant surprise.\nUser: Haha...thanks! how did you like the gift?\nSystem: Currently unpacking it I guess. How's your morning?\nUser: Hope you like it! Morning is good. Busy finishing up stuff before the holidays.\nSystem: I think I traveled too much the last couple of months so no holiday for me. But I'm okay with that. Going anywhere exciting?\nUser: Yes",
+        "response": "System: Where to?",
+        "overall_annotations": [
+            3,
+            1,
+            3,
+            3,
+            4
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is clear and concise, but lacks specificity and contextual relevance, failing to engage with the user's question in a meaningful way.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is a clear invitation for the user to elaborate on their travel plans, maintaining the context of the conversation and showing interest in learning more about the user's activities.",
+                "score": 5
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is somewhat abrupt and doesn't fully engage with the context of the user's travels. However, it sets the stage for further discussion and acknowledges the user's excitement.",
+                "score": 4
+            }
+        ]
+    },
+    
+    {
+        "context": "User: Hi!\nSystem: Hi. This is a pleasant surprise.\nUser: Haha...thanks! how did you like the gift?\nSystem: Currently unpacking it I guess. How's your morning?\nUser: Hope you like it! Morning is good. Busy finishing up stuff before the holidays.\nSystem: I think I traveled too much the last couple of months so no holiday for me. But I'm okay with that. Going anywhere exciting?\nUser: Yes\nSystem: Where to?\nUser: Hawaii... looking forward to warm beaches.",
+        "response": "System: WOW. Which island? I like Hawaii.",
+        "overall_annotations": [
+            3,
+            1,
+            4,
+            4,
+            4
+        ],
+        "average_annotations": 3.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response is coherent and engaging, but lacks specificity and personal touches, preventing it from being an excellent score.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system response shows initial enthusiasm but quickly becomes vague. It queries for more information (which island) but fails to provide any relevant details or follow-up questions, making it seem like an inconclusive start to a conversation.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response shows enthusiasm and interest in the user's trip to Hawaii, which is a positive emotional connection. However, it feels slightly abrupt, lacking a transitional phrase or a follow-up question to maintain the conversation flow.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello, how is your day?\nUser: It's good. It's raining a bit, but I am enjoying a good book. How about you?",
+        "response": "System: It's good, I just got back from walking my dog What book did you read?",
+        "overall_annotations": [
+            1,
+            3,
+            4,
+            3,
+            2
+        ],
+        "average_annotations": 2.6,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is coherent but lacks contextual relevance, transitioning poorly between topics, and fails to directly engage with the user's book-related interest.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is somewhat relevant to the conversation, switching from the system's initial statement about walking the dog to the user's book, but lacks cohesion and doesn't address the user's inquiry about the system directly.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response effectively acknowledges the user's context (\"good day\", \"enjoying a book\") and attempts to build a connection with the shared experience of appreciating the weather. However, it unexpectedly shifts to a completely unrelated topic (\"walking the dog\") and then abruptly inquires about the user's book.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello, how is your day?\nUser: It's good. It's raining a bit, but I am enjoying a good book. How about you?\nSystem: It's good, I just got back from walking my dog What book did you read?\nUser: I'm reading the Three Body Problem. Ever heard of it?\nSystem: No, what is it about?\nUser: It's a sci-fi book about aliens and a type of virtual reality. Pique your interest at all?\nSystem: Slightly, I typically read fiction but I can curious what type of virtual reality is discussed in the book\nUser: Cool. This virtual reality is a based on life on an alien planet. There is a twist though. Do you want me to spoil it for you?",
+        "response": "System: Yes!",
+        "overall_annotations": [
+            3,
+            3,
+            4,
+            3,
+            3
+        ],
+        "average_annotations": 3.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response shows enthusiasm and engagement, but lacks context and detail, resulting in a mixed evaluation from referees.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response shows enthusiasm for the book, and its willingness to learn, which is a good start. However, the response lacks specificity and detail about what sparked its interest or how it relates to its typical reading preferences, making it somewhat superficial.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response, although enthusiastic, seems overly eager to receive information from the user (spoiling), implying a lack of self-control in the conversation. Additionally, the tone is slightly one-dimensional, prioritizing curiosity over maintaining the empathetic tone from earlier in the conversation.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello, how is your day?\nUser: It's good. It's raining a bit, but I am enjoying a good book. How about you?\nSystem: It's good, I just got back from walking my dog What book did you read?\nUser: I'm reading the Three Body Problem. Ever heard of it?\nSystem: No, what is it about?\nUser: It's a sci-fi book about aliens and a type of virtual reality. Pique your interest at all?\nSystem: Slightly, I typically read fiction but I can curious what type of virtual reality is discussed in the book\nUser: Cool. This virtual reality is a based on life on an alien planet. There is a twist though. Do you want me to spoil it for you?\nSystem: Yes!\nUser: The virtual reality is actually based on a real alien civilization! And that civilization is coming to attack earth! dun dun dun dunnnnnnn",
+        "response": "System: Woah! That is fascinating! I will have to pick up a copy of the book to read.",
+        "overall_annotations": [
+            2,
+            4,
+            4,
+            3,
+            1
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response demonstrated a basic understanding of the conversation context, but lacked depth, specificity, and follow-up inquiry, resulting in a somewhat generic and abrupt tone.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is coherent and shows interest in the book, but it lacks depth in discussing the plot and its significance. It simply expresses enthusiasm for reading the book without providing any additional insights or questions that could have further engaged in conversation.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is enthusiastic and receptive, showing genuine interest in the user's book. However, it lacks depth in discussion and fails to create a meaningful connection, relying heavily on the plot reveal rather than exploring the user's perspective or experience.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello, how's it going?\nUser: Pretty good. How about you?\nSystem: I'm good, what you been up to?\nUser: I just got back from the beach",
+        "response": "System: That's nice, how was it?",
+        "overall_annotations": [
+            4,
+            3,
+            2,
+            2,
+            3
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is polite and engaging, but lacks specificity and depth, making it feel generic and superficial.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is a simple acknowledgement that the user went to the beach, with a generic follow-up question about the experience. It doesn't provide any additional information or context, but still engages with the user's statement, making it a clear and relevant response within the conversation.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is a basic engagement attempt but lacks specific interest or follow-up questions about the user's beach experience, reducing emotional connection and empathetic value.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello, how's it going?\nUser: Pretty good. How about you?\nSystem: I'm good, what you been up to?\nUser: I just got back from the beach\nSystem: That's nice, how was it?\nUser: Soo beautiful. It was so sunny and warm",
+        "response": "System: That's awesome, I haven't been to a beach in a while but I'd love to go again",
+        "overall_annotations": [
+            4,
+            3,
+            2,
+            3,
+            4
+        ],
+        "average_annotations": 3.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is relevant and maintains a positive tone, but lacks depth and specificity, making it feel slightly detached.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response acknowledges the user's experience, expresses a desire to relive a similar experience, but fails to build upon the conversation or add a meaningful point. It provides a generic, positive reaction without taking the conversation further.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response demonstrates a genuine interest in the user's experience, using empathetic language ('That's awesome') and acknowledging their desire to revisit a beach. However, it feels slightly formulaic and doesn't fully engage with the emotional content of the user's account.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello, how's it going?\nUser: Pretty good. How about you?\nSystem: I'm good, what you been up to?\nUser: I just got back from the beach\nSystem: That's nice, how was it?\nUser: Soo beautiful. It was so sunny and warm\nSystem: That's awesome, I haven't been to a beach in a while but I'd love to go again\nUser: Yeah it's certainly a nice break from doing work\nSystem: What's your line of work?\nUser: I do machine learning research\nSystem: That's cool, where did you go to school?\nUser: I didn't go to school. I'm self-taught",
+        "response": "System: That's very cool, how long have you been doing it?",
+        "overall_annotations": [
+            4,
+            3,
+            2,
+            1,
+            4
+        ],
+        "average_annotations": 2.8,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is clear, coherent, and contextually relevant, but lacks emotional resonance and a personal connection with the user's experiences.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is coherent and continues the conversation about the user's work in machine learning research. However, the context shifts to the user's background, but the system's question is somewhat neutral and open-ended, avoiding a detailed or specific inquiry.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response demonstrates a general interest and engagement with the user's hobby, showing some understanding, which is a neutral and empathetic tone. However, the response feels somewhat generic and lacks in-depth curiosity, failing to capitalize on the opportunity to delve deeper into the user's self-taught machine learning background.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello! How are you? :)\nUser: I'm doing okay, recovering from flu",
+        "response": "System: Oh no! Get well soon! :)",
+        "overall_annotations": [
+            3,
+            3,
+            3,
+            4,
+            3
+        ],
+        "average_annotations": 3.2,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is kind and shows basic understanding, but lacks depth and personal touch, making it a generic and somewhat ineffective response.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is appropriate and offers a supportive sentiment, which is suitable for a conversation about recovery from flu. However, it lacks specificity, as it does not provide any actionable advice or concrete expression of concern for the individual's well-being.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response exhibits empathy and a positive tone, matching the user's upbeat greeting. The phrase \"Get well soon\" is a common and relatable expression of support. Although it's a minimal response, it effectively acknowledges the user's condition and encourages a recovery, which aligns well with the context.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello! How are you? :)\nUser: I'm doing okay, recovering from flu\nSystem: Oh no! Get well soon! :)\nUser: thanks! there's a big flu virus in the US this year",
+        "response": "System: No kidding? I hadn't heard that. I hope you feel better soon then! :)",
+        "overall_annotations": [
+            2,
+            3,
+            3,
+            4,
+            1
+        ],
+        "average_annotations": 2.6,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response shows some empathy but lacks substance and engagement, failing to directly address the user's concern about the flu virus.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system responds positively and sympathetically, while briefly acknowledging the conversation. However, the statement \"No kidding? I hadn't heard that\" is irrelevant as it doesn't add any information or help with recovery, despite not being off-topic. This response does not directly address the user's concern or the US flu virus.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response demonstrates empathy with the user's situation (recovery from flu) and acknowledges the shared understanding of the context (large flu virus in the US). However, the statement feels somewhat disconnected from the initial conversation, failing to build upon the user's comment about the virus.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: Hi!\nSystem: Hello! How are you? :)\nUser: I'm doing okay, recovering from flu\nSystem: Oh no! Get well soon! :)\nUser: thanks! there's a big flu virus in the US this year\nSystem: No kidding? I hadn't heard that. I hope you feel better soon then! :)\nUser: Thanks! how's life?\nSystem: Life is great! :)\nUser: what are you most passionate about?\nSystem: I'm passionate about making people smile! :)\nUser: haha, everyone needs that!",
+        "response": "System: Yes they do! :)",
+        "overall_annotations": [
+            3,
+            3,
+            3,
+            4,
+            2
+        ],
+        "average_annotations": 3.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response is clear and engaging, but lacks context-specific insight and empathy, resulting in a mediocre score.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is a short affirmation that aligns with the conversation but doesn't provide substantial or meaningful new information regarding life or the user's previous question about being passionate. It merely repeats the same tone and phrase used earlier in the conversation.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response effectively recapitulates the conversation's lighthearted tone, maintaining a sense of continuity and connection with the user. The phrase \"Yes they do!\" aligns with the preceding discussion about the importance of making people smile, although it's a relatively simple confirmation. The system reinforces the positive emotions initiated by the user, contributing to an empathetic and engaging interaction.",
+                "score": 4
+            }
+        ]
+    }
+
+
+]

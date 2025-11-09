@@ -24,6 +24,7 @@ class LLMEvalAgent(BaseAgent):
     reference_text: str = ""
     generated_text: str = ""
     response_to_evaluate: str = ""  # TODO: ho aggiunto questa
+    fact: str = ""  # TODO: ho aggiunto questa
 
     # for pair comparison
     compared_text_one: str = ""
@@ -141,6 +142,7 @@ class LLMEvalAgent(BaseAgent):
             "reference_text": self.reference_text,
             "generated_text": self.generated_text,
             "response_to_evaluate": self.response_to_evaluate, # <-- TODO: ho aggiunto questa
+            "fact": self.fact,  # <-- TODO: ho aggiunto questa
             "compared_text_one": self.compared_text_one,
             "compared_text_two": self.compared_text_two,
             "final_prompt": self.final_prompt,

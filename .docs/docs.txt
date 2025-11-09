@@ -17,3 +17,5 @@ Avviare
 python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/fed/one-to-one/config.yaml
 python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/fed/simultaneous/config.yaml
 python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/fed/simultaneous_sum/config.yaml
+
+python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/topical/one-to-one/config.yaml

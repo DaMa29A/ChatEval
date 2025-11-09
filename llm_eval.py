@@ -64,9 +64,8 @@ elif "fed" in args_data_path:
     
     # LOOP SUL DATASET
     #TODO : One-to-One evaluation fai data[10:20] 
-    #TODO : Simultaneous evaluation fai data[270:280] 
-    #TODO : Simultaneous summarizer evaluation fai data[:10]
-    for index, elem in enumerate(data[375:376]): #data[:n]   data[x:y]
+    #TODO : Simultaneous summarizer evaluation fai data[40:50]
+    for index, elem in enumerate(data[30:40]): #data[:n]   data[x:y]
         print(f"================================instance {index+1}====================================")
         chat = elem["context"]
         response = elem["response"]
@@ -146,10 +145,75 @@ elif "fed" in args_data_path:
         print(f"--- Valutazione completata. Salvo i risultati in {args_output_dir}/fed_evaluation_results.json ---")
         json.dump(output, f, indent=4)
 
-
 elif "topical" in args_data_path:
-    print(f"Topical")
+    print(f"[Rilevato dataset 'Topical']")
     output = []
-    n = 1
-    for index, elem in enumerate(data[:n]):
-        print(f"================================instance {index+1}====================================")
+    
+    #Fino a 60
+    for index, elem in enumerate(data[:1]): # ognuna sono 6 domande
+        chat = elem["context"]
+        fact = elem["fact"]
+
+        # Preprocessing chat per formattazione User/System
+        formatted_context = ""
+        turns = [t.strip() for t in chat.strip().split("\n") if t.strip()]
+        # Alterna User/System
+        for i, turn in enumerate(turns):
+            speaker = "User" if i % 2 == 0 else "System"
+            formatted_context += f"{speaker}: {turn}\n"
+        chat = formatted_context.strip()
+
+        y = 0
+        # LOOP INTERNO
+        for response_data in elem["responses"]:
+            y += 1
+            # if y > 1:
+            #     break
+            response_text = response_data["response"]
+            model_name = response_data["model"]
+            human_overall = response_data["Overall"] # Punteggi umani
+            
+            print(f"================================instance {index+1} - response {y} ====================================")
+
+            # Assegna i dati (incluso il fact) a ogni agente
+            for agent_id in range(len(agentverse.agents)):
+                agent = agentverse.agents[agent_id]
+                agent.source_text = chat
+                agent.fact = fact
+                agent.response_to_evaluate = response_text
+                agent.final_prompt = "" 
+
+            print("--- Dati agenti impostati. Avvio del dibattito (agentverse.run())... ---")
+            agentverse.run() # Avvio dibattito (per questa singola risposta)
+            print("--- Dibattito concluso. Estrazione delle valutazioni... ---")
+        
+            evaluation = get_evaluation(setting="every_agent", messages=agentverse.agents[0].memory.messages, agent_nums=len(agentverse.agents), type="topical")
+            
+            average_scores = 0
+            if human_overall:
+                sum_scores = sum(human_overall)
+                num_scores = len(human_overall)
+                average_scores = sum_scores / num_scores
+            else:
+                average_scores = None
+            
+            #Salvataggio output
+            output.append({
+                "context": chat,
+                "fact": fact,
+                "response": response_text,
+                "model": model_name,
+                "overall_annotations": human_overall,
+                "average_annotations": average_scores,
+                "chateval_evaluation": evaluation
+            })
+
+            # TODO: time.sleep(15) per one-to-one
+            # TODO: time.sleep(50) per simultaneous e anche con sum
+            time.sleep(30)
+
+    # Salvataggio in file json
+    os.makedirs(args_output_dir, exist_ok=True)
+    with open(os.path.join(args_output_dir, "tc_evaluation_results.json"), "w") as f:
+        print(f"--- Valutazione completata. Salvo i risultati in {args_output_dir}/tc_evaluation_results.json ---")
+        json.dump(output, f, indent=4)

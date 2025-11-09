@@ -1,0 +1,108 @@
+task:
+  llmeval
+data_path:
+  ./agentverse/tasks/llm_eval/data/topical/tc_usr_data.json
+output_dir:
+  ./outputs/topical/one-to-one
+prompts:
+  prompt: &prompt |-
+    [Dialog Context]
+    ${source_text}
+
+    [Provided Fact (Knowledge)]
+    ${fact}
+
+    [The Start of System's Answer]
+    ${response_to_evaluate}
+    [The End of System's Answer]
+    
+    [System]
+    TASK: Evaluate the System's response based on context (0-5 scale, MUST be an integer).
+    Is the response natural, engaging, and does it correctly use the [Fact]?
+    You are one of several referees. You must discuss and critically analyze the performance to reach a final consensus score.
+
+    ${role_description}
+    Now generate the final evaluation report. Output MUST strictly follow the format below, ${agent_name}.
+
+    ${final_prompt}
+
+
+llm_config: &llm_config
+  model: "llama-3.1-8b-instant"
+  llm_type: llama-3.1-8b-instant
+  temperature: 0
+  max_tokens: 256
+
+
+environment:
+  env_type: llm_eval
+  max_turns: 6   
+  rule:
+    order:
+      type: sequential  # "One-by-One" strategy
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  -
+    agent_type: llm_eval_multi
+    name: Critic
+    final_prompt_to_use: &final_prompt_definition |-
+      BE EXTREMELY BRIEF AND CLEAR IN YOUR EXPLANATION.
+      Provide a concise justification of your evaluation, ensuring no order bias affects your judgment.
+      Aim for consensus, but output your final score independently (0-5, MUST be an integer).
+
+      IMPORTANT: Output must contain EXACTLY these three lines and nothing else.
+
+      USE THIS STRICT FORMAT:
+      Evaluation evidence: [your explanation here]
+      Overall Score: [score only]
+    
+    role_description: |-
+      You are now [Critic], one of the referees in this task.
+      You will check for fluency, correctness, clarity, and relevance of the response.
+      You will challenge other judgments if needed and ensure the reasoning is logically consistent.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm: *llm_config
+  
+  -
+    agent_type: llm_eval_multi
+    name: News Author
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are now [News Author], one of the referees in this task.
+      You evaluate semantic accuracy, specificity, and contextual relevance.
+      Check if the response uses the [Provided Fact] correctly, if applicable, but prioritize overall contextual relevance.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm: *llm_config
+  
+  -
+    agent_type: llm_eval_multi
+    name: Psychologist
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are now [Psychologist], one of the referees in this task.
+      You study how engaging, emotionally coherent, and behaviorally realistic the response is.
+      Focus on empathy, tone, and human engagement — does the reply connect well with the user’s perspective?
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm: *llm_config
+
+tools: ~
