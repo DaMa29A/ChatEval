@@ -92,8 +92,14 @@ if __name__ == "__main__":
     # output_dataset_file = "./agentverse/tasks/llm_eval/data/fed/fed_data_preproc.json"
     # save_data_to_json(data_with_response, output_dataset_file)
 
+
+    input = "./outputs/fed/one-to-one/results.json"
+    input = "./outputs/fed/simultaneous/results.json"
     input = "./outputs/fed/simultaneous_sum/results.json"
-    #input = "./outputs/fed/one-to-one/results.json"
+
+    input = "./outputs/topical/one-to-one/results.json"
+    input = "./outputs/topical/simultaneous/results.json"
+
     print(f"Input: {len(get_data(input))}")
 
     # input = "./agentverse/tasks/llm_eval/data/fed/fed_data_preproc.json"

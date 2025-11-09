@@ -63,9 +63,8 @@ elif "fed" in args_data_path:
     output = []
     
     # LOOP SUL DATASET
-    #TODO : One-to-One evaluation fai data[10:20] 
-    #TODO : Simultaneous summarizer evaluation fai data[40:50]
-    for index, elem in enumerate(data[30:40]): #data[:n]   data[x:y]
+    #TODO : Simultaneous summarizer evaluation fai data[100:y]
+    for index, elem in enumerate(data[95:100]): #data[:n]   data[x:y]
         print(f"================================instance {index+1}====================================")
         chat = elem["context"]
         response = elem["response"]
@@ -150,7 +149,9 @@ elif "topical" in args_data_path:
     output = []
     
     #Fino a 60
-    for index, elem in enumerate(data[:1]): # ognuna sono 6 domande
+    #TODO: one-to-one 10:11
+    #TODO: simultaneous 10:11
+    for index, elem in enumerate(data[8:10]): # ognuna sono 6 domande
         chat = elem["context"]
         fact = elem["fact"]
 

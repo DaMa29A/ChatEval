@@ -3,7 +3,7 @@ task:
 data_path:
   ./agentverse/tasks/llm_eval/data/topical/tc_usr_data.json
 output_dir:
-  ./outputs/topical/one-to-one
+  ./outputs/topical/simultaneous
 prompts:
   prompt: &prompt |-
     [Dialog Context]
@@ -26,20 +26,18 @@ prompts:
 
     ${final_prompt}
 
-
 llm_config: &llm_config
   model: "llama-3.1-8b-instant"
   llm_type: llama-3.1-8b-instant
   temperature: 0
-  max_tokens: 256
-
+  max_tokens: 256 #512
 
 environment:
   env_type: llm_eval
-  max_turns: 6   
+  max_turns: 2 # 2 turni per istanza (2 dice articolo come ideale)
   rule:
     order:
-      type: sequential  # "One-by-One" strategy
+      type: concurrent # "Simultaneous-Talk" strategy
     visibility:
       type: all
     selector:
@@ -58,12 +56,11 @@ agents:
       Provide a concise justification of your evaluation, ensuring no order bias affects your judgment.
       Aim for consensus, but output your final score independently (0-5, MUST be an integer).
 
-      IMPORTANT: Output must contain EXACTLY these three lines and nothing else.
+      IMPORTANT: Output must contain EXACTLY these two lines and nothing else.
 
       USE THIS STRICT FORMAT:
       Evaluation evidence: [your explanation here]
       Overall Score: [score only]
-    
     role_description: |-
       You are now [Critic], one of the referees in this task.
       You will check for fluency, correctness, clarity, and relevance of the response.
@@ -75,7 +72,23 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm: *llm_config
-  
+
+  # -
+  #   agent_type: llm_eval_multi
+  #   name: General Public
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [General Public], one of the referees in this task.
+  #     You represent an average, interested reader following the story or conversation.
+  #     You will focus on how natural, realistic, and plausible the response sounds.
+  #     Ask yourself: does this sound like something a normal person would say here?
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: basic
+  #   prompt_template: *prompt
+  #   llm: *llm_config
+
   -
     agent_type: llm_eval_multi
     name: News Author
@@ -105,5 +118,20 @@ agents:
       memory_manipulator_type: basic
     prompt_template: *prompt
     llm: *llm_config
+  
+  # -
+  #   agent_type: llm_eval_multi
+  #   name: Scientist
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [Scientist], one of the referees in this task.
+  #     You evaluate logical soundness, factual consistency, and understandability.
+  #     Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: basic
+  #   prompt_template: *prompt
+  #   llm: *llm_config
 
 tools: ~
