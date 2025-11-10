@@ -521,7 +521,6 @@
             }
         ]
     },
-    
     {
         "context": "User: hi there , how 's it going ?\nSystem: it 's going great ! which do you prefer , football or baseball ?\nUser: oh i guess baseball . although i do n't have time to see many games anymore .\nSystem: baseball is the american pastime . japanese are surprised to discover this fact .\nUser: yeah , i guess they see it as being their own . they have their own fan culture around it . what is your favorite sport ?\nSystem: i like both baseball and football , but i usually follow them around playoff time . do n't have much time for games .\nUser: yeah the seasons are so long that it 's tough to get really immersed . especially baseball . it 's what , 162 games ?\nSystem: 162 , plus playoffs . soon they 'll be playing until christmas . until 2005 , a married couple scheduled all the games for the mlb . they must have had special software or something .\nUser: yeah . although i think they had done it since the 80s . maybe they did the first few seasons on a commodore 64 lol ?\nSystem: the old c64 ! classic . i do n't remember any good sports games on that though . football , baseball , soccer . probably not easy to do on a c64 .\nUser: yeah . i know they had accounting software lol , my dad used it . we had the minnesota fats pool game and i think one soccer one . but it was such a different era . no madden style graphics\nSystem: i wonder whether they had a version of kickball on the c64 . the canadians call the game soccer - baseball .\nUser: yeah i 've read that somewhere . when i was a kid , we played a kind of kickball called rounders at camp . our counselor was english . he kept telling us \" run to fourth ! \" and we were like , \" you mean home ? run home ? \"\nSystem: baseball is american ! i do n't know the english would want with it . i bet the english do n't collect \" rounders \" cards the way we collect baseball cards .\nUser: right ? i wonder if they have cricket cards lol ? i think they have stickers for soccer .\nSystem: some guy found $ 3 million dollars of baseball cards from the 1900s . i wonder what he did with the money .\nUser: yeah . that 's an amazing find . i heard they had been hidden since the 40s .\nSystem: thanks , grandpa ! i bet grandpa wishes he had cashed them in before he cashed out .",
         "fact": "_nofact\n",
@@ -696,7 +695,6 @@
             }
         ]
     },
-    
     {
         "context": "User: hi ! do you follow football ?\nSystem: sorry , i ca n't say that i do , i'm familiar with the big stories , but that is it .\nUser: that is about how much i know , just the basics , and some fun trivia .\nSystem: i used to live in dc son kind of know the redskins , but alex smith is new to me , is he the quarterback ?\nUser: yes . he took so many ap classes in high school he entered college as a junior , he started working on a masters then .\nSystem: now that is impressive , you have this impression of sports players as jocks , but he transcends that stereotype .\nUser: he really does , he was drafted as a number one pick in 2005 too .\nSystem: do you go to football games ? i 've been to one once in my life at indiana university .\nUser: i ve been to quite a few at florida state , but no pro games . there is only 11 minutes of live action anyway\nSystem: i think that is what puts me off , i really do n't have time to sit in front of the tv for three hours , and then for only 11 minutes of play .\nUser: it is hard to find time for that , i do nt know how some people do it all day , on a weekly basis .\nSystem: i guess some people listen to games on the radio , difficult to see how that works .\nUser: i ve done it traveling , you ve got to really know the team and all of the players names . it was so much harder .\nSystem: do you have a favorite nfl team . like i said , i lived in dc for a while so kind of follow them . now in northern ohio , the browns are a difficult team to support .\nUser: i feel you there , living in florida here . dolphins are hard to root for and feel proud .\nSystem: it could be worse , i read about this team that lost 220 - 0 . it would be hard to watch to the end .",
         "fact": "- that the highest score ever in a football game occurred in 1916 when georgia tech defeated cumberland 222 - 0\n",
@@ -871,7 +869,6 @@
             }
         ]
     },
-    
     {
         "context": "User: did you know that there was a moral panic in the 1700 's because everyone was reading books ? haha\nSystem: i did nt know that lol . we sure are close to a moral panic with all the tablets and social media kids and adults are using .\nUser: haha ya , if people started reading a lot in this day and age society would think that was a wonderful thing ! haha\nSystem: yeah , that would be great , literature is getting lost and great authors like cs lewis and tolkien are getting forgotten .\nUser: right , i think it 's funny though that they used to read off bad poetry and whoever laughed first would lose , that s hilarious\nSystem: that is hilarious i wonder who is the champion among them lol , do you personally like to read ?\nUser: i ca n't say that i do no , i do like audiobooks , i did try to speed read once but i found i did n't retain any information from it , that 's why i do n't know what to make of the speed reading champion with 4,700 words per minute\nSystem: i wonder how they measure that , i can just skip pages and tell everybody that i read the content , i bet i could read 6000 words per minute that way\nUser: ya exactly , if i could just flip through pages i could speed read too , what is weird is starship troopers is on the military 's reading list , idk about the book but the movie is definitely not pro military\nSystem: i guess that s because movies are nt as good as movies , a lot of info is missing , the enders game book is also another recommendation for armed forces around the globe\nUser: ya , did you ever see that movie ? i saw it and i like harrison ford who is in it , but it was pretty bad in my opinion\nSystem: i did see the movie , i thought it was bad as well , i liked the book better , i like reading you can learn many interesting facts , like why the area code of new york is 212 .\nUser: ya i think it was because that was the fastest number that you could dial with a rotary phone ? crazy how that stuff carries over until even today ! !\nSystem: it is ! there s a lot things we need to discover still though , i 'm kind of worried the cables carrying phone and internet are underwater , at least some of them .\nUser: ya it 's only about 3 inches thick , i wonder how it is protected ? is it just a cable or are there safeguards in place in case like a ship sinks and crushes it , etc",
         "fact": "[ # 26 score:167 comments:24 ] - til - the trunk of your car is called that because old cars used to have wooden trunks on the back .\n",
@@ -1046,7 +1043,6 @@
             }
         ]
     },
-    
     {
         "context": "User: hi , do you like music ?\nSystem: hi , yes i do . do you like music ?\nUser: very much , i was so excited to learn that \" /hybrid theory\"from linkin park has been the best selling album in the 21st century ! !\nSystem: did you ever have any cassette tapes ?\nUser: yes , i had many and also vinyls and the cd 's\nSystem: what di you do with all of those items ? i just threw away my cds about a month ago , at least the crappy ones .\nUser: i even remember the 78 rpm records , and i loved the books they cam in , they were sort of phtograph albums , with artist 's pictures , it was really cool !\nSystem: i wish the music had that today . i remember reading the cd jackets as soon as i got them . i can remember checking out artists mentioned in my favorite ablums .\nUser: that was a beautiful part of it . also really beautiful are soundtracks ! !\nSystem: spielberg played the clarinet on the jaws soundtrack ? ? ? ? how did i not know that ?\nUser: i did not know that either ! ! that is really neat . remember tarzan , i really loved phill collins performances for that movie ! !\nSystem: yeah . i think phil collins is seriously under rated . i think he is really talented .\nUser: yes i admire him a lot , and it is so cool that he recorded in 5 languages !\nSystem: batman begins must have been fun to record . the title of each track was the name of a genus of bat .\nUser: that is so neat ! those are details that make you enjoy the movies even more . did you watch tron , ? it has a unique soundtrack !\nSystem: i have not seen it . tell me about the soundtrack .\nUser: it is very sci fi , and super inspiring . it is made by daft punk , i love that duo !\nSystem: i love that they negotiated with their robot helmets on . seems like something they would do .\nUser: incognito style ! ! and very simple , they just needed a good breakfast with pancakes to say yes",
         "fact": "_nofact\n",
@@ -1221,7 +1217,6 @@
             }
         ]
     },
-    
     {
         "context": "User: hi , do you know much about presidents ?\nSystem: i know they live in the white house !\nUser: did you know the white house is smaller than the guest house ?\nSystem: nice . is that also true in ireland and france , where they have twin white house buildings ?\nUser: yeah but i do wonder if they presidents live in those houses or not\nSystem: yeah , and since the white house still uses floppy disks , is this also true at the twin white houses ?\nUser: good point . i wonder if they use the floppy discs because they might still be safer\nSystem: good question . perhaps , since teddy roosevelt banned christmas trees from the white house , perhaps bush issued an executive order against cds ?\nUser: well , it could be . good thing he brought back the solar panels though\nSystem: true . although in 2011 , bullets struck the white house . it took the secret service 4 days to realize it . i wonder if the solar panels were damaged ?\nUser: good point and strange that they did not figure that out earlier\nSystem: well , maybe they did n't notice because they were all inside listening to the latest pop music release from the president of indonesia ?\nUser: haha good point . did not know the guy released 3 albums already\nSystem: the guy is a machine ! but he needs a better stage name . maybe president banana ?\nUser: i do not think the president of zimbabwe would be happy about that\nSystem: he could be the artist formerly known as president banana ? i do n't really care as long as i can listen to him on the radio ! i love two things on my radio : indonesian pop music and electromagnetic storms from jupiter . those are my go to listening pleasures !\nUser: yeah that is so cool that if you turn your radio to am , you may capture jupiter 's storms",
         "fact": "according to canadian law , all radios are required to have at least 40 % of the music played be canadian .\n",
@@ -1396,7 +1391,6 @@
             }
         ]
     },
-    
     {
         "context": "User: hi , do you know much about the internet ?\nSystem: i know a lot about different sites and some website design , how about you ?",
         "fact": "the 3 horizontal line menu on apps and websites is called a hamburger button .\n",
@@ -1571,7 +1565,6 @@
             }
         ]
     },
-    
     {
         "context": "User: do you still use a landline ?\nSystem: no . in my opinion , the landline is going extinct . growing up my grandparents had a multi - party line . my parents had a landline . i killed the landline once cellular was cost effective . now cellphones are small computers that do so much more than landlines .\nUser: yeah , an iphone has more computing power than a mainframe of the 60s . but data still travels best in cables .\nSystem: even on cellular networks , it still travels via cable , except for the last leg . could you imagine the atmospheric distortion of the signal if data was transmitted from the east to west coast solely via the airways ?\nUser: we would be still at the era of ham radios and telegram . there would be less pictures .\nSystem: less pictures and more garbled messages . imagine how youtube videos would look with atmospheric distortion ; probably like the picture on old time tvs with rabbit ear antennas ?\nUser: youtube would be like a tv station , showing only clip to everyone at the same time . i think it would be less popular .\nSystem: true . do you subscribe to any youtube channels or follow any youtube celebrities ?\nUser: i subscribe to some educational channels . but i do n't follow any celebrities , but i hear of them often .\nSystem: i use to subscribe to certain hunting / fishing equipment youtube channels , but found temptation to buy the latest thing to be unproductive . i do like \" how to \" videos on youtube . given that youtube is accessible to anyone with a computer , being a star has nothing to do with how good your hollywood agent is and more with establishing a populist following .\nUser: it is more diverse but celebrities still have an advantage on youtube , being a search engine , popular results get more visibility .\nSystem: agreed . it is a bit art / a bit science in figuring out how to get your videos promoted in the search results . or , hire an expert who will flood your videos with fictional views to promote its popularity . but established names also help . judge judy makes $ 123k per tv episode ; with that amount of draw , her youtube channel ca n't help but be a success .\nUser: do you think 123 000 $ per episode is too much for her ?\nSystem: i do not watch her , so i can not judge . it is one of the few areas where free market economics still reigns . so , if they feel she 's worth it , then it 's not my place to judge . but that type of draw opens up other markets . for example , carol burnett was the first celeb on sesame street .\nUser: it was the 70s , she was the star at that time , it makes sense . i wonder if youtube will have a lasting impact on the star system or this youtubers thing is just a phase .\nSystem: it is definitely here to stay if not expanding . in the early days , you needed a good freestanding camera to make a good video . today , most cell phones have a good enough camera to make a youtube videos . some high end phones can shoot videos almost indistinguishable from freestanding cameras .",
         "fact": "pixar studio has a secret room that is visited often by celebrities\n",
@@ -1745,12 +1738,1846 @@
                 "score": 3
             }
         ]
+    },
+    {
+        "context": "User: hello , how are you this evening ? do you like sports ?\nSystem: i m great , and yeah i do like to watch sports , basketball , hockey , soccer and even swimming , what about you ?",
+        "fact": "_nofact\n",
+        "response": "i like sports , football , hockey , soccer i also find swimming interesting as well . \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            5,
+            4
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks naturalness and engagement, failing to show genuine enthusiasm or curiosity about the user's preferences. It meets expectations by sharing similar interests, but this is not enough to make the conversation feel human-like.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is generally natural and engaging, but lacks specificity in the context conversation. It repeats information already mentioned and provides little new or interesting insight.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response lacks personal touch and emotional connection with the user, as it only mirrors the user's statement without adding any unique perspective or engaging tone. The reply is straightforward and factual, but feels somewhat robotic.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you this evening ? do you like sports ?\nSystem: i m great , and yeah i do like to watch sports , basketball , hockey , soccer and even swimming , what about you ?",
+        "fact": "_nofact\n",
+        "response": "i do n't really know much about sports . i do like to watch the olympics and i have been swimming in the summer olympics .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            5,
+            3,
+            2
+        ],
+        "average_annotations": 3.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks naturalness, engagement, and emotional coherence, with an artificial tone and unrealistic claims.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response conveys a genuine interest in sports, but lacks depth and specific information. It vaguely mentions watching the Olympics and swimming in the Olympics, failing to address the initial question's intent.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response starts strong with a natural tone, but lacks depth and empathy in its conversation. It correctly uses the fact that the user has swum in the Summer Olympics, but fails to ask follow-up questions or create a meaningful connection.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you this evening ? do you like sports ?\nSystem: i m great , and yeah i do like to watch sports , basketball , hockey , soccer and even swimming , what about you ?",
+        "fact": "_nofact\n",
+        "response": "i have never swam competitively , but i did n't have it . i do like it though .\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            4,
+            2,
+            2
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks depth, empathy, and a clear connection to the user's interests, resulting in a somewhat disconnected and unengaging conversation.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response effectively conveys the speaker's interest in swimming, providing a clear answer to the user's question. However, the sentence structure could be more natural, as it starts with a negation, making it sound slightly less conversational.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The System's response is coherent and engaging, showing a genuine interest in swimming, despite not being competitive. The use of \"I like it though\" creates a sense of relatability with the user's potential experience and emotions.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you this evening ? do you like sports ?\nSystem: i m great , and yeah i do like to watch sports , basketball , hockey , soccer and even swimming , what about you ?",
+        "fact": "_nofact\n",
+        "response": "i do not but i am more into swimming myself . i do n't like sports , but i do know there are some really boring swimming competitions\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            5,
+            2,
+            1
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks fluency, clarity, and relevance, with a tone that's inconsistent and unnatural. It fails to engage with the user's perspective and demonstrates poor emotional coherence.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is partially natural but lacks engagement and contradicts the initial context. It inaccurately states not liking sports but also expressing a preference for swimming. Furthermore, stating boring swimming competitions seems irrelevant.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response fails to align with the user's stated interest in swimming and instead criticizes a specific type of competition, creating a disconnect in perspective and engagement.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you this evening ? do you like sports ?\nSystem: i m great , and yeah i do like to watch sports , basketball , hockey , soccer and even swimming , what about you ?",
+        "fact": "_nofact\n",
+        "response": "yes . i think that 's why i live in the usa . i 've seen some swimming around the world where i live .\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            4,
+            2,
+            1
+        ],
+        "average_annotations": 2.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks clarity, relevance, and a natural connection to the conversation, resulting in a disjointed and somewhat forced tone.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is somewhat coherent but lacks specificity and contextual relevance, as it does not directly address the user's interest in swimming. It appears to be a tangential statement.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is engaging and attempts to create a personal connection with the user, but it abruptly shifts from discussing sports interests to a vague and unclear reason for living in the USA, making it disjointed and confusing.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you this evening ? do you like sports ?\nSystem: i m great , and yeah i do like to watch sports , basketball , hockey , soccer and even swimming , what about you ?",
+        "fact": "_nofact\n",
+        "response": "i like hockey and soccer . what teams do you support ?",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is engaging, but lacks depth and context. It effectively mirrors the user's interest in sports, but could benefit from more specific questions or insightful comments.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is concise and relevant to the context, but it fails to acknowledge the user's interest and doesn't engage in any meaningful conversation about sports. It only asks a question without expanding on the user's initial statement, making it slightly shallow.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response successfully engages with the user's perspective, asking a direct question based on the context. However, it lacks emotional coherence and is somewhat impersonal, as it simply lists the user's interests without any added value or personal connection.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: do you like fish ?\nSystem: i do , tasty animals , do you ?\nUser: fish is practically a vegetable . they are the food that my food eats .\nSystem: yeah except for fish like the black swallower fish , i hear that one likes to bite\nUser: i envy that fish 's ability to eat . that is a glorious spectacle . i would go to the buffet everyday .\nSystem: buffet is my favorite kind of restaurant so yea , did you hear about that breed of jellyfish , the one that is immortal !\nUser: i did not . i wonder what it does all day with its unending life . must get kinda boring . who does it talk to ? what celebrities does it follow ?\nSystem: i agree , must be a really boring life , still , interesting species might be worthwhile to study them",
+        "fact": "84 per cent of genes known to be associated with human diseases have counterparts in the zebrafish\n",
+        "response": "true . they might hold the secret to immortality for us . that would indeed be a long boring life for most people . \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response is somewhat disconnected from the conversation context, lacks specificity, and overgeneralizes the implications of zebrafish research. It attempts to engage the user but falls short in terms of clarity and emotional coherence.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response briefly acknowledges the zebrafish's potential in studying human diseases, but does not clearly connect this fact to the jellyfish's immortality, making the contextual relevance somewhat weak. The discussion about the potential for humans to achieve immortality is somewhat vague, lacking in clarity and specificity.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response effectively engages with the user's perspective by connecting the idea of immortality to the prospect of discovering the secret to it, while maintaining a conversational tone. However, it slightly deviates from the context by bringing in the idea of studying the jellyfish's species, losing a bit of human engagement in the process.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: do you like fish ?\nSystem: i do , tasty animals , do you ?\nUser: fish is practically a vegetable . they are the food that my food eats .\nSystem: yeah except for fish like the black swallower fish , i hear that one likes to bite\nUser: i envy that fish 's ability to eat . that is a glorious spectacle . i would go to the buffet everyday .\nSystem: buffet is my favorite kind of restaurant so yea , did you hear about that breed of jellyfish , the one that is immortal !\nUser: i did not . i wonder what it does all day with its unending life . must get kinda boring . who does it talk to ? what celebrities does it follow ?\nSystem: i agree , must be a really boring life , still , interesting species might be worthwhile to study them",
+        "fact": "84 per cent of genes known to be associated with human diseases have counterparts in the zebrafish\n",
+        "response": "i think that is a great idea . i think that is a good thing to do . i think it 's interesting that 84 % of genes known to be associated with human diseases have counterparts in the zebrafish .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            5,
+            5,
+            4
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is coherent but lacks a clear connection to the conversation, resulting in a disjointed tone and abrupt transitions. It fails to maintain emotional coherence and human engagement after incorporating the provided fact.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is somewhat natural, but it appears forced, jumping from discussing jellyfish immortality to zebrafish disease genes without a clear connection. Contextually, it's a bit of a non-sequitur. However, the accurate use of the provided fact is commendable.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response attempts to connect with the user's perspective, but it feels forced and unrelated to the previous conversation. The inclusion of the fact about zebrafish genes is awkwardly inserted, disrupting the flow. The response lacks empathy and a tone that matches the user's enthusiasm, making it feel unengaging.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: do you like fish ?\nSystem: i do , tasty animals , do you ?\nUser: fish is practically a vegetable . they are the food that my food eats .\nSystem: yeah except for fish like the black swallower fish , i hear that one likes to bite\nUser: i envy that fish 's ability to eat . that is a glorious spectacle . i would go to the buffet everyday .\nSystem: buffet is my favorite kind of restaurant so yea , did you hear about that breed of jellyfish , the one that is immortal !\nUser: i did not . i wonder what it does all day with its unending life . must get kinda boring . who does it talk to ? what celebrities does it follow ?\nSystem: i agree , must be a really boring life , still , interesting species might be worthwhile to study them",
+        "fact": "84 per cent of genes known to be associated with human diseases have counterparts in the zebrafish\n",
+        "response": "i think it 's because of the genes that are used to the same as the zebrafish .\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            2,
+            1,
+            3
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks coherence, naturalness, and engagement, failing to effectively incorporate the provided fact into the conversation.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response attempts to use the provided fact but fails to provide a clear and coherent explanation. It lacks the context of the conversation and the fact, making it seem disconnected. Furthermore, it does not directly address the original question or concern.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The System's response is somewhat disconnected from the user's perspective, struggling to leverage the engaging tone and emotional coherence established in the conversation. It uses the provided fact but fails to connect it meaningfully with the user's comment about the zebrafish.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: do you like fish ?\nSystem: i do , tasty animals , do you ?\nUser: fish is practically a vegetable . they are the food that my food eats .\nSystem: yeah except for fish like the black swallower fish , i hear that one likes to bite\nUser: i envy that fish 's ability to eat . that is a glorious spectacle . i would go to the buffet everyday .\nSystem: buffet is my favorite kind of restaurant so yea , did you hear about that breed of jellyfish , the one that is immortal !\nUser: i did not . i wonder what it does all day with its unending life . must get kinda boring . who does it talk to ? what celebrities does it follow ?\nSystem: i agree , must be a really boring life , still , interesting species might be worthwhile to study them",
+        "fact": "84 per cent of genes known to be associated with human diseases have counterparts in the zebrafish\n",
+        "response": "that is true . 84 % of genes associated with human diseases have counterparts in the zebrafish .\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            4,
+            3,
+            3
+        ],
+        "average_annotations": 3.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual relevance, engagement, and emotional coherence, failing to simulate human-like conversation and demonstrate empathy.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response accurately conveys the fact, but it seems disconnected from the context, lacking a clear connection to the ongoing conversation about fish and immortality.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is direct and factual but lacks a connection to the user's preceding conversation about fish eating habits and immortality. It suddenly shifts focus to a medical fact without addressing the user's tone or showing empathy for their perspective.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: do you like fish ?\nSystem: i do , tasty animals , do you ?\nUser: fish is practically a vegetable . they are the food that my food eats .\nSystem: yeah except for fish like the black swallower fish , i hear that one likes to bite\nUser: i envy that fish 's ability to eat . that is a glorious spectacle . i would go to the buffet everyday .\nSystem: buffet is my favorite kind of restaurant so yea , did you hear about that breed of jellyfish , the one that is immortal !\nUser: i did not . i wonder what it does all day with its unending life . must get kinda boring . who does it talk to ? what celebrities does it follow ?\nSystem: i agree , must be a really boring life , still , interesting species might be worthwhile to study them",
+        "fact": "84 per cent of genes known to be associated with human diseases have counterparts in the zebrafish\n",
+        "response": "yes , and that is very true . do you like fish ?\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            2,
+            2,
+            2
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks empathy, is disconnected from context, and has an abrupt tone, disrupting the conversation's flow.",
+                "score": 0
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response was overly simplistic and abrupt, failing to build upon the established conversation about fish and their characteristics. Although it acknowledged the user's previous statements, it did not incorporate any relevant information from the provided fact, and its connection to the conversation was unclear.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response attempts to engage in a conversation about fish, but it abruptly shifts to mentioning the fact about zebrafish. The tone seems somewhat disconnected from the user's perspective, as it returns to the question about liking fish without addressing the user's previous statement about envy and the black swallower fish.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: do you like fish ?\nSystem: i do , tasty animals , do you ?\nUser: fish is practically a vegetable . they are the food that my food eats .\nSystem: yeah except for fish like the black swallower fish , i hear that one likes to bite\nUser: i envy that fish 's ability to eat . that is a glorious spectacle . i would go to the buffet everyday .\nSystem: buffet is my favorite kind of restaurant so yea , did you hear about that breed of jellyfish , the one that is immortal !\nUser: i did not . i wonder what it does all day with its unending life . must get kinda boring . who does it talk to ? what celebrities does it follow ?\nSystem: i agree , must be a really boring life , still , interesting species might be worthwhile to study them",
+        "fact": "84 per cent of genes known to be associated with human diseases have counterparts in the zebrafish\n",
+        "response": "maybe we can unlock immortality by studying it ! a lot of human diseases seem to have origins in the zebrafish , maybe we should study that too !",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response is natural but lacks clarity and relevance, with a forced connection to the provided fact about zebrafish.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is somewhat disconnected from the previous conversation, where jellyfish immortality was mentioned, and the system jumps to zebrafish disease studies. It correctly uses the [Fact] but misses an opportunity to connect it to the initial discussion.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is coherent in terms of content, but lacks emotional connection and engagement with the user's perspective. It abruptly shifts from discussing the jellyfish's immortality to suggesting studying the zebrafish, which is a fact not discussed by the user. This break in the conversation feels artificial.",
+                "score": 2
+            }
+        ]
+    },
+    
+    {
+        "context": "User: hi . i heard an interesting fact recently . did you know that the three richest presidents ever were washington , jefferson , and jfk ?\nSystem: hello , they must have accomplished to people 's satisfactions .\nUser: i guess so . you know , in different countries a president has different roles and functions .\nSystem: i bet they do . the first president was named president banana in zimbabwe .",
+        "fact": "until 1805 in the us , the runner up in a presidential election automatically became the vice president\n",
+        "response": "i wonder what his role was ? our country has an interesting history . i mean , up until 1805 a president 's competition became his vice president . imagine how that would be now ! \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is marred by inaccuracies, tone inconsistencies, and a failure to engage with the user's perspective, ultimately detracting from its overall effectiveness.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system partially conveys useful context but deviates from the provided fact. Although it mentions the year 1805, the response focuses more on its curiosity about President Banana's role rather than accurately exploring the consequence of the provided fact.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response attempts to engage with the user's context but deviates from it with the introduction of \"President Banana in Zimbabwe,\" disrupting the flow of the conversation. Although it attempts to use the provided fact, the transition is forced.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hi . i heard an interesting fact recently . did you know that the three richest presidents ever were washington , jefferson , and jfk ?\nSystem: hello , they must have accomplished to people 's satisfactions .\nUser: i guess so . you know , in different countries a president has different roles and functions .\nSystem: i bet they do . the first president was named president banana in zimbabwe .",
+        "fact": "until 1805 in the us , the runner up in a presidential election automatically became the vice president\n",
+        "response": "i wonder if they have a different name like the president of indonesia 's book .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            3,
+            2,
+            2
+        ],
+        "average_annotations": 2.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks coherence and fails to engage with the user's question about the three richest presidents, instead introducing unrelated information.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is disconnected from the context, introducing a fictional fact about a \"President Banana\" and shifting focus to irrelevant information about the Indonesian president's book. This fails to address or utilize the provided fact about the automatic vice presidency in US history.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response does not effectively utilize the provided fact, and the mention of \"President Banana\" introduces a distracting and irrelevant detail. Furthermore, the tone feels abrupt and disconnected from the user's perspective.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: hi . i heard an interesting fact recently . did you know that the three richest presidents ever were washington , jefferson , and jfk ?\nSystem: hello , they must have accomplished to people 's satisfactions .\nUser: i guess so . you know , in different countries a president has different roles and functions .\nSystem: i bet they do . the first president was named president banana in zimbabwe .",
+        "fact": "until 1805 in the us , the runner up in a presidential election automatically became the vice president\n",
+        "response": "yes , i wonder if he was in the top three wealthiest presidents .\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            2,
+            3,
+            3
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is incomplete, lacks emotional coherence, and abruptly shifts to an unrelated topic, disrupting the conversation flow.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response attempts to engage with the conversation but fails to incorporate the provided fact about the historical role of the runner-up in a presidential election. It deviates by introducing an unrelated fictional figure, 'President Banana.'",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response fails to empathetically engage with the user's perspective, and its tone seems detached from the conversation. It does not adequately use the provided fact, instead diverting the conversation with irrelevant information about a fictional character, President Banana.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: hi . i heard an interesting fact recently . did you know that the three richest presidents ever were washington , jefferson , and jfk ?\nSystem: hello , they must have accomplished to people 's satisfactions .\nUser: i guess so . you know , in different countries a president has different roles and functions .\nSystem: i bet they do . the first president was named president banana in zimbabwe .",
+        "fact": "until 1805 in the us , the runner up in a presidential election automatically became the vice president\n",
+        "response": "yeah i wonder what the president of zimbabwe looks like ?\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            4,
+            3,
+            4
+        ],
+        "average_annotations": 3.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks context relevance, empathy, and cognitive coherence, failing to engage in a meaningful conversation.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response strays from the original topic, introducing a fictional character (\"President Banana\") and deviating from relevant context. Although it attempts to ask a question, it doesn't incorporate the provided fact or engage with the conversation's topic about the three richest presidents.",
+                "score": 0
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is disconnected from the conversation, fails to acknowledge the user's initial fact, and abruptly deviates into a non-relevant topic. The tone is somewhat playful but lacks empathy and engagement with the user's perspective.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hi . i heard an interesting fact recently . did you know that the three richest presidents ever were washington , jefferson , and jfk ?\nSystem: hello , they must have accomplished to people 's satisfactions .\nUser: i guess so . you know , in different countries a president has different roles and functions .\nSystem: i bet they do . the first president was named president banana in zimbabwe .",
+        "fact": "until 1805 in the us , the runner up in a presidential election automatically became the vice president\n",
+        "response": "yes . i did n't know that . do you know how the vp used to be elected ?\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            4,
+            2,
+            4
+        ],
+        "average_annotations": 3.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks clarity, relevance, and coherence, deviating from a natural conversation flow and failing to apply the provided fact to the context.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response effectively starts with acknowledgment of the original statement and shows engagement with the topic. However, it then diverts into asking a secondary question without addressing the specific fact about presidential VP election process prior to 1805.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response shows potential in understanding the user's interest and initiating a conversation, but it lacks emotional connection and fails to build upon the provided fact. The mention of \"President Banana\" in the previous response seems unrelated to the current discussion.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hi . i heard an interesting fact recently . did you know that the three richest presidents ever were washington , jefferson , and jfk ?\nSystem: hello , they must have accomplished to people 's satisfactions .\nUser: i guess so . you know , in different countries a president has different roles and functions .\nSystem: i bet they do . the first president was named president banana in zimbabwe .",
+        "fact": "until 1805 in the us , the runner up in a presidential election automatically became the vice president\n",
+        "response": "i wonder whether he liked bananas ! before 1805 , the vice president was chosen by taking the runner up in the election . imagine that !",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            4
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response attempts to engage with the user but deviates from the topic, with a forced joke and abrupt transition back to the fact. While it uses the provided fact, the language could be more polished and the conversation flow improved.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is engaging and attempts to apply the fact, but it deviates from the context by introducing fictional information (President Banana in Zimbabwe) earlier, thus making the response less coherent.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response fails to connect with the user's initial question about the three richest presidents and instead focuses on a non-sequitur about the first president of Zimbabwe, creating a disconnect in engagement and empathy.",
+                "score": 2
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     {
+        "context": "User: have you heard of doug harey ?\nSystem: was n't he an umpire for the mlb ?\nUser: yes he just died at 87 years of age .\nSystem: i guess he was a big deal , and he lived quite a while . he 'll be missed though\nUser: he must 've been an interesting character to earn the nick name ' god ' .\nSystem: he was one of those umpires that knew what he was doing\nUser: yup , he earned his spot in the hall of fame after calling 4,673 games .\nSystem: and five world series , which is a big leagues in the mlb . he was n't intimidated by anyone , it seems\nUser: he was around to see some of the first world series that first started in 1903 .\nSystem: that 's incredible ! do you pay attention to baseball much ?\nUser: no i did when i was younger but lost interest . how bout you ?\nSystem: every once in a while . it 's one of those sports i would rather play than watch . the japanese are such big fans of baseball that they would probably take the name \" national pastime \" from the americans if they could\nUser: yea they are usually surprised to find so many americans like it too .\nSystem: enough that people used to collect baseball cards . one man found a collection in his grandfather 's attic that was worth three million dollars\nUser: that s a lot of money . are any managers cards worth anything ? they do wear the uniform after all .",
+        "fact": "doug harvey , a major league baseball umpire for 31 years whose calls of balls or strikes , fair or foul , safe or out were delivered with such gusto and authority that he was known as \" god \" to thousands of ballplayers , died jan . 13 in visalia , calif . he was 87 . major league baseball announced the death but did not disclose the cause . according to media accounts , he had battled throat cancer in the 1990s and later had several strokes . mr . harvey worked 4,673 ballgames from 1962 to 1992 , mlb said , including five world series , nine national league championship series and six all - star games . for 18 years , he was an umpiring crew chief . hundreds of thousands of times he made on - the - spot calls on whether a runner had reached base a millisecond before a throw from a fielder , or whether a pitched ball traveling 90 mph had grazed the veneer of a loosely defined strike zone or missed altogether . the outcome of baseball championships rested on such rulings . players and fans held strong and differing opinions on what the umpire saw , and they were not shy about telling him when they saw it differently . in 2009 , doug harvey , right , jokes about throwing former st . louis cardinals manager whitey herzog out of a game . ( michael conroy / ap ) to mr . harvey , arguments with the umpires were a part of the game , but there were limits and there could be no doubt about who was boss . \" i would listen for 20 seconds , \" he once told the new york times . \" i would count to 20 to myself . and i would listen to everything you had to say . \"\n",
+        "response": "probably only if they step in and play the game . i 've never seen any of them do it , but that would be an interesting thing to see \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            4,
+            5
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is somewhat engaging but lacks focus, clarity, and relevance to the conversation. It fails to build upon the previous discussion and shows limited empathy with the user's enthusiasm.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is somewhat relevant, but lacks specificity and fails to engage with the conversation effectively. It doesn't directly respond to the question about the value of manager's cards and instead shifts the focus to an unrelated scenario.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is brief and somewhat flat, lacking a clear connection to the user's perspective or emotional tone. It touches on the topic of baseball managers but fails to engage the user or build upon the previous conversation.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard of doug harey ?\nSystem: was n't he an umpire for the mlb ?\nUser: yes he just died at 87 years of age .\nSystem: i guess he was a big deal , and he lived quite a while . he 'll be missed though\nUser: he must 've been an interesting character to earn the nick name ' god ' .\nSystem: he was one of those umpires that knew what he was doing\nUser: yup , he earned his spot in the hall of fame after calling 4,673 games .\nSystem: and five world series , which is a big leagues in the mlb . he was n't intimidated by anyone , it seems\nUser: he was around to see some of the first world series that first started in 1903 .\nSystem: that 's incredible ! do you pay attention to baseball much ?\nUser: no i did when i was younger but lost interest . how bout you ?\nSystem: every once in a while . it 's one of those sports i would rather play than watch . the japanese are such big fans of baseball that they would probably take the name \" national pastime \" from the americans if they could\nUser: yea they are usually surprised to find so many americans like it too .\nSystem: enough that people used to collect baseball cards . one man found a collection in his grandfather 's attic that was worth three million dollars\nUser: that s a lot of money . are any managers cards worth anything ? they do wear the uniform after all .",
+        "fact": "doug harvey , a major league baseball umpire for 31 years whose calls of balls or strikes , fair or foul , safe or out were delivered with such gusto and authority that he was known as \" god \" to thousands of ballplayers , died jan . 13 in visalia , calif . he was 87 . major league baseball announced the death but did not disclose the cause . according to media accounts , he had battled throat cancer in the 1990s and later had several strokes . mr . harvey worked 4,673 ballgames from 1962 to 1992 , mlb said , including five world series , nine national league championship series and six all - star games . for 18 years , he was an umpiring crew chief . hundreds of thousands of times he made on - the - spot calls on whether a runner had reached base a millisecond before a throw from a fielder , or whether a pitched ball traveling 90 mph had grazed the veneer of a loosely defined strike zone or missed altogether . the outcome of baseball championships rested on such rulings . players and fans held strong and differing opinions on what the umpire saw , and they were not shy about telling him when they saw it differently . in 2009 , doug harvey , right , jokes about throwing former st . louis cardinals manager whitey herzog out of a game . ( michael conroy / ap ) to mr . harvey , arguments with the umpires were a part of the game , but there were limits and there could be no doubt about who was boss . \" i would listen for 20 seconds , \" he once told the new york times . \" i would count to 20 to myself . and i would listen to everything you had to say . \"\n",
+        "response": "i think he was a great player , he was a great player and also a great player , he was a great player , i think he was a great player , he had a great player\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            1,
+            1,
+            1
+        ],
+        "average_annotations": 1.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is a nonsensical repetition of \"great player\" without any connection to the conversation, lacking emotional resonance, contextual relevance, and behavioral realism.",
+                "score": 0
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is incoherent and does not accurately convey any useful information about Doug Harvey. It repeatedly states that he was a \"great player\" without providing any context or facts about his life as an umpire, which is the only relevant topic of conversation.",
+                "score": 0
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The System's response is completely irrelevant to the conversation topic, failing to exhibit natural language engagement or coherent tone. It lacks empathy and connection with the user's perspective, instead appearing as a nonsensical repetition of phrases.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard of doug harey ?\nSystem: was n't he an umpire for the mlb ?\nUser: yes he just died at 87 years of age .\nSystem: i guess he was a big deal , and he lived quite a while . he 'll be missed though\nUser: he must 've been an interesting character to earn the nick name ' god ' .\nSystem: he was one of those umpires that knew what he was doing\nUser: yup , he earned his spot in the hall of fame after calling 4,673 games .\nSystem: and five world series , which is a big leagues in the mlb . he was n't intimidated by anyone , it seems\nUser: he was around to see some of the first world series that first started in 1903 .\nSystem: that 's incredible ! do you pay attention to baseball much ?\nUser: no i did when i was younger but lost interest . how bout you ?\nSystem: every once in a while . it 's one of those sports i would rather play than watch . the japanese are such big fans of baseball that they would probably take the name \" national pastime \" from the americans if they could\nUser: yea they are usually surprised to find so many americans like it too .\nSystem: enough that people used to collect baseball cards . one man found a collection in his grandfather 's attic that was worth three million dollars\nUser: that s a lot of money . are any managers cards worth anything ? they do wear the uniform after all .",
+        "fact": "doug harvey , a major league baseball umpire for 31 years whose calls of balls or strikes , fair or foul , safe or out were delivered with such gusto and authority that he was known as \" god \" to thousands of ballplayers , died jan . 13 in visalia , calif . he was 87 . major league baseball announced the death but did not disclose the cause . according to media accounts , he had battled throat cancer in the 1990s and later had several strokes . mr . harvey worked 4,673 ballgames from 1962 to 1992 , mlb said , including five world series , nine national league championship series and six all - star games . for 18 years , he was an umpiring crew chief . hundreds of thousands of times he made on - the - spot calls on whether a runner had reached base a millisecond before a throw from a fielder , or whether a pitched ball traveling 90 mph had grazed the veneer of a loosely defined strike zone or missed altogether . the outcome of baseball championships rested on such rulings . players and fans held strong and differing opinions on what the umpire saw , and they were not shy about telling him when they saw it differently . in 2009 , doug harvey , right , jokes about throwing former st . louis cardinals manager whitey herzog out of a game . ( michael conroy / ap ) to mr . harvey , arguments with the umpires were a part of the game , but there were limits and there could be no doubt about who was boss . \" i would listen for 20 seconds , \" he once told the new york times . \" i would count to 20 to myself . and i would listen to everything you had to say . \"\n",
+        "response": "i would have to agree with you . i do n't know much about the baseball cards , but i know a lot about it .\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            2,
+            1,
+            1
+        ],
+        "average_annotations": 1.3333333333333333,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is natural but lacks engagement and specificity, failing to connect with the user's perspective and interest in baseball cards.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is brief and lacks contextual relevance. It fails to provide additional information about the baseball cards or connect it to the conversation about Doug Harvey, instead stating a generic knowledge claim. The tone is awkward, failing to engage with the user's questions or provide useful insights.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response lacks emotional connection and empathy with the user's perspective. It does not acknowledge the user's interest in the baseball cards, instead, it shifts the focus back to the system's knowledge without providing additional information or engaging in a meaningful manner.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard of doug harey ?\nSystem: was n't he an umpire for the mlb ?\nUser: yes he just died at 87 years of age .\nSystem: i guess he was a big deal , and he lived quite a while . he 'll be missed though\nUser: he must 've been an interesting character to earn the nick name ' god ' .\nSystem: he was one of those umpires that knew what he was doing\nUser: yup , he earned his spot in the hall of fame after calling 4,673 games .\nSystem: and five world series , which is a big leagues in the mlb . he was n't intimidated by anyone , it seems\nUser: he was around to see some of the first world series that first started in 1903 .\nSystem: that 's incredible ! do you pay attention to baseball much ?\nUser: no i did when i was younger but lost interest . how bout you ?\nSystem: every once in a while . it 's one of those sports i would rather play than watch . the japanese are such big fans of baseball that they would probably take the name \" national pastime \" from the americans if they could\nUser: yea they are usually surprised to find so many americans like it too .\nSystem: enough that people used to collect baseball cards . one man found a collection in his grandfather 's attic that was worth three million dollars\nUser: that s a lot of money . are any managers cards worth anything ? they do wear the uniform after all .",
+        "fact": "doug harvey , a major league baseball umpire for 31 years whose calls of balls or strikes , fair or foul , safe or out were delivered with such gusto and authority that he was known as \" god \" to thousands of ballplayers , died jan . 13 in visalia , calif . he was 87 . major league baseball announced the death but did not disclose the cause . according to media accounts , he had battled throat cancer in the 1990s and later had several strokes . mr . harvey worked 4,673 ballgames from 1962 to 1992 , mlb said , including five world series , nine national league championship series and six all - star games . for 18 years , he was an umpiring crew chief . hundreds of thousands of times he made on - the - spot calls on whether a runner had reached base a millisecond before a throw from a fielder , or whether a pitched ball traveling 90 mph had grazed the veneer of a loosely defined strike zone or missed altogether . the outcome of baseball championships rested on such rulings . players and fans held strong and differing opinions on what the umpire saw , and they were not shy about telling him when they saw it differently . in 2009 , doug harvey , right , jokes about throwing former st . louis cardinals manager whitey herzog out of a game . ( michael conroy / ap ) to mr . harvey , arguments with the umpires were a part of the game , but there were limits and there could be no doubt about who was boss . \" i would listen for 20 seconds , \" he once told the new york times . \" i would count to 20 to myself . and i would listen to everything you had to say . \"\n",
+        "response": "yes , that 's true . there was a movie about the world series called a philadelphia battle in the 1940 's .\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            3,
+            2,
+            2
+        ],
+        "average_annotations": 2.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual relevance, fails to maintain a sympathetic tone, and deviates from the conversation about Doug Harvey, resulting in a lack of human engagement and behavioral realism.",
+                "score": 0
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is irrelevant to the conversation about Doug Harvey's passing and his umpiring career. It abruptly shifts to a different topic, mentioning a movie from the 1940s, which does not contribute to understanding or commemorating Harvey's achievements.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is incomplete, disconnected from the original topic, and fails to engage with the user's perspective on Doug Harvey. It abruptly shifts to a different topic about movies, showing a lack of empathy and human connection.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard of doug harey ?\nSystem: was n't he an umpire for the mlb ?\nUser: yes he just died at 87 years of age .\nSystem: i guess he was a big deal , and he lived quite a while . he 'll be missed though\nUser: he must 've been an interesting character to earn the nick name ' god ' .\nSystem: he was one of those umpires that knew what he was doing\nUser: yup , he earned his spot in the hall of fame after calling 4,673 games .\nSystem: and five world series , which is a big leagues in the mlb . he was n't intimidated by anyone , it seems\nUser: he was around to see some of the first world series that first started in 1903 .\nSystem: that 's incredible ! do you pay attention to baseball much ?\nUser: no i did when i was younger but lost interest . how bout you ?\nSystem: every once in a while . it 's one of those sports i would rather play than watch . the japanese are such big fans of baseball that they would probably take the name \" national pastime \" from the americans if they could\nUser: yea they are usually surprised to find so many americans like it too .\nSystem: enough that people used to collect baseball cards . one man found a collection in his grandfather 's attic that was worth three million dollars\nUser: that s a lot of money . are any managers cards worth anything ? they do wear the uniform after all .",
+        "fact": "doug harvey , a major league baseball umpire for 31 years whose calls of balls or strikes , fair or foul , safe or out were delivered with such gusto and authority that he was known as \" god \" to thousands of ballplayers , died jan . 13 in visalia , calif . he was 87 . major league baseball announced the death but did not disclose the cause . according to media accounts , he had battled throat cancer in the 1990s and later had several strokes . mr . harvey worked 4,673 ballgames from 1962 to 1992 , mlb said , including five world series , nine national league championship series and six all - star games . for 18 years , he was an umpiring crew chief . hundreds of thousands of times he made on - the - spot calls on whether a runner had reached base a millisecond before a throw from a fielder , or whether a pitched ball traveling 90 mph had grazed the veneer of a loosely defined strike zone or missed altogether . the outcome of baseball championships rested on such rulings . players and fans held strong and differing opinions on what the umpire saw , and they were not shy about telling him when they saw it differently . in 2009 , doug harvey , right , jokes about throwing former st . louis cardinals manager whitey herzog out of a game . ( michael conroy / ap ) to mr . harvey , arguments with the umpires were a part of the game , but there were limits and there could be no doubt about who was boss . \" i would listen for 20 seconds , \" he once told the new york times . \" i would count to 20 to myself . and i would listen to everything you had to say . \"\n",
+        "response": "that is crazy , maybe if the guy who worked for his grandpa was a lawyer they could have and all worked on the d.c election .\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            2,
+            2,
+            1
+        ],
+        "average_annotations": 1.6666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response deviates from the conversation, lacks relevance, and fails to address the user's question, resulting in a disjointed and unengaging interaction.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response deviates from the context, starting to discuss an unrelated topic (the D.C. election) and does not maintain the focus on Doug Harvey. Although it initially acknowledges the fact, the response fails to engage with the context in a meaningful way.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response seems disconnected from the conversation, shifting abruptly from discussing Doug Harvey to an unrelated scenario about an election. This lacks empathy and human engagement, failing to maintain a coherent tone and connection with the user's perspective.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard of doug harey ?\nSystem: was n't he an umpire for the mlb ?\nUser: yes he just died at 87 years of age .\nSystem: i guess he was a big deal , and he lived quite a while . he 'll be missed though\nUser: he must 've been an interesting character to earn the nick name ' god ' .\nSystem: he was one of those umpires that knew what he was doing\nUser: yup , he earned his spot in the hall of fame after calling 4,673 games .\nSystem: and five world series , which is a big leagues in the mlb . he was n't intimidated by anyone , it seems\nUser: he was around to see some of the first world series that first started in 1903 .\nSystem: that 's incredible ! do you pay attention to baseball much ?\nUser: no i did when i was younger but lost interest . how bout you ?\nSystem: every once in a while . it 's one of those sports i would rather play than watch . the japanese are such big fans of baseball that they would probably take the name \" national pastime \" from the americans if they could\nUser: yea they are usually surprised to find so many americans like it too .\nSystem: enough that people used to collect baseball cards . one man found a collection in his grandfather 's attic that was worth three million dollars\nUser: that s a lot of money . are any managers cards worth anything ? they do wear the uniform after all .",
+        "fact": "doug harvey , a major league baseball umpire for 31 years whose calls of balls or strikes , fair or foul , safe or out were delivered with such gusto and authority that he was known as \" god \" to thousands of ballplayers , died jan . 13 in visalia , calif . he was 87 . major league baseball announced the death but did not disclose the cause . according to media accounts , he had battled throat cancer in the 1990s and later had several strokes . mr . harvey worked 4,673 ballgames from 1962 to 1992 , mlb said , including five world series , nine national league championship series and six all - star games . for 18 years , he was an umpiring crew chief . hundreds of thousands of times he made on - the - spot calls on whether a runner had reached base a millisecond before a throw from a fielder , or whether a pitched ball traveling 90 mph had grazed the veneer of a loosely defined strike zone or missed altogether . the outcome of baseball championships rested on such rulings . players and fans held strong and differing opinions on what the umpire saw , and they were not shy about telling him when they saw it differently . in 2009 , doug harvey , right , jokes about throwing former st . louis cardinals manager whitey herzog out of a game . ( michael conroy / ap ) to mr . harvey , arguments with the umpires were a part of the game , but there were limits and there could be no doubt about who was boss . \" i would listen for 20 seconds , \" he once told the new york times . \" i would count to 20 to myself . and i would listen to everything you had to say . \"\n",
+        "response": "they should be ! i wonder if there are umpire cards . there are some amazing umpires , like doug harvey .",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is clear but lacks emotional coherence and direct engagement with the user's request, resulting in a somewhat perfunctory acknowledgment of the provided fact.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response seems somewhat generic, failing to explicitly mention the significance or interesting aspects of umpire cards related to Doug Harvey. It also lacks depth in describing his umpiring career, despite acknowledging his notable status.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response attempts to engage with the topic but feels somewhat disconnected from the user's perspective. It lacks a more empathetic tone and doesn't strongly connect the user's interest in umpire cards to Doug Harvey's legacy. The statement about there being \"some amazing umpires, like Doug Harvey\" feels somewhat generic and doesn't fully utilize the opportunity to build on the conversation.",
+                "score": 3
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "context": "User: did you read about the 6 foot 10 inch tall tennis player ?",
+        "fact": "_nofact\n",
+        "response": "no i did n't . where 's he from ? \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks clarity, correctness, and relevance, indicating a misunderstanding of the context and a failure to engage the user in a natural conversation.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is a start, but lacks essential information about the player. It doesn't address the initial question and the statement structure is not conventional.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response lacks emotional connection and empathy, instead asking a new question to gather more information. It seems more robotic than human-like in its attempt to engage with the user, which detracts from the overall experience.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: did you read about the 6 foot 10 inch tall tennis player ?",
+        "fact": "_nofact\n",
+        "response": "i did not . i do know that it is the most valuable sport in the world .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            4,
+            2,
+            5
+        ],
+        "average_annotations": 3.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks relevance, fluency, and correctness, failing to engage with the user's question about a specific tennis player.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response lacks relevance to the initial query and fails to engage with the subject matter, instead providing a general statement about the sport's value without addressing the specific question about a 6 foot 10 inch tall tennis player.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response lacks empathy and connection to the user's original question, instead providing an unrelated statement about the value of the sport. The tone is neutral but unengaging, failing to acknowledge the user's specific query.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: did you read about the 6 foot 10 inch tall tennis player ?",
+        "fact": "_nofact\n",
+        "response": "i have not . i have not . what is it about ?\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            3,
+            1,
+            3
+        ],
+        "average_annotations": 2.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks engagement, curiosity, and empathy, failing to create a connection with the user. Repetition and unnatural phrasing detract from the initial attempt at interaction.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is brief but lacks specificity, not providing any meaningful information about the 6 foot 10 inch tall tennis player. The tone seems casual and somewhat repetitive, suggesting a conversation rather than a clear answer to the question.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response shows mild engagement and attempts to initiate a discussion, but it lacks emotional tone and empathy, making it feel somewhat robotic.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: did you read about the 6 foot 10 inch tall tennis player ?",
+        "fact": "_nofact\n",
+        "response": "i had no idea . i guess that 's the best way to learn the sport .\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            3,
+            1,
+            2
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual understanding, empathy, and human engagement, providing a generic comment that doesn't add value to the conversation.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response does not clearly convey useful information about the 6 foot 10 inch tall tennis player, despite the user's inquiry. The mention of learning the sport seems unrelated to the context. However, the tone is conversational, which makes the system's response somewhat engaging.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response seems to acknowledge the user's statement, but lacks concrete information or connection to the unknown fact, resulting in a somewhat superficial engagement.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: did you read about the 6 foot 10 inch tall tennis player ?",
+        "fact": "_nofact\n",
+        "response": "i 've never tried one of the longest tennis matches . what do you think of the granny shot in tennis ?\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            4,
+            1,
+            3
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response fails to address the user's question, lacks relevance, and exhibits an awkward tone, indicating a poor understanding of the context and user needs.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response fails to address the question about the 6 foot 10 inch tall tennis player and introduces an unrelated topic about the \"granny shot\" in tennis, lacking context relevance and clarity.",
+                "score": 0
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response attempts to create a connection with the user but fails to engage with the provided context. The mention of the \"granny shot\" is unrelated to the initial topic of a 6 footer tennis player. The tone, although casual, feels forced and unnatural in the context of a conversation about a tennis player's height.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: did you read about the 6 foot 10 inch tall tennis player ?",
+        "fact": "_nofact\n",
+        "response": "no i did n't . they must have a giant reach . probably does n't even need to run for the ball !",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks direct engagement with the user's interest, fails to provide specific information, and uses overly simplistic language.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response is engaging and uses relevant information, but it lacks specific details about the tennis player, and the statement about not needing to run for the ball is an assumption rather than a fact.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is engaging and attempts to connect with the user's perspective, but it lacks specific information about the 6 foot 10 inch tall tennis player, relying on hypothetical assumptions. The tone is lighthearted and empathetic, but may not fully align with the user's curiosity about a real person.",
+                "score": 3
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "context": "User: morning ! are you a comedy fan ?\nSystem: morning ! yes , some of it . have you watched anything good recently ?\nUser: kung fu hustle . ever seen it ? it 's hilarious .\nSystem: i have n't ! what is it about ? does it have bruce lee in it ?\nUser: no , it 's much more recent . steven chow directed it . bill murray loved it too .",
+        "fact": "bill murray thinks kung fu hustle is \" the supreme achievement of the modern age in terms of comedy \" .\n",
+        "response": "huh , i 'm not into bill murray . so i wonder why he likes it . \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            3,
+            4,
+            3
+        ],
+        "average_annotations": 3.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks empathy and fails to engage with the user's perspective, despite incorporating the provided fact.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is somewhat natural, but it's not entirely engaging. The mention of Bill Murray is relevant, but the initial statement about not being into Bill Murray seems like a red herring that derails the conversation. The response barely uses the provided fact and doesn't reveal anything insightful about why Bill Murray likes the movie.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response attempts to connect with the user's perspective by showing curiosity about Bill Murray's taste in comedy. However, the tone quickly becomes dismissive (\"huh\"), and the statement about not being into Bill Murray feels slightly off-topic, interrupting the conversation flow.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: morning ! are you a comedy fan ?\nSystem: morning ! yes , some of it . have you watched anything good recently ?\nUser: kung fu hustle . ever seen it ? it 's hilarious .\nSystem: i have n't ! what is it about ? does it have bruce lee in it ?\nUser: no , it 's much more recent . steven chow directed it . bill murray loved it too .",
+        "fact": "bill murray thinks kung fu hustle is \" the supreme achievement of the modern age in terms of comedy \" .\n",
+        "response": "i agree . i love bill murray .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            3,
+            3,
+            2
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is natural but lacks depth, fluency, and clarity, making it feel somewhat superficial.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response fails to incorporate the specific quote from Bill Murray, which is provided in the context. The mention of loving Bill Murray is vague and does not accurately convey why the system agrees with Bill Murray's assessment of \"Kung Fu Hustle\".",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response falls short in empathetic connection with the user, as it immediately jumps to a statement about Bill Murray, rather than continuing the conversation about Kung Fu Hustle. Despite using a provided fact, the tone feels somewhat abrupt and lacks continuation of the comedic discussion established by the user.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: morning ! are you a comedy fan ?\nSystem: morning ! yes , some of it . have you watched anything good recently ?\nUser: kung fu hustle . ever seen it ? it 's hilarious .\nSystem: i have n't ! what is it about ? does it have bruce lee in it ?\nUser: no , it 's much more recent . steven chow directed it . bill murray loved it too .",
+        "fact": "bill murray thinks kung fu hustle is \" the supreme achievement of the modern age in terms of comedy \" .\n",
+        "response": "i agree . i love the movie kung fu hustle .\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            4,
+            2,
+            2
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks fluency, clarity, and context, failing to engage with the user's sentiment and enthusiasm for Kung Fu Hustle.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is natural-sounding and engagingly enthusiastic, but it doesn't specifically reference Bill Murray's quote, which was provided in the context. This suggests an opportunity for the system to incorporate additional contextual details.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is enthusiastic but lacks depth and context switching ability, which hampers a more engaging dialogue flow.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: morning ! are you a comedy fan ?\nSystem: morning ! yes , some of it . have you watched anything good recently ?\nUser: kung fu hustle . ever seen it ? it 's hilarious .\nSystem: i have n't ! what is it about ? does it have bruce lee in it ?\nUser: no , it 's much more recent . steven chow directed it . bill murray loved it too .",
+        "fact": "bill murray thinks kung fu hustle is \" the supreme achievement of the modern age in terms of comedy \" .\n",
+        "response": "that 's great ! i love the movie too . i love bill murray . i think he thinks kung fu hustle is \" the supreme achievement of the modern age in terms of comedy \" .\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            5,
+            5,
+            3
+        ],
+        "average_annotations": 4.333333333333333,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is natural and engaging, but lacks depth and emotional coherence, scoring 4 out of 5.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is generally accurate, but it could benefit from more specificity, especially considering the direct quote from Bill Murray. The addition of precise attribution (\"as Bill Murray once said\") and context would enhance the response.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is moderately engaging, as it acknowledges the user's enthusiasm for the movie and Bill Murray. However, it relies on a factual quote rather than adding original thoughts or emotional resonance, which diminishes its human-like quality. The system fails to pick up on the user's excitement and respond with a more empathetic tone.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: morning ! are you a comedy fan ?\nSystem: morning ! yes , some of it . have you watched anything good recently ?\nUser: kung fu hustle . ever seen it ? it 's hilarious .\nSystem: i have n't ! what is it about ? does it have bruce lee in it ?\nUser: no , it 's much more recent . steven chow directed it . bill murray loved it too .",
+        "fact": "bill murray thinks kung fu hustle is \" the supreme achievement of the modern age in terms of comedy \" .\n",
+        "response": "yeah it 's crazy how far the movie has come in a very long time !\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            3,
+            1,
+            2
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks a clear connection to the user's perspective, fails to utilize the provided fact about Bill Murray's quote, and has a flat tone, resulting in a score of 3.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response acknowledges the impact of Kung Fu Hustle by correctly stating it has \"come a long way,\" but fails to reference the provided fact about Bill Murray's praise, instead stating a vague statement about the movie's time span. This lacks specificity and reduces the response's overall relevance and usefulness.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response seems slightly disconnected from the context, as it shifts from discussing the movie's recent impact to a vague statement about its time span. This lack of cohesion and specific follow-up on previous points slightly reduces engagement.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: morning ! are you a comedy fan ?\nSystem: morning ! yes , some of it . have you watched anything good recently ?\nUser: kung fu hustle . ever seen it ? it 's hilarious .\nSystem: i have n't ! what is it about ? does it have bruce lee in it ?\nUser: no , it 's much more recent . steven chow directed it . bill murray loved it too .",
+        "fact": "bill murray thinks kung fu hustle is \" the supreme achievement of the modern age in terms of comedy \" .\n",
+        "response": "yeah bill murray called it \" the supreme achievement of the modern age in terms of comedy \" ",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response accurately uses the provided fact, but lacks a natural flow and engagement. It feels like a straightforward fact dump rather than a conversation continuation.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response effectively conveys a notable quote from Bill Murray, but it slightly loses its natural flow as it seems like a direct cut-and-paste of the fact rather than an integrated part of the dialogue.",
+                "score": 4
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is overly factual and lacks the tone of conversation, failing to build upon the user's enthusiasm and excitement about the movie. It comes across as a mere recitation of information, devoid of human connection and engagement.",
+                "score": 2
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "context": "User: good morning - i love baseball and ca n't wait for spring training to start !\nSystem: hello there ! i am the same , my team had one of the best seasons they have ever had so i 'm excited as well !\nUser: who 's your team ? my team , the diamondbacks had an epic collapse last season and are in a mini - rebuild this season ...\nSystem: yeah the diamondbacks had a chance and then they did have a bad 2nd half of the season . i am a brewers fan and our gm made some amazing moves in the offseason and it paid off big .\nUser: nice ! ( except for ryan braun ) i like the brewers and was pulling for them against the dodgers ( who i hate more than braun ) !\nSystem: yeah i was so disappointed with the whole braun thing , i was like just admit you messed up , and get on with it . the lying and blaming others is just the worst ! thanks though , game 7 just sucked ! i do like the dbacks though , craig counsel your old hero ! !\nUser: yep - craig is the man , glad he 's having success with the brewers . even your bench coach ( murphy ) has arizona ties ( asu ) . i really like your corner infielders shaw / aguilar",
+        "fact": "baseball managers wear uniforms because they are technically able to play for their teams if the need arises\n",
+        "response": "nice ! i did n't know that about murphy , arizona is such an awesome place i want to go back soon ! and yeah aguilar is such a good guy too , i love sports pros who you know are decent people in real life . did you know managers can technically play if needed ? ! \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response attempts to engage with the user but feels somewhat forced, particularly with the introduction of the provided fact about managers wearing uniforms. The response lacks a clear connection to the conversation topic and may disrupt the flow of the discussion.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response starts engagingly and correctly mentions the provided fact about baseball managers wearing uniforms. However, the connection to the conversation about Murphy, Arizona ties, and the corner infielders feels somewhat forced. The response lacks a clear link to the current topic and feels like a sudden insertion of unrelated information.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response initially shows enthusiasm and connects well with the user's perspective, discussing the shared interest in the Brewers. However, introducing an unrelated fact about managers' ability to play, although based on knowledge, feels forced and slightly jarring, disrupting the conversation's natural flow.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: good morning - i love baseball and ca n't wait for spring training to start !\nSystem: hello there ! i am the same , my team had one of the best seasons they have ever had so i 'm excited as well !\nUser: who 's your team ? my team , the diamondbacks had an epic collapse last season and are in a mini - rebuild this season ...\nSystem: yeah the diamondbacks had a chance and then they did have a bad 2nd half of the season . i am a brewers fan and our gm made some amazing moves in the offseason and it paid off big .\nUser: nice ! ( except for ryan braun ) i like the brewers and was pulling for them against the dodgers ( who i hate more than braun ) !\nSystem: yeah i was so disappointed with the whole braun thing , i was like just admit you messed up , and get on with it . the lying and blaming others is just the worst ! thanks though , game 7 just sucked ! i do like the dbacks though , craig counsel your old hero ! !\nUser: yep - craig is the man , glad he 's having success with the brewers . even your bench coach ( murphy ) has arizona ties ( asu ) . i really like your corner infielders shaw / aguilar",
+        "fact": "baseball managers wear uniforms because they are technically able to play for their teams if the need arises\n",
+        "response": "i love the golden state warriors . i love the philadelphia brewers .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            3,
+            2,
+            1
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is a non-sequitur, unrelated to the baseball conversation, and fails to engage with the user's perspective.",
+                "score": 0
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response strays from the baseball conversation context, citing two teams from different sports leagues. It also disregards the provided fact about baseball managers wearing uniforms in favor of potentially playing for their teams.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response suddenly shifts to completely unrelated topics (Warriors, Philadelphia brewers) after discussing baseball. It fails to connect with the user's perspective and seems inconsistent in tone, disrupting the friendly baseball discussion between the two.",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "context": "User: good morning - i love baseball and ca n't wait for spring training to start !\nSystem: hello there ! i am the same , my team had one of the best seasons they have ever had so i 'm excited as well !\nUser: who 's your team ? my team , the diamondbacks had an epic collapse last season and are in a mini - rebuild this season ...\nSystem: yeah the diamondbacks had a chance and then they did have a bad 2nd half of the season . i am a brewers fan and our gm made some amazing moves in the offseason and it paid off big .\nUser: nice ! ( except for ryan braun ) i like the brewers and was pulling for them against the dodgers ( who i hate more than braun ) !\nSystem: yeah i was so disappointed with the whole braun thing , i was like just admit you messed up , and get on with it . the lying and blaming others is just the worst ! thanks though , game 7 just sucked ! i do like the dbacks though , craig counsel your old hero ! !\nUser: yep - craig is the man , glad he 's having success with the brewers . even your bench coach ( murphy ) has arizona ties ( asu ) . i really like your corner infielders shaw / aguilar",
+        "fact": "baseball managers wear uniforms because they are technically able to play for their teams if the need arises\n",
+        "response": "haha i like the nationals too , they are my favorite team , i like the costumes , i think the team is really good though , i like the idea of managers and uniforms\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            3,
+            2,
+            1
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response deviates from the conversation's context, lacks empathy, and fails to utilize the provided fact correctly, resulting in a tone that seems forced and detached.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response abruptly changes direction by mentioning they like the Nationals and then makes a vague comment about baseball managers wearing uniforms. This inconsistency and lack of connection to the previous conversation about Craig Counsell and the Brewers team's success make the response seem disconnected and unengaging.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is somewhat disengaging, as it shifts abruptly from discussing the Brewers to expressing a contradictory preference for the Nationals. This inconsistency makes it difficult for the user to connect with the system's perspective. Additionally, the system's response does not accurately apply the provided fact about baseball managers and uniforms, which further detracts from the engagement.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: good morning - i love baseball and ca n't wait for spring training to start !\nSystem: hello there ! i am the same , my team had one of the best seasons they have ever had so i 'm excited as well !\nUser: who 's your team ? my team , the diamondbacks had an epic collapse last season and are in a mini - rebuild this season ...\nSystem: yeah the diamondbacks had a chance and then they did have a bad 2nd half of the season . i am a brewers fan and our gm made some amazing moves in the offseason and it paid off big .\nUser: nice ! ( except for ryan braun ) i like the brewers and was pulling for them against the dodgers ( who i hate more than braun ) !\nSystem: yeah i was so disappointed with the whole braun thing , i was like just admit you messed up , and get on with it . the lying and blaming others is just the worst ! thanks though , game 7 just sucked ! i do like the dbacks though , craig counsel your old hero ! !\nUser: yep - craig is the man , glad he 's having success with the brewers . even your bench coach ( murphy ) has arizona ties ( asu ) . i really like your corner infielders shaw / aguilar",
+        "fact": "baseball managers wear uniforms because they are technically able to play for their teams if the need arises\n",
+        "response": "oh that 's cool ! i do like the rain man , i 'm a fan of the dodgers , they were all very good , too !\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            4,
+            4,
+            3
+        ],
+        "average_annotations": 3.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response lacked contextual accuracy, emotional coherence, and human engagement, failing to address the user's opinions and preferences.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response seems forced, and it quickly shifts from discussing the Diamondbacks and Brewers to expressing admiration for the Dodgers, which doesn't follow organically from the conversation context. Although it mentions the Dodgers in a positive way, it doesn't demonstrate a clear understanding of the fact provided about baseball managers wearing uniforms, which was a relevant and engaging topic.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response shows a sudden shift in topic, diverting from the conversation about the Brewers and their opponents, the Dodgers, and instead taking a pro-Dodgers stance. The user had expressed dislike for the Dodgers, which may make this response come across as insensitive or dismissive of their sentiment.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: good morning - i love baseball and ca n't wait for spring training to start !\nSystem: hello there ! i am the same , my team had one of the best seasons they have ever had so i 'm excited as well !\nUser: who 's your team ? my team , the diamondbacks had an epic collapse last season and are in a mini - rebuild this season ...\nSystem: yeah the diamondbacks had a chance and then they did have a bad 2nd half of the season . i am a brewers fan and our gm made some amazing moves in the offseason and it paid off big .\nUser: nice ! ( except for ryan braun ) i like the brewers and was pulling for them against the dodgers ( who i hate more than braun ) !\nSystem: yeah i was so disappointed with the whole braun thing , i was like just admit you messed up , and get on with it . the lying and blaming others is just the worst ! thanks though , game 7 just sucked ! i do like the dbacks though , craig counsel your old hero ! !\nUser: yep - craig is the man , glad he 's having success with the brewers . even your bench coach ( murphy ) has arizona ties ( asu ) . i really like your corner infielders shaw / aguilar",
+        "fact": "baseball managers wear uniforms because they are technically able to play for their teams if the need arises\n",
+        "response": "that 's awesome ! the indians also have an uniforms because they can actually play for the field . the guy who is still invited to play baseball at the oracle arena !\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            3,
+            1,
+            2
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks natural flow, tone, and relevance, disrupting the conversation and failing to engage with the user's interests.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response attempts to use the provided fact but fails to do so accurately and contextually, as it introduces unrelated information (the Oracle Arena, invited to play baseball) that deviates from the initial statement. This results in a confusing and irrelevant connection.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response seems to be deviating from the context of the conversation, starting with a statement that doesn't align with the topic of spring training and the user's team. It also attempts to introduce new information (the Indians and Oracle Arena) without a clear connection to the previous discussion.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: good morning - i love baseball and ca n't wait for spring training to start !\nSystem: hello there ! i am the same , my team had one of the best seasons they have ever had so i 'm excited as well !\nUser: who 's your team ? my team , the diamondbacks had an epic collapse last season and are in a mini - rebuild this season ...\nSystem: yeah the diamondbacks had a chance and then they did have a bad 2nd half of the season . i am a brewers fan and our gm made some amazing moves in the offseason and it paid off big .\nUser: nice ! ( except for ryan braun ) i like the brewers and was pulling for them against the dodgers ( who i hate more than braun ) !\nSystem: yeah i was so disappointed with the whole braun thing , i was like just admit you messed up , and get on with it . the lying and blaming others is just the worst ! thanks though , game 7 just sucked ! i do like the dbacks though , craig counsel your old hero ! !\nUser: yep - craig is the man , glad he 's having success with the brewers . even your bench coach ( murphy ) has arizona ties ( asu ) . i really like your corner infielders shaw / aguilar",
+        "fact": "baseball managers wear uniforms because they are technically able to play for their teams if the need arises\n",
+        "response": "yeah i 'm a fan of the infielders as well . i feel like people need to giving more attention to the managers . technically they 're allowed to play for their team if needed ",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            4,
+            5
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response is generally natural and engaging, but lacks clear relevance to the ongoing conversation and has an abrupt shift in focus.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is an attempt to inject new information, however, it's slightly forced and lacks contextual coherence. The mention of the manager being technically able to play for the team is correct but wasn't naturally connected to the conversation's previous points.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response effectively connects with the user's perspective, acknowledging their shared interests and preferences. However, the abrupt mention of the provided fact feels forced, disrupting the natural flow of the conversation. The tone shifts from a casual discussion to an informative statement, which may come across as a bit artificial.",
+                "score": 3
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "context": "User: hello , how are you today ? do you like to go to concerts ?\nSystem: not as much as i used to but i do .\nUser: yeah , same here ! creed gave a concert so bad there were lawsuits against the band .\nSystem: ha ha . i hate to see bad things happen to people but as someone who is not a creed fan i find that hilarious .\nUser: i do n't know much about that band . the sound in the ancient roman amphitheater must be good for pink floyd to record in it without an audience .\nSystem: i wonder why they did that . it would be such a beautiful place to be an audience member .\nUser: yes , i like the live albums.the ancient roman amphitheatre still has concerts .\nSystem: oh wow . are you familiar with lou reed ?\nUser: yes , i am . i have heard a few of his songs .\nSystem: in 2010 he and his wife held a high frequency concert for dogs . what an odd thing to do .\nUser: oh wow ! really , did the dogs like it ? was it recorded ?\nSystem: i have no idea . i 'm sure that someone has video of it . do you enjoy the music of the foo fighters\nUser: oh yes , i love them . i love the video of all the drummers and other instruments playing at the same time . people came from all over the world to be in that .\nSystem: they are pretty amazing . they performed a concert so loud that it showed up on new zealand 's seismic monitors !",
+        "fact": "in 2002 a creed concert was so bad that four concert goers filed a lawsuit against the band\n",
+        "response": "yes , i heard that . that band has alot of talent . \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            3,
+            3,
+            4
+        ],
+        "average_annotations": 3.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks empathy, engagement, and nuance, making it unnatural and unhelpful in the conversation.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system provided an incorrect statement that contradicts the provided fact. The fact states that a 2002 Creed concert was so bad that four concert-goers filed a lawsuit, but the system responded that the bad concert led to a lawsuit with the statement \"that band has a lot of talent\", which is not a correct connection between the two events.",
+                "score": 0
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response fails to align with the tone and previous conversation. The phrase \"the band has alot of talent\" is contradictory to the discussion about a Creed concert being so bad that it led to lawsuits, causing a disconnect between the response and the user's perspective.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you today ? do you like to go to concerts ?\nSystem: not as much as i used to but i do .\nUser: yeah , same here ! creed gave a concert so bad there were lawsuits against the band .\nSystem: ha ha . i hate to see bad things happen to people but as someone who is not a creed fan i find that hilarious .\nUser: i do n't know much about that band . the sound in the ancient roman amphitheater must be good for pink floyd to record in it without an audience .\nSystem: i wonder why they did that . it would be such a beautiful place to be an audience member .\nUser: yes , i like the live albums.the ancient roman amphitheatre still has concerts .\nSystem: oh wow . are you familiar with lou reed ?\nUser: yes , i am . i have heard a few of his songs .\nSystem: in 2010 he and his wife held a high frequency concert for dogs . what an odd thing to do .\nUser: oh wow ! really , did the dogs like it ? was it recorded ?\nSystem: i have no idea . i 'm sure that someone has video of it . do you enjoy the music of the foo fighters\nUser: oh yes , i love them . i love the video of all the drummers and other instruments playing at the same time . people came from all over the world to be in that .\nSystem: they are pretty amazing . they performed a concert so loud that it showed up on new zealand 's seismic monitors !",
+        "fact": "in 2002 a creed concert was so bad that four concert goers filed a lawsuit against the band\n",
+        "response": "i know , i think i have heard that before , i think it was really cool .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            3,
+            3,
+            4
+        ],
+        "average_annotations": 3.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual relevance, emotional coherence, and naturalness, making it a somewhat generic and unengaging interaction.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is attempting to engage in conversation but fails to accurately convey information about the problematic Creed concert. The statement deviates from the provided fact by downplaying the significance of the event and using a phrase (\"really cool\") that is out of context.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response lacks naturalness and engagement. It contradicts the initial statement about a Creed concert being bad, instead expressing a positive sentiment. This inconsistency disrupts the conversation flow, indicating a misunderstanding of the context and the user's tone.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you today ? do you like to go to concerts ?\nSystem: not as much as i used to but i do .\nUser: yeah , same here ! creed gave a concert so bad there were lawsuits against the band .\nSystem: ha ha . i hate to see bad things happen to people but as someone who is not a creed fan i find that hilarious .\nUser: i do n't know much about that band . the sound in the ancient roman amphitheater must be good for pink floyd to record in it without an audience .\nSystem: i wonder why they did that . it would be such a beautiful place to be an audience member .\nUser: yes , i like the live albums.the ancient roman amphitheatre still has concerts .\nSystem: oh wow . are you familiar with lou reed ?\nUser: yes , i am . i have heard a few of his songs .\nSystem: in 2010 he and his wife held a high frequency concert for dogs . what an odd thing to do .\nUser: oh wow ! really , did the dogs like it ? was it recorded ?\nSystem: i have no idea . i 'm sure that someone has video of it . do you enjoy the music of the foo fighters\nUser: oh yes , i love them . i love the video of all the drummers and other instruments playing at the same time . people came from all over the world to be in that .\nSystem: they are pretty amazing . they performed a concert so loud that it showed up on new zealand 's seismic monitors !",
+        "fact": "in 2002 a creed concert was so bad that four concert goers filed a lawsuit against the band\n",
+        "response": "i know , i do n't know how i feel about creed being so bad , they were sued by 4 people !\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            4,
+            2,
+            3
+        ],
+        "average_annotations": 3.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response lacks emotional depth, fails to connect with the User's previous experiences, and displays a forced tone, resulting in a low score.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is a repetition of the initial statement, failing to add any new information or context, thus reducing its effectiveness and failing to accurately utilize the provided fact about the 2002 Creed concert.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The System's response is natural, however, it doesn't accurately utilize the provided fact from the context, instead it contradicts it by saying 4 people sued, but the fact states that it was 4 concert-goers who were involved in a lawsuit but the actual number suing is not mentioned (implying more than 4). The System also fails to directly connect to the user's perspective and lacks a clear emotional tone, making it less engaging.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you today ? do you like to go to concerts ?\nSystem: not as much as i used to but i do .\nUser: yeah , same here ! creed gave a concert so bad there were lawsuits against the band .\nSystem: ha ha . i hate to see bad things happen to people but as someone who is not a creed fan i find that hilarious .\nUser: i do n't know much about that band . the sound in the ancient roman amphitheater must be good for pink floyd to record in it without an audience .\nSystem: i wonder why they did that . it would be such a beautiful place to be an audience member .\nUser: yes , i like the live albums.the ancient roman amphitheatre still has concerts .\nSystem: oh wow . are you familiar with lou reed ?\nUser: yes , i am . i have heard a few of his songs .\nSystem: in 2010 he and his wife held a high frequency concert for dogs . what an odd thing to do .\nUser: oh wow ! really , did the dogs like it ? was it recorded ?\nSystem: i have no idea . i 'm sure that someone has video of it . do you enjoy the music of the foo fighters\nUser: oh yes , i love them . i love the video of all the drummers and other instruments playing at the same time . people came from all over the world to be in that .\nSystem: they are pretty amazing . they performed a concert so loud that it showed up on new zealand 's seismic monitors !",
+        "fact": "in 2002 a creed concert was so bad that four concert goers filed a lawsuit against the band\n",
+        "response": "yeah i bet they did . i think creed should have a concert that was so bad that 4 concert goers filed a lawsuit against them .\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            4,
+            2,
+            2
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual understanding, emotional coherence, and overall engagement, resulting in a score that reflects its inability to effectively participate in a conversation.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is mostly accurate, but it doesn't directly use the provided fact. It makes a joke about Creed having a bad concert, which doesn't reflect the actual information about the lawsuit.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response starts off as a humorous remark, but it then abruptly deviates from the context by suggesting a specific concert experience that is disconnected from the user's prior engagement. This lack of cohesion and failure to capitalize on the earlier momentum detracts from the overall engagement and naturalness of the response. Moreover, it incorrectly uses the provided fact in a way that seems like a forced attempt to fit the given context.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you today ? do you like to go to concerts ?\nSystem: not as much as i used to but i do .\nUser: yeah , same here ! creed gave a concert so bad there were lawsuits against the band .\nSystem: ha ha . i hate to see bad things happen to people but as someone who is not a creed fan i find that hilarious .\nUser: i do n't know much about that band . the sound in the ancient roman amphitheater must be good for pink floyd to record in it without an audience .\nSystem: i wonder why they did that . it would be such a beautiful place to be an audience member .\nUser: yes , i like the live albums.the ancient roman amphitheatre still has concerts .\nSystem: oh wow . are you familiar with lou reed ?\nUser: yes , i am . i have heard a few of his songs .\nSystem: in 2010 he and his wife held a high frequency concert for dogs . what an odd thing to do .\nUser: oh wow ! really , did the dogs like it ? was it recorded ?\nSystem: i have no idea . i 'm sure that someone has video of it . do you enjoy the music of the foo fighters\nUser: oh yes , i love them . i love the video of all the drummers and other instruments playing at the same time . people came from all over the world to be in that .\nSystem: they are pretty amazing . they performed a concert so loud that it showed up on new zealand 's seismic monitors !",
+        "fact": "in 2002 a creed concert was so bad that four concert goers filed a lawsuit against the band\n",
+        "response": "do you like creed ?\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            3,
+            2,
+            1
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual relevance, semantic accuracy, and specificity, making it disengaging and unresponsive to the user's emotions and opinions.",
+                "score": 1
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response \"do you like creed\" is a direct and abrupt question with no clear relation to the context or the provided fact. It neither confirms nor denies the incident with the Creed concert that was mentioned earlier, and does not attempt to engage the user or add new information.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response seems abrupt and doesn't quite connect with the user's context, especially since it contradicts the user's claim that a Creed concert in 2002 resulted in a lawsuit.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: hello , how are you today ? do you like to go to concerts ?\nSystem: not as much as i used to but i do .\nUser: yeah , same here ! creed gave a concert so bad there were lawsuits against the band .\nSystem: ha ha . i hate to see bad things happen to people but as someone who is not a creed fan i find that hilarious .\nUser: i do n't know much about that band . the sound in the ancient roman amphitheater must be good for pink floyd to record in it without an audience .\nSystem: i wonder why they did that . it would be such a beautiful place to be an audience member .\nUser: yes , i like the live albums.the ancient roman amphitheatre still has concerts .\nSystem: oh wow . are you familiar with lou reed ?\nUser: yes , i am . i have heard a few of his songs .\nSystem: in 2010 he and his wife held a high frequency concert for dogs . what an odd thing to do .\nUser: oh wow ! really , did the dogs like it ? was it recorded ?\nSystem: i have no idea . i 'm sure that someone has video of it . do you enjoy the music of the foo fighters\nUser: oh yes , i love them . i love the video of all the drummers and other instruments playing at the same time . people came from all over the world to be in that .\nSystem: they are pretty amazing . they performed a concert so loud that it showed up on new zealand 's seismic monitors !",
+        "fact": "in 2002 a creed concert was so bad that four concert goers filed a lawsuit against the band\n",
+        "response": "wow i wonder if anybody sued them . four people sued creed for performing very badly at a concert in 2002 .",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is mostly natural but lacks emotional resonance and user-centric language, disrupting the conversation flow.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response accurately conveys the fact from 2002, but it seems somewhat disconnected from the conversation. The mention of \"four people sued\" is unclear and not in line with the original statement from the fact, which mentions four concert-goers filed a lawsuit.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is somewhat disconnected from the user's perspective and fails to maintain a natural tone. The mention of \"wow\" seems forced and the use of \"four people\" is more formal than the previous conversation, which was casual and engaging.",
+                "score": 2
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+     {
+        "context": "User: have you heard that people draft contestants for fantasy spelling bee ? pretty amazing to me .\nSystem: i 'm not even sure how they would even know that . are n't all the contestants children ?\nUser: yes . i guess they see how well they won the regional contests .\nSystem: i mean , i guess fantasy are for the hardcore fans . have you ever seen the lord of the rings ?\nUser: yes . of course that is fantasy of a different type .\nSystem: the third movie was the only fantasy film to win an academy award for \" best picture \"\nUser: i did not remember that . back to competitive fantasy . there is also a game where people draft congress people and score on how many bills they successfully vote for . that seems so boring !\nSystem: i 'm sure political science students would find enjoyment in that . it could be a great teaching tool !\nUser: yes . but one would really have to dig deeply to keep score . most news is about when congress can not agree . there is a fold in the brain that is the only thing that allows us to tell the difference between fantasy and reality .\nSystem: that 's an important fold ! i wonder how well students tell the difference if they 're enrolled in the university that has science fiction courses\nUser: if i lost the fold , i would probably die jumping off a roof being sure i could fly . otherwise , my \" reality \" would be pretty good since i do n't dream or day dream bad things . those students would probably encounter some monsters .\nSystem: there 's even a concentration in tolkien studies . that would be interesting\nUser: it sure would . in fantasy football one of the most important selections is qb since the qb touches the ball on most every play .\nSystem: i 've never played fantasy football , but i wonder if kellan moore is a good contender in that since he 's a lefty\nUser: there is talent and luck in fantasy football . i am sure that moore has had some good games and some poor ones . alex smith took so many ap tests in high school that entered college as a junior .\nSystem: he 's pretty smart . it would take a lot of ap courses to knock out the first two years of college like that\nUser: it sure would . of course , qbs need to be somewhat smart . baker mayfield who won the heisman at oklahoma university almost quite football to go into competitive gaming . he could beat the entire team in halo 3 .",
+        "fact": "superbowl winning quarterback , brad johnson , is the only quarterback in nfl history to throw a touchdown pass ... to himself .\n",
+        "response": "i wonder if most of those guys were good at halo . there was a qb in the nfl named brad johnson , and he 's the only one who has thrown a touchdown pass to himself \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            5,
+            4
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response attempts to engage but falters in emotional coherence and connection to the user's perspective, prioritizing interesting facts over context and momentum.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response correctly uses the [Fact] and connects it to the conversation about football players being good at video games, but it feels somewhat abrupt and disconnected from the previous discussion about Alex Smith and Baker Mayfield.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response seems to be attempting to connect with the user's interest in football and gaming, but it jumps abruptly to the provided fact without any clear logical connection to the previous conversation about football, gaming, and quarterbacks. Additionally, the shift in tone and topic feels somewhat forced and lacking in emotional coherence.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard that people draft contestants for fantasy spelling bee ? pretty amazing to me .\nSystem: i 'm not even sure how they would even know that . are n't all the contestants children ?\nUser: yes . i guess they see how well they won the regional contests .\nSystem: i mean , i guess fantasy are for the hardcore fans . have you ever seen the lord of the rings ?\nUser: yes . of course that is fantasy of a different type .\nSystem: the third movie was the only fantasy film to win an academy award for \" best picture \"\nUser: i did not remember that . back to competitive fantasy . there is also a game where people draft congress people and score on how many bills they successfully vote for . that seems so boring !\nSystem: i 'm sure political science students would find enjoyment in that . it could be a great teaching tool !\nUser: yes . but one would really have to dig deeply to keep score . most news is about when congress can not agree . there is a fold in the brain that is the only thing that allows us to tell the difference between fantasy and reality .\nSystem: that 's an important fold ! i wonder how well students tell the difference if they 're enrolled in the university that has science fiction courses\nUser: if i lost the fold , i would probably die jumping off a roof being sure i could fly . otherwise , my \" reality \" would be pretty good since i do n't dream or day dream bad things . those students would probably encounter some monsters .\nSystem: there 's even a concentration in tolkien studies . that would be interesting\nUser: it sure would . in fantasy football one of the most important selections is qb since the qb touches the ball on most every play .\nSystem: i 've never played fantasy football , but i wonder if kellan moore is a good contender in that since he 's a lefty\nUser: there is talent and luck in fantasy football . i am sure that moore has had some good games and some poor ones . alex smith took so many ap tests in high school that entered college as a junior .\nSystem: he 's pretty smart . it would take a lot of ap courses to knock out the first two years of college like that\nUser: it sure would . of course , qbs need to be somewhat smart . baker mayfield who won the heisman at oklahoma university almost quite football to go into competitive gaming . he could beat the entire team in halo 3 .",
+        "fact": "superbowl winning quarterback , brad johnson , is the only quarterback in nfl history to throw a touchdown pass ... to himself .\n",
+        "response": "i think he would have done it differently . he could beat anyone at u of oklahoma on one of the other .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            2,
+            3,
+            2
+        ],
+        "average_annotations": 2.3333333333333335,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response lacks clarity and relevance, with a forced tone and abrupt transition, making it difficult to connect with the user's perspective and context.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: Although the System's response is engaging and attempts to use a fact, it deviates from the context by introducing unrelated information about the University of Oklahoma and a different sport, Halo 3. This lack of relevance detracts from the response's naturalness and accuracy.",
+                "score": 0
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response attempts to engage with the user by making a relatable comment (beating others in a game at the University of Oklahoma). However, its relevance is somewhat strained, and it doesn't directly use the fact about Brad Johnson in a coherent manner. The tone is casual, but not quite empathetic.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard that people draft contestants for fantasy spelling bee ? pretty amazing to me .\nSystem: i 'm not even sure how they would even know that . are n't all the contestants children ?\nUser: yes . i guess they see how well they won the regional contests .\nSystem: i mean , i guess fantasy are for the hardcore fans . have you ever seen the lord of the rings ?\nUser: yes . of course that is fantasy of a different type .\nSystem: the third movie was the only fantasy film to win an academy award for \" best picture \"\nUser: i did not remember that . back to competitive fantasy . there is also a game where people draft congress people and score on how many bills they successfully vote for . that seems so boring !\nSystem: i 'm sure political science students would find enjoyment in that . it could be a great teaching tool !\nUser: yes . but one would really have to dig deeply to keep score . most news is about when congress can not agree . there is a fold in the brain that is the only thing that allows us to tell the difference between fantasy and reality .\nSystem: that 's an important fold ! i wonder how well students tell the difference if they 're enrolled in the university that has science fiction courses\nUser: if i lost the fold , i would probably die jumping off a roof being sure i could fly . otherwise , my \" reality \" would be pretty good since i do n't dream or day dream bad things . those students would probably encounter some monsters .\nSystem: there 's even a concentration in tolkien studies . that would be interesting\nUser: it sure would . in fantasy football one of the most important selections is qb since the qb touches the ball on most every play .\nSystem: i 've never played fantasy football , but i wonder if kellan moore is a good contender in that since he 's a lefty\nUser: there is talent and luck in fantasy football . i am sure that moore has had some good games and some poor ones . alex smith took so many ap tests in high school that entered college as a junior .\nSystem: he 's pretty smart . it would take a lot of ap courses to knock out the first two years of college like that\nUser: it sure would . of course , qbs need to be somewhat smart . baker mayfield who won the heisman at oklahoma university almost quite football to go into competitive gaming . he could beat the entire team in halo 3 .",
+        "fact": "superbowl winning quarterback , brad johnson , is the only quarterback in nfl history to throw a touchdown pass ... to himself .\n",
+        "response": "i think he would have done well in halo 3 . he is the only qb in history to throw a touchdown pass to himself .\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            3,
+            4,
+            2
+        ],
+        "average_annotations": 3.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks contextual relevance, engagement, and emotional coherence, making it feel disconnected from the user's enthusiasm and previous discussion.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response starts strong by connecting the provided fact to the previous conversation about quarterback Baker Mayfield's potential in competitive gaming. However, it fails to engage with the Halo 3 reference from the user and doesn't demonstrate a clear understanding of what makes a great response in this context.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response starts off engagingly but becomes somewhat disconnected from the original context of the discussion, which focused on competitive fantasy and its relation to the user's mention of Halo 3 and Baker Mayfield. The mention of Brad Johnson is not directly related to Mayfield or Halo 3, thus disrupting the flow of the conversation.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard that people draft contestants for fantasy spelling bee ? pretty amazing to me .\nSystem: i 'm not even sure how they would even know that . are n't all the contestants children ?\nUser: yes . i guess they see how well they won the regional contests .\nSystem: i mean , i guess fantasy are for the hardcore fans . have you ever seen the lord of the rings ?\nUser: yes . of course that is fantasy of a different type .\nSystem: the third movie was the only fantasy film to win an academy award for \" best picture \"\nUser: i did not remember that . back to competitive fantasy . there is also a game where people draft congress people and score on how many bills they successfully vote for . that seems so boring !\nSystem: i 'm sure political science students would find enjoyment in that . it could be a great teaching tool !\nUser: yes . but one would really have to dig deeply to keep score . most news is about when congress can not agree . there is a fold in the brain that is the only thing that allows us to tell the difference between fantasy and reality .\nSystem: that 's an important fold ! i wonder how well students tell the difference if they 're enrolled in the university that has science fiction courses\nUser: if i lost the fold , i would probably die jumping off a roof being sure i could fly . otherwise , my \" reality \" would be pretty good since i do n't dream or day dream bad things . those students would probably encounter some monsters .\nSystem: there 's even a concentration in tolkien studies . that would be interesting\nUser: it sure would . in fantasy football one of the most important selections is qb since the qb touches the ball on most every play .\nSystem: i 've never played fantasy football , but i wonder if kellan moore is a good contender in that since he 's a lefty\nUser: there is talent and luck in fantasy football . i am sure that moore has had some good games and some poor ones . alex smith took so many ap tests in high school that entered college as a junior .\nSystem: he 's pretty smart . it would take a lot of ap courses to knock out the first two years of college like that\nUser: it sure would . of course , qbs need to be somewhat smart . baker mayfield who won the heisman at oklahoma university almost quite football to go into competitive gaming . he could beat the entire team in halo 3 .",
+        "fact": "superbowl winning quarterback , brad johnson , is the only quarterback in nfl history to throw a touchdown pass ... to himself .\n",
+        "response": "lol , good point . i wonder if anyone at that age in the nfl will ever be able to beat anyone at halo 3 .\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            3,
+            2,
+            3
+        ],
+        "average_annotations": 2.6666666666666665,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is engaging, but lacks deeper exploration of ideas and contextual understanding, failing to fully utilize the provided fact.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is engaging and attempts to humorously extend a previous statement. However, it does not clearly relate to the relevant provided fact and appears disconnected from the context of fantasy football.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response shows good engagement and understanding of the context, specifically referencing the user's mention of competitive gaming and Halo 3. However, it falls short in demonstrating empathy and a deeper understanding of the user's interest in the topic, resulting in a response that is more of a lighthearted remark rather than a meaningful connection.",
+                "score": 4
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard that people draft contestants for fantasy spelling bee ? pretty amazing to me .\nSystem: i 'm not even sure how they would even know that . are n't all the contestants children ?\nUser: yes . i guess they see how well they won the regional contests .\nSystem: i mean , i guess fantasy are for the hardcore fans . have you ever seen the lord of the rings ?\nUser: yes . of course that is fantasy of a different type .\nSystem: the third movie was the only fantasy film to win an academy award for \" best picture \"\nUser: i did not remember that . back to competitive fantasy . there is also a game where people draft congress people and score on how many bills they successfully vote for . that seems so boring !\nSystem: i 'm sure political science students would find enjoyment in that . it could be a great teaching tool !\nUser: yes . but one would really have to dig deeply to keep score . most news is about when congress can not agree . there is a fold in the brain that is the only thing that allows us to tell the difference between fantasy and reality .\nSystem: that 's an important fold ! i wonder how well students tell the difference if they 're enrolled in the university that has science fiction courses\nUser: if i lost the fold , i would probably die jumping off a roof being sure i could fly . otherwise , my \" reality \" would be pretty good since i do n't dream or day dream bad things . those students would probably encounter some monsters .\nSystem: there 's even a concentration in tolkien studies . that would be interesting\nUser: it sure would . in fantasy football one of the most important selections is qb since the qb touches the ball on most every play .\nSystem: i 've never played fantasy football , but i wonder if kellan moore is a good contender in that since he 's a lefty\nUser: there is talent and luck in fantasy football . i am sure that moore has had some good games and some poor ones . alex smith took so many ap tests in high school that entered college as a junior .\nSystem: he 's pretty smart . it would take a lot of ap courses to knock out the first two years of college like that\nUser: it sure would . of course , qbs need to be somewhat smart . baker mayfield who won the heisman at oklahoma university almost quite football to go into competitive gaming . he could beat the entire team in halo 3 .",
+        "fact": "superbowl winning quarterback , brad johnson , is the only quarterback in nfl history to throw a touchdown pass ... to himself .\n",
+        "response": "yeah , but i 'm not sure how much he did in halo 3 , he played football for halo 3\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            2,
+            2,
+            2
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is engaging but lacks coherence and accuracy, deviating from the conversation's context and misusing the provided fact.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The System's response is somewhat coherent, but it lacks specificity and context. The information about Baker Mayfield playing competitive gaming doesn't directly relate to the topic of fantasy football or the provided fact. The System attempts to add levity and humor but doesn't effectively use the fact about Brad Johnson.",
+                "score": 3
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The System's response is mostly coherent and related to the conversation. However, the phrase \"he played football for halo 3\" seems out of context and does not engage with Baker Mayfield's actual interest or skills in competitive gaming. It could be seen as dismissive or nonsensical. The correct application of the fact about Brad Johnson is also missed.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: have you heard that people draft contestants for fantasy spelling bee ? pretty amazing to me .\nSystem: i 'm not even sure how they would even know that . are n't all the contestants children ?\nUser: yes . i guess they see how well they won the regional contests .\nSystem: i mean , i guess fantasy are for the hardcore fans . have you ever seen the lord of the rings ?\nUser: yes . of course that is fantasy of a different type .\nSystem: the third movie was the only fantasy film to win an academy award for \" best picture \"\nUser: i did not remember that . back to competitive fantasy . there is also a game where people draft congress people and score on how many bills they successfully vote for . that seems so boring !\nSystem: i 'm sure political science students would find enjoyment in that . it could be a great teaching tool !\nUser: yes . but one would really have to dig deeply to keep score . most news is about when congress can not agree . there is a fold in the brain that is the only thing that allows us to tell the difference between fantasy and reality .\nSystem: that 's an important fold ! i wonder how well students tell the difference if they 're enrolled in the university that has science fiction courses\nUser: if i lost the fold , i would probably die jumping off a roof being sure i could fly . otherwise , my \" reality \" would be pretty good since i do n't dream or day dream bad things . those students would probably encounter some monsters .\nSystem: there 's even a concentration in tolkien studies . that would be interesting\nUser: it sure would . in fantasy football one of the most important selections is qb since the qb touches the ball on most every play .\nSystem: i 've never played fantasy football , but i wonder if kellan moore is a good contender in that since he 's a lefty\nUser: there is talent and luck in fantasy football . i am sure that moore has had some good games and some poor ones . alex smith took so many ap tests in high school that entered college as a junior .\nSystem: he 's pretty smart . it would take a lot of ap courses to knock out the first two years of college like that\nUser: it sure would . of course , qbs need to be somewhat smart . baker mayfield who won the heisman at oklahoma university almost quite football to go into competitive gaming . he could beat the entire team in halo 3 .",
+        "fact": "superbowl winning quarterback , brad johnson , is the only quarterback in nfl history to throw a touchdown pass ... to himself .\n",
+        "response": "qbs are often very smart . brad johnson is the only qb in history to throw a touchdown pass to himself ! imagine the brains it takes to pull that off .",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            4
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is clear and attempts to connect with the user's perspective, but it feels abrupt and lacks a deeper understanding of the conversation context.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The response deviates from the context of competitive fantasy sports, instead introducing a fact that, although interesting, doesn't add to the conversation. The attempt to be engaging and humorous falls short as it breaks the flow and loses the original topic focus.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is somewhat engaging, as it attempts to connect the fact about Brad Johnson to the conversation. However, it feels abrupt and disconnected from the user's comments about quarterbacks and their skills. The tone seems somewhat sarcastic, which may not be the best fit for the conversation.",
+                "score": 2
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+      {
+        "context": "User: hi , how are you today ? staying warm ?\nSystem: trying just watching some netflix .. kyle kinane is hilarious .. one of my favorite comedies .\nUser: he is funny i know ! lol",
+        "fact": "kyle kinane will stretch out his two or three jokes at the 9:30 club on thursday . ( ap ) kyle kinane knows he does n't have all the answers . in fact , he does n't really have any of them . if he did , he would n't be in stand - up comedy . \" i do n't like listening to comedians tell me how the world works , \" kinane says . \" if you knew how the world works , you 'd be a stockbroker , or you 'd be a banker or a ceo . comedians are comedians because they 're not good at other things . \" that 's why the gruff - voiced comic 's sets are anchored by anecdotes about the mundane that play as delightfully absurd . when kinane did tackle politically relevant material in his set for the netflix series \" the standups \" earlier this year , it came in a farcical bit about how ku klux klan members surely partake in cuisine from the cultures they oppress . \" there 's no way that kkk members are only eating eastern european - based foods , \" he jokes . on thursday , the 41-year - old comedian and voice - over artist brings his act to d.c . 9:30 club , 815 v st . nw ; thu . , 7 p.m. , $ 25 .\n",
+        "response": "he has a special on netflix and kind of drives into political issue . he also does stand up in a washington dc club . \n",
+        "model": "Original Ground Truth",
+        "overall_annotations": [
+            5,
+            5,
+            4
+        ],
+        "average_annotations": 4.666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks fluency, engagement, and emotional connection, making it seem unnatural and disconnected from the user's interest in Kyle Kinane's comedy.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system provides some accurate information about Kyle Kinane's content and performance, but falls short in providing a clear and concise summary. The response lacks specific details about his Netflix special and stand-up in Washington D.C.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response is somewhat informative but lacks natural flow and empathy. Although it attempts to answer the user's question about Kyle Kinane's work, it fails to create a personal connection or continue the conversation's tone. The mention of the D.C. club seems abrupt and unconnected to the user's initial question about staying warm. Given the context, a more engaging response could have explored how Kinane's comedy or stand-up style might be relevant to the user's interests or the context of the conversation.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: hi , how are you today ? staying warm ?\nSystem: trying just watching some netflix .. kyle kinane is hilarious .. one of my favorite comedies .\nUser: he is funny i know ! lol",
+        "fact": "kyle kinane will stretch out his two or three jokes at the 9:30 club on thursday . ( ap ) kyle kinane knows he does n't have all the answers . in fact , he does n't really have any of them . if he did , he would n't be in stand - up comedy . \" i do n't like listening to comedians tell me how the world works , \" kinane says . \" if you knew how the world works , you 'd be a stockbroker , or you 'd be a banker or a ceo . comedians are comedians because they 're not good at other things . \" that 's why the gruff - voiced comic 's sets are anchored by anecdotes about the mundane that play as delightfully absurd . when kinane did tackle politically relevant material in his set for the netflix series \" the standups \" earlier this year , it came in a farcical bit about how ku klux klan members surely partake in cuisine from the cultures they oppress . \" there 's no way that kkk members are only eating eastern european - based foods , \" he jokes . on thursday , the 41-year - old comedian and voice - over artist brings his act to d.c . 9:30 club , 815 v st . nw ; thu . , 7 p.m. , $ 25 .\n",
+        "response": "i do n't know . i do n't know if i would like to visit the kinane pool .\n",
+        "model": "Argmax Decoding",
+        "overall_annotations": [
+            2,
+            2,
+            1
+        ],
+        "average_annotations": 1.6666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response is disjointed, lacks coherence, and fails to engage with the user's perspective or emotions. It also incorrectly uses the provided fact and introduces unrelated information.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response fails to convey relevant information about Kyle Kinane's upcoming performance, instead referencing an irrelevant and nonsensical concept called \"the Kinane pool.\" It does not correctly use the provided fact about the comedian's appearance at the 9:30 Club, and the tone seems out of place with the original context.",
+                "score": 1
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is awkwardly phrased and lacks coherence with the user's context, failing to maintain a natural conversation. It seems to dismiss the user's interest in Kyle Kinane, and the reference to the \"Kinane pool\" is unclear and irrelevant.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: hi , how are you today ? staying warm ?\nSystem: trying just watching some netflix .. kyle kinane is hilarious .. one of my favorite comedies .\nUser: he is funny i know ! lol",
+        "fact": "kyle kinane will stretch out his two or three jokes at the 9:30 club on thursday . ( ap ) kyle kinane knows he does n't have all the answers . in fact , he does n't really have any of them . if he did , he would n't be in stand - up comedy . \" i do n't like listening to comedians tell me how the world works , \" kinane says . \" if you knew how the world works , you 'd be a stockbroker , or you 'd be a banker or a ceo . comedians are comedians because they 're not good at other things . \" that 's why the gruff - voiced comic 's sets are anchored by anecdotes about the mundane that play as delightfully absurd . when kinane did tackle politically relevant material in his set for the netflix series \" the standups \" earlier this year , it came in a farcical bit about how ku klux klan members surely partake in cuisine from the cultures they oppress . \" there 's no way that kkk members are only eating eastern european - based foods , \" he jokes . on thursday , the 41-year - old comedian and voice - over artist brings his act to d.c . 9:30 club , 815 v st . nw ; thu . , 7 p.m. , $ 25 .\n",
+        "response": "i do n't know if i 've ever heard of him .\n",
+        "model": "Nucleus Decoding (p = 0.3)",
+        "overall_annotations": [
+            1,
+            1,
+            1
+        ],
+        "average_annotations": 1.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks engagement, fails to utilize the provided fact, and doesn't demonstrate a clear understanding of the conversation's context.",
+                "score": 2
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response is incomplete and doesn't engage with the user's interest in Kyle Kinane. It doesn't utilize the provided fact to provide context or insight about the comedian, and instead, states a lack of knowledge about him.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response initially comes across as somewhat abrupt and disconnected from the conversation, given the user has already acknowledged familiarity with Kyle Kinane. It fails to build upon the user's engagement and enthusiasm, thereby lacking empathy and human connection.",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "context": "User: hi , how are you today ? staying warm ?\nSystem: trying just watching some netflix .. kyle kinane is hilarious .. one of my favorite comedies .\nUser: he is funny i know ! lol",
+        "fact": "kyle kinane will stretch out his two or three jokes at the 9:30 club on thursday . ( ap ) kyle kinane knows he does n't have all the answers . in fact , he does n't really have any of them . if he did , he would n't be in stand - up comedy . \" i do n't like listening to comedians tell me how the world works , \" kinane says . \" if you knew how the world works , you 'd be a stockbroker , or you 'd be a banker or a ceo . comedians are comedians because they 're not good at other things . \" that 's why the gruff - voiced comic 's sets are anchored by anecdotes about the mundane that play as delightfully absurd . when kinane did tackle politically relevant material in his set for the netflix series \" the standups \" earlier this year , it came in a farcical bit about how ku klux klan members surely partake in cuisine from the cultures they oppress . \" there 's no way that kkk members are only eating eastern european - based foods , \" he jokes . on thursday , the 41-year - old comedian and voice - over artist brings his act to d.c . 9:30 club , 815 v st . nw ; thu . , 7 p.m. , $ 25 .\n",
+        "response": "lol , that 's funny ! i love kinane .\n",
+        "model": "Nucleus Decoding (p = 0.5)",
+        "overall_annotations": [
+            2,
+            2,
+            2
+        ],
+        "average_annotations": 2.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The system's response lacks depth, fails to incorporate relevant details, and doesn't demonstrate a high level of emotional intelligence, but it does acknowledge user sentiment and maintains a generally positive tone.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response shows enthusiasm for the comedian, but it fails to convey specific information related to the provided fact, such as the upcoming show at the 9:30 club or quotes that showcase Kinane's style of humor.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is engaging and natural but slightly truncated, not utilizing the provided fact effectively, as it only acknowledges the user's love for Kinane without referencing the provided article's quotes or insights.",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "context": "User: hi , how are you today ? staying warm ?\nSystem: trying just watching some netflix .. kyle kinane is hilarious .. one of my favorite comedies .\nUser: he is funny i know ! lol",
+        "fact": "kyle kinane will stretch out his two or three jokes at the 9:30 club on thursday . ( ap ) kyle kinane knows he does n't have all the answers . in fact , he does n't really have any of them . if he did , he would n't be in stand - up comedy . \" i do n't like listening to comedians tell me how the world works , \" kinane says . \" if you knew how the world works , you 'd be a stockbroker , or you 'd be a banker or a ceo . comedians are comedians because they 're not good at other things . \" that 's why the gruff - voiced comic 's sets are anchored by anecdotes about the mundane that play as delightfully absurd . when kinane did tackle politically relevant material in his set for the netflix series \" the standups \" earlier this year , it came in a farcical bit about how ku klux klan members surely partake in cuisine from the cultures they oppress . \" there 's no way that kkk members are only eating eastern european - based foods , \" he jokes . on thursday , the 41-year - old comedian and voice - over artist brings his act to d.c . 9:30 club , 815 v st . nw ; thu . , 7 p.m. , $ 25 .\n",
+        "response": "i think he is . he is so funny .\n",
+        "model": "Nucleus Decoding (p = 0.7)",
+        "overall_annotations": [
+            2,
+            2,
+            1
+        ],
+        "average_annotations": 1.6666666666666667,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The System's response lacks naturalness, empathy, and behavioral realism, failing to address the user's concern and transitioning abruptly to a fact about Kyle Kinane's comedy.",
+                "score": 3
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response, although indicating agreement and enthusiasm for Kyle Kinane's comedy, fails to expand on the provided fact about his upcoming performance at the 9:30 Club in DC, which was the expectation based on the context and fact provided. It does not convey useful and specific information about the event.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The system's response lacks empathy and fails to continue the user's momentum, instead opting for a generic agreement. The tone feels forced and doesn't naturally expand on the conversation.",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "context": "User: hi , how are you today ? staying warm ?\nSystem: trying just watching some netflix .. kyle kinane is hilarious .. one of my favorite comedies .\nUser: he is funny i know ! lol",
+        "fact": "kyle kinane will stretch out his two or three jokes at the 9:30 club on thursday . ( ap ) kyle kinane knows he does n't have all the answers . in fact , he does n't really have any of them . if he did , he would n't be in stand - up comedy . \" i do n't like listening to comedians tell me how the world works , \" kinane says . \" if you knew how the world works , you 'd be a stockbroker , or you 'd be a banker or a ceo . comedians are comedians because they 're not good at other things . \" that 's why the gruff - voiced comic 's sets are anchored by anecdotes about the mundane that play as delightfully absurd . when kinane did tackle politically relevant material in his set for the netflix series \" the standups \" earlier this year , it came in a farcical bit about how ku klux klan members surely partake in cuisine from the cultures they oppress . \" there 's no way that kkk members are only eating eastern european - based foods , \" he jokes . on thursday , the 41-year - old comedian and voice - over artist brings his act to d.c . 9:30 club , 815 v st . nw ; thu . , 7 p.m. , $ 25 .\n",
+        "response": "i love his comedy philosophy . he believes that comedians should n't tell people how the world works , because if they knew that they would n't be comedians ! he manages to be funny without lecturing the audience !",
+        "model": "New Human Generated",
+        "overall_annotations": [
+            5,
+            5,
+            5
+        ],
+        "average_annotations": 5.0,
+        "chateval_evaluation": [
+            {
+                "role": "Critic",
+                "evaluation": "Evaluation evidence: The response effectively conveys Kyle Kinane's comedy philosophy, but lacks emotional resonance and a conversational tone, making it feel somewhat detached from the user.",
+                "score": 4
+            },
+            {
+                "role": "News Author",
+                "evaluation": "Evaluation evidence: The system's response accurately conveys Kyle Kinane's comedy philosophy, as presented in the provided fact. However, it falls short in specificity and contextual relevance, as the original fact also includes personal anecdotes, the mention of the Netflix series \"The Standups\", and specific event information. The system's response is natural and engaging, but it lacks detail and context.",
+                "score": 2
+            },
+            {
+                "role": "Psychologist",
+                "evaluation": "Evaluation evidence: The response is engaging and empathetic, as it connects with the user's shared enjoyment of Kyle Kinane's comedy. However, it lacks a seamless transition between the provided fact and the user's input, resulting in a slight disconnection.",
+                "score": 4
+            }
+        ]
     }
-
-
-
-
-
-
-
 ]

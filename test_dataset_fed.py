@@ -98,7 +98,9 @@ if __name__ == "__main__":
     input = "./outputs/fed/simultaneous_sum/results.json"
 
     input = "./outputs/topical/one-to-one/results.json"
-    input = "./outputs/topical/simultaneous/results.json"
+    # input = "./outputs/topical/simultaneous/results.json"
+    # input = "./outputs/topical/simultaneous_sum/results.json"
+
 
     print(f"Input: {len(get_data(input))}")
 

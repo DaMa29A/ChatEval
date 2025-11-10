@@ -19,3 +19,5 @@ python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/fed/simult
 python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/fed/simultaneous_sum/config.yaml
 
 python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/topical/one-to-one/config.yaml
+python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/topical/simultaneous/config.yaml
+python llm_eval.py --config agentverse/tasks/llm_eval/project_configs/topical/simultaneous_sum/config.yaml

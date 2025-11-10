@@ -1,0 +1,167 @@
+task:
+  llmeval
+data_path:
+  ./agentverse/tasks/llm_eval/data/topical/tc_usr_data.json
+output_dir:
+  ./outputs/topical/simultaneous_sum
+prompts:
+  prompt: &prompt |-
+    [Dialog Context]
+    ${source_text}
+
+    [Provided Fact (Knowledge)]
+    ${fact}
+
+    [The Start of System's Answer]
+    ${response_to_evaluate}
+    [The End of System's Answer]
+    
+    [System]
+    TASK: Evaluate the System's response based on context (0-5 scale, MUST be an integer).
+    Is the response natural, engaging, and does it correctly use the [Fact]?
+    You are one of several referees. You must discuss and critically analyze the performance to reach a final consensus score.
+
+    ${role_description}
+    Now generate the final evaluation report. Output MUST strictly follow the format below, ${agent_name}.
+
+    ${final_prompt}
+
+
+llm_config: &llm_config
+  model: "llama-3.1-8b-instant"
+  llm_type: llama-3.1-8b-instant
+  temperature: 0
+  max_tokens: 256
+
+llm_config: &llm_config_sum
+  model: "llama-3.1-8b-instant"
+  llm_type: llama-3.1-8b-instant
+  temperature: 0
+  max_tokens: 512
+
+environment:
+  env_type: llm_eval
+  max_turns: 2 
+  rule:
+    order:
+      type: concurrent # "Simultaneous-Talk" strategy
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+summary_template_def: &summary_template_def |-
+  Summarize the latest discussion turns below:
+  ${new_lines}
+
+  Write a brief, neutral summary keeping key evaluation points, logic trends, and disagreements.
+  No new opinions. Max 3 sentences. Focus on system performance only. Output concise summary text.
+
+
+agents:
+  -
+    agent_type: llm_eval_multi_con
+    name: Critic
+    final_prompt_to_use: &final_prompt_definition |-
+      BE EXTREMELY BRIEF AND CLEAR IN YOUR EXPLANATION.
+      Provide a concise justification of your evaluation, ensuring no order bias affects your judgment.
+      Aim for consensus, but output your final score independently (0-5, MUST be an integer).
+
+      IMPORTANT: Output must contain EXACTLY these two lines and nothing else.
+
+      USE THIS STRICT FORMAT:
+      Evaluation evidence: [your explanation here]
+      Overall Score: [score only]
+    role_description: |-
+      You are now [Critic], one of the referees in this task.
+      You will check for fluency, correctness, clarity, and relevance of the response.
+      You will challenge other judgments if needed and ensure the reasoning is logically consistent.
+      Focus on writing quality and precision of expression.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: summary
+      llm: *llm_config_sum  
+      summary_template: *summary_template_def
+
+    prompt_template: *prompt
+    llm: *llm_config
+
+  # -
+  #   agent_type: llm_eval_multi_con
+  #   name: General Public
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [General Public], one of the referees in this task.
+  #     You represent an average, interested reader following the story or conversation.
+  #     You will focus on how natural, realistic, and plausible the response sounds.
+  #     Ask yourself: does this sound like something a normal person would say here?
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: summary
+  #     llm: *llm_config_sum  
+  #     summary_template: *summary_template_def
+
+  #   prompt_template: *prompt
+  #   llm: *llm_config 
+  
+  -
+    agent_type: llm_eval_multi_con
+    name: News Author
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are now [News Author], one of the referees in this task.
+      You evaluate the semantic accuracy, specificity, and contextual relevance of the response.
+      Focus on whether the response clearly conveys useful and appropriate information, as a professional writer would.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: summary
+      llm: *llm_config_sum  
+      summary_template: *summary_template_def
+
+    prompt_template: *prompt
+    llm: *llm_config
+  
+  -
+    agent_type: llm_eval_multi_con
+    name: Psychologist
+    final_prompt_to_use: *final_prompt_definition
+    role_description: |-
+      You are now [Psychologist], one of the referees in this task.
+      You study how engaging, emotionally coherent, and behaviorally realistic the response is.
+      Focus on empathy, tone, and human engagement — does the reply connect well with the user’s perspective?
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: summary
+      llm: *llm_config_sum  
+      summary_template: *summary_template_def
+
+    prompt_template: *prompt
+    llm: *llm_config
+  
+  # -
+  #   agent_type: llm_eval_multi_con
+  #   name: Scientist
+  #   final_prompt_to_use: *final_prompt_definition
+  #   role_description: |-
+  #     You are now [Scientist], one of the referees in this task.
+  #     You evaluate logical soundness, factual consistency, and understandability.
+  #     Focus on whether the response demonstrates reasoning and structure that are logically valid and easy to follow.
+  #   memory:
+  #     memory_type: chat_history
+  #   memory_manipulator:
+  #     memory_manipulator_type: summary
+  #     llm: *llm_config_sum  
+  #     summary_template: *summary_template_def
+
+  #   prompt_template: *prompt
+  #   llm: *llm_config
+
+tools: ~

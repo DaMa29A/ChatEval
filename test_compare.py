@@ -236,10 +236,8 @@ def save_last_n_elements(data, n, output_directory, original_filename):
 
 
 if __name__ == "__main__":
-    # file di 385
-    # i primi 100 coincidono    dalla 101 alla 110
-    # gli ultimi 275 coincidono
+    path_file2 = "outputs/topical/one-to-one/results.json"
+    path_file1 = "outputs/topical/simultaneous/results.json"
+    compare_contexts(path_file2, path_file1)
 
-    path_file1 = "outputs/fed/one-to-one/results.json"
-    path_file2 = "outputs/fed/simultaneous/results.json"
-    compare_contexts(path_file1, path_file2)
+    

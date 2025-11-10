@@ -186,6 +186,8 @@ scripts
 test_gpt_free.py
 test_gpt.py
 ./test_os_key.py
+./.docs/
+outputs/
 
 *.jsonl
 llm_eval_azure.py
